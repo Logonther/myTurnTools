@@ -15,6 +15,9 @@ let router = new Router({
             path: '/',
             redirect: '/index'
         },{
+            path: '/vue-myturn',
+            redirect: '/index'
+        },{
             path: '/index',
             name: 'Index',
             component: Index,
