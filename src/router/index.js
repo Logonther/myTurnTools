@@ -9,7 +9,7 @@ import African from '@/components/african.vue'
 
 let router = new Router({
     linkExactActiveClass: 'active',
-    mode: 'history',
+    mode: 'hash',
     routes: [
         {
             path: '/',

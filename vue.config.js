@@ -1,5 +1,5 @@
 module.exports = {
-    publicPath:"./vue-myturn/",
+    publicPath:"./",
     outputDir:"dist",
-    assetsDir:"./vue-myturn/",
+    assetsDir:"./",
 }
