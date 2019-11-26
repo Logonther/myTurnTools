@@ -2,7 +2,6 @@
     <div>
         <div class="container indexText">
             <h3>我的回合资料站开始施工！</h3>
-            <p>新页面：https://logonther.github.io/vue-myturn</p>
             <p>此后这个页面也许不会再更新也可能</p>
             <h3>更新记录：</h3>
             <ul>
