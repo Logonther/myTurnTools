@@ -727,7 +727,7 @@
     },
     {
         "name":"荒漠萨满",
-        "if":false,
+        "if":true,
         "cost":"7",
         "type":"blue",
         "rare":"copper",
