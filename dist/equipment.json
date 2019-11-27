@@ -16,7 +16,7 @@
     {
         "name":"钢铁毁灭战斧",
         "if":true,
-        "cost":"3",
+        "cost":"2",
         "rare":"gold","type":"equipment",
         "pic":"image/equipments/钢铁毁灭战斧.jpg"
     },
@@ -44,7 +44,7 @@
     {
         "name":"天使命运竖琴",
         "if":true,
-        "cost":"3",
+        "cost":"2",
         "rare":"gold","type":"equipment",
         "pic":"image/equipments/天使命运竖琴.jpg"
     },
@@ -114,28 +114,28 @@
     {
         "name":"神秘怪盗提箱",
         "if":true,
-        "cost":"2",
+        "cost":"1",
         "rare":"gold","type":"equipment",
         "pic":"image/equipments/神秘怪盗提箱.jpg"
     },
     {
         "name":"微光的蜡烛",
         "if":true,
-        "cost":"2",
+        "cost":"1",
         "rare":"silver","type":"equipment",
         "pic":"image/equipments/微光的蜡烛.jpg"
     },
     {
         "name":"审判官之锤",
         "if":true,
-        "cost":"1",
+        "cost":"2",
         "rare":"silver","type":"equipment",
         "pic":"image/equipments/审判官之锤.jpg"
     },
     {
         "name":"毁灭者法球",
         "if":true,
-        "cost":"4",
+        "cost":"3",
         "rare":"silver","type":"equipment",
         "pic":"image/equipments/毁灭者法球.jpg"
     },
@@ -163,14 +163,14 @@
     {
         "name":"隐居者斗篷",
         "if":true,
-        "cost":"1",
+        "cost":"2",
         "rare":"silver","type":"equipment",
         "pic":"image/equipments/隐居者斗篷.jpg"
     },
     {
         "name":"超音速引擎",
         "if":true,
-        "cost":"2",
+        "cost":"1",
         "rare":"silver","type":"equipment",
         "pic":"image/equipments/超音速引擎.jpg"
     },
@@ -191,14 +191,14 @@
     {
         "name":"不屈者腰带",
         "if":true,
-        "cost":"3",
+        "cost":"2",
         "rare":"silver","type":"equipment",
         "pic":"image/equipments/不屈者腰带.jpg"
     },
     {
         "name":"纵火狂燧石",
         "if":true,
-        "cost":"2",
+        "cost":"1",
         "rare":"silver","type":"equipment",
         "pic":"image/equipments/纵火狂燧石.jpg"
     },
@@ -212,7 +212,7 @@
     {
         "name":"大祭司权杖",
         "if":true,
-        "cost":"2",
+        "cost":"1",
         "rare":"silver","type":"equipment",
         "pic":"image/equipments/大祭司权杖.jpg"
     },
@@ -254,14 +254,14 @@
     {
         "name":"刺客匕首",
         "if":true,
-        "cost":"1",
+        "cost":"2",
         "rare":"copper","type":"equipment",
         "pic":"image/equipments/刺客匕首.jpg"
     },
     {
         "name":"吸血面具",
         "if":true,
-        "cost":"1",
+        "cost":"2",
         "rare":"copper","type":"equipment",
         "pic":"image/equipments/吸血面具.jpg"
     },
@@ -289,21 +289,21 @@
     {
         "name":"逆流手套",
         "if":true,
-        "cost":"1",
+        "cost":"2",
         "rare":"copper","type":"equipment",
         "pic":"image/equipments/逆流手套.jpg"
     },
     {
         "name":"巨蛇鳞片",
         "if":true,
-        "cost":"2",
+        "cost":"3",
         "rare":"copper","type":"equipment",
         "pic":"image/equipments/巨蛇鳞片.jpg"
     },
     {
         "name":"巫毒人偶",
         "if":true,
-        "cost":"1",
+        "cost":"2",
         "rare":"copper","type":"equipment",
         "pic":"image/equipments/巫毒人偶.jpg"
     },
