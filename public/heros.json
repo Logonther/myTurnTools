@@ -1635,7 +1635,7 @@
     },
     {
         "name":"幻术师",
-        "if":false,
+        "if":true,
         "cost":"7",
         "type":"purple",
         "rare":"gold",
