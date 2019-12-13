@@ -141,7 +141,7 @@
     },
     {
         "name":"紫水晶吊坠",
-        "if":false,
+        "if":true,
         "cost":"2",
         "rare":"silver","type":"equipment",
         "pic":"image/equipments/紫水晶吊坠.jpg"
