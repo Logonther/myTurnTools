@@ -21,23 +21,30 @@
                 <li>互动语音：所有英雄相关的互动语音（暂无确定资料）</li>
             </ul>
         </div>
+
     </div>
 </template>
 
 <script>
-    export default {
-        name: "index"
+export default {
+  name: "index",
+  data(){
+    return {
     }
+  }
+}
 </script>
 
 <style scoped lang="less">
-    p，ul{
+    p，ul {
         font-size: 16px;
     }
-    ul{
+
+    ul {
         list-style: disc;
         margin-left: 15px;
-        li{
+
+        li {
             list-style: disc;
         }
     }

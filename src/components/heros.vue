@@ -14,11 +14,19 @@
                     <div class="pic" :style="'background-image: url('+item.pic+')'"></div>
                     <div class="skills">
                         <div class="skill">Ex {{ item.ex[0].name }}：<br>{{ item.ex[0].txt }}</div>
-                        <div class="skill">技能 {{ item.skill1[0].cost }}费 {{ item.skill1[0].name }}：<br>{{ item.skill1[0].txt }}</div>
-                        <div class="skill">技能 {{ item.skill2[0].cost }}费 {{ item.skill2[0].name }}：<br>{{ item.skill2[0].txt }}</div>
-                        <div class="skill">技能 {{ item.skill3[0].cost }}费 {{ item.skill3[0].name }}：<br>{{ item.skill3[0].txt }}</div>
+                        <div class="skill">技能 {{ item.skill1[0].cost }}费 {{ item.skill1[0].name }}：<br>{{
+                            item.skill1[0].txt }}
+                        </div>
+                        <div class="skill">技能 {{ item.skill2[0].cost }}费 {{ item.skill2[0].name }}：<br>{{
+                            item.skill2[0].txt }}
+                        </div>
+                        <div class="skill">技能 {{ item.skill3[0].cost }}费 {{ item.skill3[0].name }}：<br>{{
+                            item.skill3[0].txt }}
+                        </div>
                         <div v-if="item.derivative != []">
-                            <div class="skill" v-for="(item2,index2) in item.derivative" :key="index2">衍生 {{ item2.cost }}费 {{ item2.name }}：<br>{{ item2.txt }}</div>
+                            <div class="skill" v-for="(item2,index2) in item.derivative" :key="index2">衍生 {{ item2.cost
+                                }}费 {{ item2.name }}：<br>{{ item2.txt }}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -28,70 +36,78 @@
 </template>
 
 <script>
-    export default {
-        name: "heros",
-        data(){
-            return{
-                herosList:[]
-            }
-        },
-        created(){
-            this.init();
-        },
-        methods:{
-            init(){
-                this.$http.get('heros.json').then((res) => {
-                    this.herosList = res.data
-                })
-            },
-            byWhat(order){
-                const that = this
-                return that.herosList.sort(function(a,b){
-                    var x = a[order];
-                    var y = b[order];
-                    return((x<y)?-1:((x>y)?1:0));
-                })
-            }
-        }
+export default {
+  name: "heros",
+  data() {
+    return {
+      herosList: []
     }
+  },
+  created() {
+    this.init();
+  },
+  methods: {
+    init() {
+      this.$http.get('heros.json').then((res) => {
+        this.herosList = res.data
+      })
+    },
+    byWhat(order) {
+      const that = this
+      return that.herosList.sort(function (a, b) {
+        var x = a[order];
+        var y = b[order];
+        return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+      })
+    }
+  }
+}
 </script>
 
 <style scoped lang="less">
     @import "../assets/less/base";
-    .heros{
+
+    .heros {
         position: relative;
-        .hero{
+
+        .hero {
             position: relative;
             padding: 10rem/@fontSize;
-            .content{
+
+            .content {
                 border: 3rem/@fontSize solid #333;
                 position: relative;
                 color: white;
                 background-repeat: no-repeat;
                 background-size: 30rem/@fontSize;
                 background-position: right top;
-                .title{
+
+                .title {
                     height: 33rem/@fontSize;
                     line-height: 30rem/@fontSize;
                     font-size: 20rem/@fontSize;
                     border-bottom: 3rem/@fontSize solid #333;
-                    span{
+
+                    span {
                         padding: 0 15rem/@fontSize;
                     }
                 }
-                .pic{
+
+                .pic {
                     height: 203rem/@fontSize;
                     background-image: url("../assets/image/书龙-01.png");
                     background-repeat: no-repeat;
                     background-size: 100%;
                     border-bottom: 3rem/@fontSize solid #333;
                 }
-                .skills{
+
+                .skills {
                     background-color: #444;
                     font-size: 15rem/@fontSize;
                     height: 188rem/@fontSize;
                     overflow-y: scroll;
-                    .skill{
+
+                    .skill {
                         padding: 0 15rem/@fontSize;
                         line-height: 25rem/@fontSize;
                         font-size: 16rem/@fontSize;
@@ -99,28 +115,36 @@
                     }
                 }
             }
-            .content.yellow{
-                background-color: rgb(189,161,0);
+
+            .content.yellow {
+                background-color: rgb(189, 161, 0);
             }
-            .content.red{
-                background-color: rgb(175,66,50);
+
+            .content.red {
+                background-color: rgb(175, 66, 50);
             }
-            .content.blue{
-                background-color: rgb(53,94,170);
+
+            .content.blue {
+                background-color: rgb(53, 94, 170);
             }
-            .content.purple{
-                background-color: rgb(118,84,145);
+
+            .content.purple {
+                background-color: rgb(118, 84, 145);
             }
-            .content.green{
-                background-color: rgb(12,114,77);
+
+            .content.green {
+                background-color: rgb(12, 114, 77);
             }
-            .content.copper{
+
+            .content.copper {
                 background-image: url("../assets/image/铜卡.png");
             }
-            .content.silver{
+
+            .content.silver {
                 background-image: url("../assets/image/银卡.png");
             }
-            .content.gold{
+
+            .content.gold {
                 background-image: url("../assets/image/金卡.png");
             }
         }
