@@ -1,7 +1,7 @@
 [
     {
         "name":"无尽力量头盔",
-        "if":false,
+        "if":true,
         "cost":"5",
         "rare":"gold","type":"equipment",
         "pic":"image/equipments/无尽力量头盔.jpg"
@@ -232,7 +232,7 @@
     },
     {
         "name":"聚气手腕",
-        "if":false,
+        "if":true,
         "cost":"1",
         "rare":"copper","type":"equipment",
         "pic":"image/equipments/聚气手腕.jpg"
