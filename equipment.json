@@ -176,7 +176,7 @@
     },
     {
         "name":"贤者的笔记",
-        "if":true,
+        "if":false,
         "cost":"2",
         "rare":"silver","type":"equipment",
         "pic":"image/equipments/贤者的笔记.jpg"
