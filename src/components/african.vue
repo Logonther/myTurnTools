@@ -4,8 +4,8 @@
             <button class="btn btn-default" @click="btnDraw1">抽1张</button>
             <button class="btn btn-default" @click="btnDraw5">抽5张</button>
             <button class="btn btn-default" @click="min = 100" style="opacity: 0">看毛看啊</button>
-            <button class="btn btn-default" @click="toggleCards(96)">切换为测试服卡池（96张版本）</button>
-            <button class="btn btn-default" @click="toggleCards(78)">切换为国际服卡池（90张版本）</button>
+            <!--<button class="btn btn-default" @click="toggleCards(96)">切换为测试服卡池（96张版本）</button>-->
+            <!--<button class="btn btn-default" @click="toggleCards(78)">切换为国际服卡池（90张版本）</button>-->
         </div>
         <div class="container cards" v-show="cards != []">
             <div v-for="(item,index) in cards"
@@ -34,7 +34,7 @@
                 herosList:[],
                 african:[],
                 european:[],
-                version: 96,
+                version: 78,
                 min: 1,
                 cards: [],
                 cardHeight: 0,
