@@ -316,7 +316,7 @@
     },
     {
         "name":"圣女旗帜",
-        "if":false,
+        "if":true,
         "cost":"3",
         "rare":"copper","type":"equipment",
         "pic":"image/equipments/圣女旗帜.jpg"
