@@ -8,7 +8,7 @@
     },
     {
         "name":"石像鬼的披风",
-        "if":false,
+        "if":true,
         "cost":"3",
         "rare":"gold","type":"equipment",
         "pic":"image/equipments/石像鬼的披风.jpg"
@@ -148,7 +148,7 @@
     },
     {
         "name":"翡翠玉指环",
-        "if":false,
+        "if":true,
         "cost":"1",
         "rare":"silver","type":"equipment",
         "pic":"image/equipments/翡翠玉指环.jpg"
