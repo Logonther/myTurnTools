@@ -129,42 +129,84 @@
                 }
                 return roll_no;
             },
+            draw5_1(){
+                let card = undefined;
+                let roll_no = this.roll100(this.min);
+                if (roll_no <= 60) {
+                    card = this.european[this.rollcard(this.european)];
+                    if (card.rare == "copper") {
+                        console.log("不暴击"+card.name+"*12");
+                        this.inin(card,card.name+"×12");
+                    }else if (card.rare == "silver") {
+                        console.log("不暴击"+card.name+"*4");
+                        this.inin(card,card.name+"×4");
+                    }else{
+                        console.log("不暴击"+card.name+"*1");
+                        this.inin(card,card.name+"×1");
+                    }
+                }else if (roll_no > 60 && roll_no <= 90) {
+                    card = this.european[this.rollcard(this.european)]
+                    if (card.rare == "copper") {
+                        console.log("小暴击"+card.name+"*36");
+                        this.inin(card,card.name+"×36");
+                    }else if (card.rare == "silver") {
+                        console.log("小暴击"+card.name+"*12");
+                        this.inin(card,card.name+"×12");
+                    }else{
+                        console.log("小暴击"+card.name+"*3");
+                        this.inin(card,card.name+"×3");
+                    }
+                }else{
+                    card = this.european[this.rollcard(this.european)]
+                    if (card.rare == "copper") {
+                        console.log("大暴击"+card.name+"*120");
+                        this.inin(card,card.name+"×120");
+                    }else if (card.rare == "silver") {
+                        console.log("大暴击"+card.name+"*40");
+                        this.inin(card,card.name+"×40");
+                    }else{
+                        console.log("大暴击"+card.name+"*10");
+                        this.inin(card,card.name+"×10");
+                    }
+                }
+                return roll_no;
+            },
             draw5(){
                 let card = undefined
                 let luck = 0
                 for (var i = 0;i<4;i++){
-                    var roll_res = this.draw1();
-                    if (roll_res>70) {
+                    var roll_res = this.draw5_1();
+                    if (roll_res>60) {
                         luck++;
                     }
                 }
                 if (luck){
-                    this.draw1();
+                    this.draw5_1();
                 }else{
-                    var roll_no = Math.floor(Math.random()*25+76)
-                    if (roll_no > 70 && roll_no <= 95) {
+                    var roll_no = Math.floor(Math.random()*40+60)
+                    if (roll_no > 60 && roll_no <= 90) {
                         card = this.european[this.rollcard(this.european)]
                         if (card.rare == "copper") {
+                            console.log("小暴击"+card.name+"*36");
+                            this.inin(card,card.name+"×36");
+                        }else if (card.rare == "silver") {
                             console.log("小暴击"+card.name+"*12");
                             this.inin(card,card.name+"×12");
-                        }else if (card.rare == "silver") {
-                            console.log("小暴击"+card.name+"*4");
-                            this.inin(card,card.name+"×4");
                         }else{
-                            console.log("小暴击"+card.name+"*1");
-                            this.inin(card,card.name+"×1");
+                            console.log("小暴击"+card.name+"*3");
+                            this.inin(card,card.name+"×3");
                         }
                     }else{
                         card = this.european[this.rollcard(this.european)]
                         if (card.rare == "copper") {
-                            console.log("大暴击"+card.name+"*36");
-                            this.inin(card,card.name+"×36");
+                            console.log("大暴击"+card.name+"*120");
+                            this.inin(card,card.name+"×120");
                         }else if (card.rare == "silver") {
-                            console.log("大暴击"+card.name+"*12");
-                            this.inin(card,card.name+"×12");
+                            console.log("大暴击"+card.name+"*40");
+                            this.inin(card,card.name+"×40");
                         }else{
-                            console.log("大暴击"+card.name+"*3");
-                            this.inin(card,card.name+"×3");
+                            console.log("大暴击"+card.name+"*10");
+                            this.inin(card,card.name+"×10");
                         }
                     }
                 }
