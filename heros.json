@@ -290,7 +290,7 @@
     {
         "name":"黎明之剑",
         "if":true,
-        "cost":"6",
+        "cost":"7",
         "type":"yellow",
         "rare":"gold",
         "pic":"image/heros/黎明之剑.jpg",
@@ -344,7 +344,7 @@
         ],
         "skill1":[
             {
-                "cost":1,
+                "cost":2,
                 "name":"霜火射击",
                 "txt":"造成75%攻击力冰霜火焰伤害"
             }
@@ -367,7 +367,7 @@
     },
     {
         "name":"狂战士",
-        "if":false,
+        "if":true,
         "cost":"4",
         "type":"red",
         "rare":"copper",
@@ -394,7 +394,7 @@
         ],
         "skill3":[
             {
-                "cost":3,
+                "cost":2,
                 "name":"回旋之斧",
                 "txt":"对全体敌方造成100%攻击力伤害，自身损失100%攻击力生命，如杀死敌方则获得1张0费的回旋之斧"
             }
@@ -440,7 +440,7 @@
     {
         "name":"武士",
         "if":true,
-        "cost":"9",
+        "cost":"6",
         "type":"red",
         "rare":"silver",
         "pic":"image/heros/武士.jpg",
@@ -476,7 +476,7 @@
     {
         "name":"复仇之刃",
         "if":true,
-        "cost":"6",
+        "cost":"5",
         "type":"red",
         "rare":"silver",
         "pic":"image/heros/复仇之刃.jpg",
@@ -764,7 +764,7 @@
     {
         "name":"风暴使者",
         "if":true,
-        "cost":"7",
+        "cost":"4",
         "type":"blue",
         "rare":"copper",
         "pic":"image/heros/风暴使者.jpg",
@@ -1002,7 +1002,7 @@
     {
         "name":"猩红魔女",
         "if":true,
-        "cost":"6",
+        "cost":"7",
         "type":"blue",
         "rare":"gold",
         "pic":"image/heros/猩红魔女.jpg",
@@ -1403,8 +1403,8 @@
     },
     {
         "name":"大侦探",
-        "if":false,
-        "cost":"7",
+        "if":true,
+        "cost":"6",
         "type":"purple",
         "rare":"silver",
         "pic":"image/heros/大侦探.jpg",
@@ -1430,7 +1430,7 @@
         ],
         "skill3":[
             {
-                "cost":3,
+                "cost":2,
                 "name":"思绪提琴",
                 "txt":"获得30能量，其他友方获得10能量"
             }
