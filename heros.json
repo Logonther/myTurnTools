@@ -1,6 +1,7 @@
 [
     {
         "name":"侍从",
+        "id":"1-1",
         "if":true,
         "cost":"4",
         "type":"yellow",
@@ -37,6 +38,7 @@
     },
     {
         "name":"园林看守",
+        "id":"1-2",
         "if":true,
         "cost":"4",
         "type":"yellow",
@@ -73,6 +75,7 @@
     },
     {
         "name":"突击战牛",
+        "id":"1-3",
         "if":true,
         "cost":"6",
         "type":"yellow",
@@ -109,6 +112,7 @@
     },
     {
         "name":"冬幕卫士",
+        "id":"1-4",
         "if":true,
         "cost":"6",
         "type":"yellow",
@@ -145,6 +149,7 @@
     },
     {
         "name":"守护天使",
+        "id":"1-5",
         "if":true,
         "cost":"7",
         "type":"yellow",
@@ -181,6 +186,7 @@
     },
     {
         "name":"奴隶斗士",
+        "id":"1-6",
         "if":true,
         "cost":"4",
         "type":"yellow",
@@ -217,6 +223,7 @@
     },
     {
         "name":"剑舞者",
+        "id":"1-7",
         "if":true,
         "cost":"5",
         "type":"yellow",
@@ -253,6 +260,7 @@
     },
     {
         "name":"战争领主",
+        "id":"1-8",
         "if":true,
         "cost":"5",
         "type":"yellow",
@@ -289,6 +297,7 @@
     },
     {
         "name":"黎明之剑",
+        "id":"1-9",
         "if":true,
         "cost":"7",
         "type":"yellow",
@@ -331,6 +340,7 @@
     },
     {
         "name":"弩手",
+        "id":"2-1",
         "if":true,
         "cost":"7",
         "type":"red",
@@ -367,6 +377,7 @@
     },
     {
         "name":"狂战士",
+        "id":"2-2",
         "if":true,
         "cost":"4",
         "type":"red",
@@ -403,6 +414,7 @@
     },
     {
         "name":"伏击刺客",
+        "id":"2-3",
         "if":true,
         "cost":"5",
         "type":"red",
@@ -439,6 +451,7 @@
     },
     {
         "name":"武士",
+        "id":"2-4",
         "if":true,
         "cost":"6",
         "type":"red",
@@ -475,6 +488,7 @@
     },
     {
         "name":"复仇之刃",
+        "id":"2-5",
         "if":true,
         "cost":"5",
         "type":"red",
@@ -511,6 +525,7 @@
     },
     {
         "name":"处决者",
+        "id":"2-6",
         "if":true,
         "cost":"6",
         "type":"red",
@@ -547,6 +562,7 @@
     },
     {
         "name":"狙击手",
+        "id":"2-7",
         "if":true,
         "cost":"6",
         "type":"red",
@@ -583,6 +599,7 @@
     },
     {
         "name":"圣枪修女",
+        "id":"2-8",
         "if":true,
         "cost":"6",
         "type":"red",
@@ -619,6 +636,7 @@
     },
     {
         "name":"重拳警卫",
+        "id":"2-9",
         "if":true,
         "cost":"3",
         "type":"red",
@@ -655,6 +673,7 @@
     },
     {
         "name":"钢铁雄狮",
+        "id":"2-10",
         "if":true,
         "cost":"7",
         "type":"red",
@@ -691,6 +710,7 @@
     },
     {
         "name":"学徒",
+        "id":"3-1",
         "if":true,
         "cost":"9",
         "type":"blue",
@@ -727,6 +747,7 @@
     },
     {
         "name":"荒漠萨满",
+        "id":"3-2",
         "if":true,
         "cost":"7",
         "type":"blue",
@@ -763,6 +784,7 @@
     },
     {
         "name":"风暴使者",
+        "id":"3-3",
         "if":true,
         "cost":"4",
         "type":"blue",
@@ -805,6 +827,7 @@
     },
     {
         "name":"寒冰巫女",
+        "id":"3-4",
         "if":true,
         "cost":"9",
         "type":"blue",
@@ -841,6 +864,7 @@
     },
     {
         "name":"红莲之羽",
+        "id":"3-5",
         "if":true,
         "cost":"9",
         "type":"blue",
@@ -877,6 +901,7 @@
     },
     {
         "name":"唤星师",
+        "id":"3-6",
         "if":true,
         "cost":"8",
         "type":"blue",
@@ -913,6 +938,7 @@
     },
     {
         "name":"灵魂收割者",
+        "id":"3-7",
         "if":true,
         "cost":"5",
         "type":"blue",
@@ -949,6 +975,7 @@
     },
     {
         "name":"老板娘",
+        "id":"3-8",
         "if":true,
         "cost":"9",
         "type":"blue",
@@ -1001,6 +1028,7 @@
     },
     {
         "name":"猩红魔女",
+        "id":"3-9",
         "if":true,
         "cost":"7",
         "type":"blue",
@@ -1037,6 +1065,7 @@
     },
     {
         "name":"牧师",
+        "id":"4-1",
         "if":true,
         "cost":"3",
         "type":"green",
@@ -1073,6 +1102,7 @@
     },
     {
         "name":"德鲁伊",
+        "id":"4-2",
         "if":true,
         "cost":"5",
         "type":"green",
@@ -1109,6 +1139,7 @@
     },
     {
         "name":"圣骑士",
+        "id":"4-3",
         "if":true,
         "cost":"4",
         "type":"green",
@@ -1145,6 +1176,7 @@
     },
     {
         "name":"炼金师",
+        "id":"4-4",
         "if":true,
         "cost":"4",
         "type":"green",
@@ -1187,6 +1219,7 @@
     },
     {
         "name":"大主教",
+        "id":"4-5",
         "if":true,
         "cost":"6",
         "type":"green",
@@ -1223,6 +1256,7 @@
     },
     {
         "name":"护士长",
+        "id":"4-6",
         "if":true,
         "cost":"4",
         "type":"green",
@@ -1259,6 +1293,7 @@
     },
     {
         "name":"符文之语",
+        "id":"4-7",
         "if":true,
         "cost":"9",
         "type":"green",
@@ -1295,6 +1330,7 @@
     },
     {
         "name":"冒险家",
+        "id":"5-1",
         "if":true,
         "cost":"6",
         "type":"purple",
@@ -1331,6 +1367,7 @@
     },
     {
         "name":"工匠之锤",
+        "id":"5-2",
         "if":true,
         "cost":"4",
         "type":"purple",
@@ -1367,6 +1404,7 @@
     },
     {
         "name":"破魔机甲",
+        "id":"5-3",
         "if":true,
         "cost":"7",
         "type":"purple",
@@ -1403,6 +1441,7 @@
     },
     {
         "name":"大侦探",
+        "id":"5-4",
         "if":true,
         "cost":"6",
         "type":"purple",
@@ -1439,6 +1478,7 @@
     },
     {
         "name":"黑魔导士",
+        "id":"5-5",
         "if":true,
         "cost":"4",
         "type":"purple",
@@ -1475,6 +1515,7 @@
     },
     {
         "name":"海盗女王",
+        "id":"5-6",
         "if":true,
         "cost":"4",
         "type":"purple",
@@ -1511,6 +1552,7 @@
     },
     {
         "name":"奥术之源",
+        "id":"5-7",
         "if":true,
         "cost":"5",
         "type":"purple",
@@ -1547,6 +1589,7 @@
     },
     {
         "name":"发明家",
+        "id":"5-8",
         "if":true,
         "cost":"5",
         "type":"purple",
@@ -1599,6 +1642,7 @@
     },
     {
         "name":"白魔导士",
+        "id":"5-9",
         "if":true,
         "cost":"8",
         "type":"purple",
@@ -1635,6 +1679,7 @@
     },
     {
         "name":"幻术师",
+        "id":"5-10",
         "if":true,
         "cost":"7",
         "type":"purple",
