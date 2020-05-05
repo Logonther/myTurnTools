@@ -11,7 +11,7 @@
         "name":"石像鬼的披风",
         "id":"1-2",
         "if":true,
-        "cost":"3",
+        "cost":"2",
         "rare":"gold","type":"equipment",
         "pic":"image/equipments/石像鬼的披风.jpg"
     },
@@ -136,10 +136,18 @@
         "pic":"image/equipments/神秘怪盗提箱.jpg"
     },
     {
+        "name":"魔术使万华镜",
+        "id":"1-18",
+        "if":true,
+        "cost":"3",
+        "rare":"gold","type":"equipment",
+        "pic":"image/equipments/魔术使万华镜.jpg"
+    },
+    {
         "name":"微光的蜡烛",
         "id":"2-1",
         "if":true,
-        "cost":"1",
+        "cost":"2",
         "rare":"silver","type":"equipment",
         "pic":"image/equipments/微光的蜡烛.jpg"
     },
@@ -179,7 +187,7 @@
         "name":"守备官臂甲",
         "id":"2-6",
         "if":true,
-        "cost":"2",
+        "cost":"1",
         "rare":"silver","type":"equipment",
         "pic":"image/equipments/守备官臂甲.jpg"
     },
@@ -262,6 +270,14 @@
         "cost":"2",
         "rare":"silver","type":"equipment",
         "pic":"image/equipments/收藏家宝藏.jpg"
+    },
+    {
+        "name":"水晶十字镐",
+        "id":"2-17",
+        "if":true,
+        "cost":"3",
+        "rare":"silver","type":"equipment",
+        "pic":"image/equipments/水晶十字镐.jpg"
     },
     {
         "name":"聚气手腕",
@@ -387,7 +403,7 @@
         "name":"聚雷线圈",
         "id":"3-16",
         "if":true,
-        "cost":"2",
+        "cost":"1",
         "rare":"copper","type":"equipment",
         "pic":"image/equipments/聚雷线圈.jpg"
     },
@@ -406,5 +422,13 @@
         "cost":"1",
         "rare":"copper","type":"equipment",
         "pic":"image/equipments/军师锦囊.jpg"
+    },
+    {
+        "name":"渡鸦雕像",
+        "id":"1-17",
+        "if":true,
+        "cost":"1",
+        "rare":"copper","type":"equipment",
+        "pic":"image/equipments/渡鸦雕像.jpg"
     }
 ]
