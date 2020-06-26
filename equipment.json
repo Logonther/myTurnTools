@@ -32,7 +32,7 @@
         "id":"1-3",
         "amount": 0,
         "if":true,
-        "cost":"2",
+        "cost":"3",
         "rare":"gold","type":"equipment",
         "pic":"image/equipments/钢铁毁灭战斧.jpg",
         "strategy": [
@@ -102,7 +102,7 @@
         "id":"1-8",
         "amount": 0,
         "if":true,
-        "cost":"3",
+        "cost":"5",
         "rare":"gold","type":"equipment",
         "pic":"image/equipments/混沌魔神之牙.jpg",
         "strategy": [
@@ -200,7 +200,7 @@
         "id":"1-15",
         "amount": 0,
         "if":true,
-        "cost":"3",
+        "cost":"2",
         "rare":"gold","type":"equipment",
         "pic":"image/equipments/不灭凤凰余烬.jpg",
         "strategy": [
@@ -256,7 +256,7 @@
         "id":"1-19",
         "amount": 0,
         "if":true,
-        "cost":"2",
+        "cost":"1",
         "rare":"gold","type":"equipment",
         "pic":"image/equipments/水银反曲长刀.jpg",
         "strategy": [
@@ -270,7 +270,7 @@
         "id":"1-20",
         "amount": 0,
         "if":true,
-        "cost":"3",
+        "cost":"2",
         "rare":"gold","type":"equipment",
         "pic":"image/equipments/驱魔人的圣油.jpg",
         "strategy": [
@@ -284,7 +284,7 @@
         "id":"2-1",
         "amount": 0,
         "if":true,
-        "cost":"2",
+        "cost":"1",
         "rare":"silver","type":"equipment",
         "pic":"image/equipments/微光的蜡烛.jpg",
         "strategy": [
@@ -326,7 +326,7 @@
         "id":"2-4",
         "amount": 0,
         "if":true,
-        "cost":"2",
+        "cost":"3",
         "rare":"silver","type":"equipment",
         "pic":"image/equipments/紫水晶吊坠.jpg",
         "strategy": [
@@ -354,7 +354,7 @@
         "id":"2-6",
         "amount": 0,
         "if":true,
-        "cost":"1",
+        "cost":"2",
         "rare":"silver","type":"equipment",
         "pic":"image/equipments/守备官臂甲.jpg",
         "strategy": [
@@ -522,7 +522,7 @@
         "id":"2-18",
         "amount": 0,
         "if":true,
-        "cost":"2",
+        "cost":"1",
         "rare":"silver","type":"equipment",
         "pic":"image/equipments/树精灵之种.jpg",
         "strategy": [
@@ -620,7 +620,7 @@
         "id":"3-7",
         "amount": 0,
         "if":true,
-        "cost":"3",
+        "cost":"2",
         "rare":"copper","type":"equipment",
         "pic":"image/equipments/生命果实.jpg",
         "strategy": [
@@ -634,7 +634,7 @@
         "id":"3-8",
         "amount": 0,
         "if":true,
-        "cost":"2",
+        "cost":"1",
         "rare":"copper","type":"equipment",
         "pic":"image/equipments/屏障宝珠.jpg",
         "strategy": [
@@ -648,7 +648,7 @@
         "id":"3-9",
         "amount": 0,
         "if":true,
-        "cost":"2",
+        "cost":"3",
         "rare":"copper","type":"equipment",
         "pic":"image/equipments/逆流手套.jpg",
         "strategy": [
@@ -676,7 +676,7 @@
         "id":"3-11",
         "amount": 0,
         "if":true,
-        "cost":"2",
+        "cost":"1",
         "rare":"copper","type":"equipment",
         "pic":"image/equipments/巫毒人偶.jpg",
         "strategy": [
@@ -718,7 +718,7 @@
         "id":"3-14",
         "amount": 0,
         "if":true,
-        "cost":"1",
+        "cost":"2",
         "rare":"copper","type":"equipment",
         "pic":"image/equipments/殉难披肩.jpg",
         "strategy": [
@@ -774,7 +774,7 @@
         "id":"3-18",
         "amount": 0,
         "if":true,
-        "cost":"1",
+        "cost":"2",
         "rare":"copper","type":"equipment",
         "pic":"image/equipments/军师锦囊.jpg",
         "strategy": [
