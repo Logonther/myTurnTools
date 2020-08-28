@@ -450,7 +450,7 @@
         "id":"2-2",
         "amount": 0,
         "if":true,
-        "cost":"4",
+        "cost":"6",
         "type":"red",
         "rare":"copper",
         "pic":"image/heros/狂战士.jpg",
