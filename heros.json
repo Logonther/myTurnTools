@@ -8,6 +8,7 @@
         "type":"yellow",
         "rare":"copper",
         "pic":"image/heros/侍从.jpg",
+        "property":[11,9,9,8,5,11],
         "ex":[
             {
                 "name":"英勇冲锋",
@@ -52,6 +53,7 @@
         "type":"yellow",
         "rare":"copper",
         "pic":"image/heros/园林看守.jpg",
+        "property":[15,11,2,6,8,13],
         "ex":[
             {
                 "name":"永恒翡翠园",
@@ -96,6 +98,7 @@
         "type":"yellow",
         "rare":"copper",
         "pic":"image/heros/突击战牛.jpg",
+        "property":[17,11,2,4,5,2],
         "ex":[
             {
                 "name":"堕天一击",
@@ -140,6 +143,7 @@
         "type":"yellow",
         "rare":"silver",
         "pic":"image/heros/冬幕卫士.jpg",
+        "property":[14,11,5,7,10,8],
         "ex":[
             {
                 "name":"寒霜之墓",
@@ -184,6 +188,7 @@
         "type":"yellow",
         "rare":"silver",
         "pic":"image/heros/守护天使.jpg",
+        "property":[12,11,11,7,10,13],
         "ex":[
             {
                 "name":"女武神降临",
@@ -228,6 +233,7 @@
         "type":"yellow",
         "rare":"silver",
         "pic":"image/heros/奴隶斗士.jpg",
+        "property":[14,13,5,5,5,7],
         "ex":[
             {
                 "name":"困兽之斗",
@@ -272,6 +278,7 @@
         "type":"yellow",
         "rare":"gold",
         "pic":"image/heros/剑舞者.jpg",
+        "property":[11,15,17,10,6,6],
         "ex":[
             {
                 "name":"利刃华尔兹",
@@ -316,6 +323,7 @@
         "type":"yellow",
         "rare":"gold",
         "pic":"image/heros/战争领主.jpg",
+        "property":[17,14,11,8,6,8],
         "ex":[
             {
                 "name":"不灭战神",
@@ -360,6 +368,7 @@
         "type":"yellow",
         "rare":"gold",
         "pic":"image/heros/黎明之剑.jpg",
+        "property":[14,14,14,11,11,14],
         "ex":[
             {
                 "name":"拂晓之光",
@@ -410,6 +419,7 @@
         "type":"red",
         "rare":"copper",
         "pic":"image/heros/弩手.jpg",
+        "property":[8,5,14,5,8,2],
         "ex":[
             {
                 "name":"致命射击",
@@ -454,6 +464,7 @@
         "type":"red",
         "rare":"copper",
         "pic":"image/heros/狂战士.jpg",
+        "property":[14,15,5,2,4,4],
         "ex":[
             {
                 "name":"鲁莽斩杀",
@@ -498,6 +509,7 @@
         "type":"red",
         "rare":"copper",
         "pic":"image/heros/伏击刺客.jpg",
+        "property":[9,8,11,2,5,5],
         "ex":[
             {
                 "name":"猫爪愤怒",
@@ -542,6 +554,7 @@
         "type":"red",
         "rare":"silver",
         "pic":"image/heros/武士.jpg",
+        "property":[12,13,13,5,5,10],
         "ex":[
             {
                 "name":"二天一流",
@@ -586,6 +599,7 @@
         "type":"red",
         "rare":"silver",
         "pic":"image/heros/复仇之刃.jpg",
+        "property":[14,14,13,4,7,8],
         "ex":[
             {
                 "name":"复仇之愿",
@@ -630,6 +644,7 @@
         "type":"red",
         "rare":"silver",
         "pic":"image/heros/处决者.jpg",
+        "property":[14,14,8,8,4,4],
         "ex":[
             {
                 "name":"嗜血的狂狼",
@@ -674,6 +689,7 @@
         "type":"red",
         "rare":"silver",
         "pic":"image/heros/狙击手.jpg",
+        "property":[9,10,15,5,4,5],
         "ex":[
             {
                 "name":"玫瑰绽放",
@@ -718,6 +734,7 @@
         "type":"red",
         "rare":"gold",
         "pic":"image/heros/圣枪修女.jpg",
+        "property":[8,10,17,6,9,9],
         "ex":[
             {
                 "name":"修女的怜悯",
@@ -762,6 +779,7 @@
         "type":"red",
         "rare":"gold",
         "pic":"image/heros/重拳警卫.jpg",
+        "property":[11,17,6,9,9,7],
         "ex":[
             {
                 "name":"超新星铁拳",
@@ -806,6 +824,7 @@
         "type":"red",
         "rare":"gold",
         "pic":"image/heros/钢铁雄狮.jpg",
+        "property":[15,17,11,14,2,10],
         "ex":[
             {
                 "name":"创世纪",
@@ -850,6 +869,7 @@
         "type":"blue",
         "rare":"copper",
         "pic":"image/heros/学徒.jpg",
+        "property":[5,5,4,11,10,5],
         "ex":[
             {
                 "name":"顿悟",
@@ -894,6 +914,7 @@
         "type":"blue",
         "rare":"copper",
         "pic":"image/heros/荒漠萨满.jpg",
+        "property":[9,11,4,7,13,8],
         "ex":[
             {
                 "name":"巨岩突刺",
@@ -938,6 +959,7 @@
         "type":"blue",
         "rare":"copper",
         "pic":"image/heros/风暴使者.jpg",
+        "property":[8,8,5,10,11,4],
         "ex":[
             {
                 "name":"雷神召唤",
@@ -988,6 +1010,7 @@
         "type":"blue",
         "rare":"silver",
         "pic":"image/heros/寒冰巫女.jpg",
+        "property":[5,5,4,14,14,8],
         "ex":[
             {
                 "name":"永霜纪元",
@@ -1032,6 +1055,7 @@
         "type":"blue",
         "rare":"silver",
         "pic":"image/heros/红莲之羽.jpg",
+        "property":[6,5,8,11,13,8],
         "ex":[
             {
                 "name":"星火燎原",
@@ -1076,6 +1100,7 @@
         "type":"blue",
         "rare":"silver",
         "pic":"image/heros/唤星师.jpg",
+        "property":[5,4,8,8,14,8],
         "ex":[
             {
                 "name":"星能爆裂",
@@ -1120,6 +1145,7 @@
         "type":"blue",
         "rare":"gold",
         "pic":"image/heros/灵魂收割者.jpg",
+        "property":[10,14,8,11,17,14],
         "ex":[
             {
                 "name":"死神之镰",
@@ -1164,6 +1190,7 @@
         "type":"blue",
         "rare":"gold",
         "pic":"image/heros/万象之龙.jpg",
+        "property":[8,7,8,14,17,12],
         "ex":[
             {
                 "name":"我的回合",
@@ -1224,6 +1251,7 @@
         "type":"blue",
         "rare":"gold",
         "pic":"image/heros/猩红魔女.jpg",
+        "property":[9,10,8,13,17,15],
         "ex":[
             {
                 "name":"鲜血风暴",
@@ -1268,6 +1296,7 @@
         "type":"green",
         "rare":"copper",
         "pic":"image/heros/牧师.jpg",
+        "property":[2,2,8,6,9,14],
         "ex":[
             {
                 "name":"神圣救赎",
@@ -1312,6 +1341,7 @@
         "type":"green",
         "rare":"copper",
         "pic":"image/heros/德鲁伊.jpg",
+        "property":[4,2,6,11,11,10],
         "ex":[
             {
                 "name":"星之祈愿",
@@ -1356,6 +1386,7 @@
         "type":"green",
         "rare":"silver",
         "pic":"image/heros/圣骑士.jpg",
+        "property":[9,12,10,9,9,11],
         "ex":[
             {
                 "name":"黎明之光",
@@ -1400,6 +1431,7 @@
         "type":"green",
         "rare":"silver",
         "pic":"image/heros/炼金师.jpg",
+        "property":[5,5,14,14,7,8],
         "ex":[
             {
                 "name":"第五元素",
@@ -1450,6 +1482,7 @@
         "type":"green",
         "rare":"silver",
         "pic":"image/heros/大主教.jpg",
+        "property":[11,8,7,13,11,14],
         "ex":[
             {
                 "name":"至高圣杯",
@@ -1494,6 +1527,7 @@
         "type":"green",
         "rare":"gold",
         "pic":"image/heros/护士长.jpg",
+        "property":[5,10,9,12,7,17],
         "ex":[
             {
                 "name":"提灯天使",
@@ -1538,6 +1572,7 @@
         "type":"green",
         "rare":"gold",
         "pic":"image/heros/符文之语.jpg",
+        "property":[7,6,9,15,15,11],
         "ex":[
             {
                 "name":"奥丁的智慧",
@@ -1582,6 +1617,7 @@
         "type":"green",
         "rare":"copper",
         "pic":"image/heros/奇妙厨师.jpg",
+        "property":[2,4,8,5,8,11],
         "ex":[
             {
                 "name":"暗黑·奇妙料理",
@@ -1626,6 +1662,7 @@
         "type":"purple",
         "rare":"copper",
         "pic":"image/heros/冒险家.jpg",
+        "property":[9,7,10,10,8,12],
         "ex":[
             {
                 "name":"珍藏的秘宝",
@@ -1670,6 +1707,7 @@
         "type":"purple",
         "rare":"copper",
         "pic":"image/heros/工匠之锤.jpg",
+        "property":[7,8,9,12,6,11],
         "ex":[
             {
                 "name":"全副武装",
@@ -1714,6 +1752,7 @@
         "type":"purple",
         "rare":"copper",
         "pic":"image/heros/破魔机甲.jpg",
+        "property":[13,9,2,11,2,8],
         "ex":[
             {
                 "name":"破魔光炮",
@@ -1758,6 +1797,7 @@
         "type":"purple",
         "rare":"silver",
         "pic":"image/heros/大侦探.jpg",
+        "property":[12,11,10,13,10,10],
         "ex":[
             {
                 "name":"思维殿堂",
@@ -1802,6 +1842,7 @@
         "type":"purple",
         "rare":"silver",
         "pic":"image/heros/黑魔导士.jpg",
+        "property":[8,8,5,15,11,11],
         "ex":[
             {
                 "name":"黑暗的邪月",
@@ -1846,6 +1887,7 @@
         "type":"purple",
         "rare":"silver",
         "pic":"image/heros/海盗女王.jpg",
+        "property":[10,10,11,8,5,5],
         "ex":[
             {
                 "name":"黑珍珠加农炮",
@@ -1890,6 +1932,7 @@
         "type":"purple",
         "rare":"gold",
         "pic":"image/heros/奥术之源.jpg",
+        "property":[10,4,2,17,15,14],
         "ex":[
             {
                 "name":"宇宙棱镜",
@@ -1934,6 +1977,7 @@
         "type":"purple",
         "rare":"gold",
         "pic":"image/heros/发明家.jpg",
+        "property":[6,6,11,17,2,15],
         "ex":[
             {
                 "name":"创世纪·试做型",
@@ -1994,6 +2038,7 @@
         "type":"purple",
         "rare":"gold",
         "pic":"image/heros/白魔导士.jpg",
+        "property":[5,5,5,12,15,17],
         "ex":[
             {
                 "name":"闪光的幻月",
@@ -2039,6 +2084,7 @@
         "type":"purple",
         "rare":"gold",
         "pic":"image/heros/幻术师.jpg",
+        "property":[4,4,8,17,14,15],
         "ex":[
             {
                 "name":"精灵封印",
