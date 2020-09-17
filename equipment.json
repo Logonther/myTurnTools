@@ -4,7 +4,7 @@
         "id":"1-1",
         "amount": 0,
         "if":true,
-        "cost":"5",
+        "cost":"3",
         "rare":"gold","type":"equipment",
         "pic":"image/equipments/无尽力量头盔.jpg",
         "strategy": [
@@ -284,7 +284,7 @@
         "id":"2-1",
         "amount": 0,
         "if":true,
-        "cost":"1",
+        "cost":"2",
         "rare":"silver","type":"equipment",
         "pic":"image/equipments/微光的蜡烛.jpg",
         "strategy": [
@@ -368,7 +368,7 @@
         "id":"2-7",
         "amount": 0,
         "if":true,
-        "cost":"2",
+        "cost":"1",
         "rare":"silver","type":"equipment",
         "pic":"image/equipments/隐居者斗篷.jpg",
         "strategy": [
@@ -382,7 +382,7 @@
         "id":"2-8",
         "amount": 0,
         "if":true,
-        "cost":"1",
+        "cost":"2",
         "rare":"silver","type":"equipment",
         "pic":"image/equipments/超音速引擎.jpg",
         "strategy": [
@@ -480,7 +480,7 @@
         "id":"2-15",
         "amount": 0,
         "if":true,
-        "cost":"2",
+        "cost":"1",
         "rare":"silver","type":"equipment",
         "pic":"image/equipments/血女巫符咒.jpg",
         "strategy": [
@@ -508,7 +508,7 @@
         "id":"2-17",
         "amount": 0,
         "if":true,
-        "cost":"3",
+        "cost":"1",
         "rare":"silver","type":"equipment",
         "pic":"image/equipments/水晶十字镐.jpg",
         "strategy": [
@@ -536,7 +536,7 @@
         "id":"3-1",
         "amount": 0,
         "if":true,
-        "cost":"1",
+        "cost":"2",
         "rare":"copper","type":"equipment",
         "pic":"image/equipments/聚气手腕.jpg",
         "strategy": [
@@ -718,7 +718,7 @@
         "id":"3-14",
         "amount": 0,
         "if":true,
-        "cost":"2",
+        "cost":"3",
         "rare":"copper","type":"equipment",
         "pic":"image/equipments/殉难披肩.jpg",
         "strategy": [
@@ -746,7 +746,7 @@
         "id":"3-16",
         "amount": 0,
         "if":true,
-        "cost":"1",
+        "cost":"2",
         "rare":"copper","type":"equipment",
         "pic":"image/equipments/聚雷线圈.jpg",
         "strategy": [
