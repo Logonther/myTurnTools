@@ -2,8 +2,8 @@
     {
         "name":"侍从",
         "id":"1-1",
-        "maxHealth": 200,
-        "health": 200,
+        "maxHealth": 212,
+        "health": 212,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
@@ -52,8 +52,8 @@
     {
         "name":"园林看守",
         "id":"1-2",
-        "maxHealth": 200,
-        "health": 200,
+        "maxHealth": 237,
+        "health": 237,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
@@ -102,8 +102,8 @@
     {
         "name":"突击战牛",
         "id":"1-3",
-        "maxHealth": 200,
-        "health": 200,
+        "maxHealth": 245,
+        "health": 245,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
@@ -152,8 +152,8 @@
     {
         "name":"冬幕卫士",
         "id":"1-4",
-        "maxHealth": 200,
-        "health": 200,
+        "maxHealth": 226,
+        "health": 226,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
@@ -202,8 +202,8 @@
     {
         "name":"守护天使",
         "id":"1-5",
-        "maxHealth": 200,
-        "health": 200,
+        "maxHealth": 220,
+        "health": 220,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
@@ -252,8 +252,8 @@
     {
         "name":"奴隶斗士",
         "id":"1-6",
-        "maxHealth": 200,
-        "health": 200,
+        "maxHealth": 235,
+        "health": 235,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
@@ -302,8 +302,8 @@
     {
         "name":"剑舞者",
         "id":"1-7",
-        "maxHealth": 200,
-        "health": 200,
+        "maxHealth": 210,
+        "health": 210,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
@@ -352,8 +352,8 @@
     {
         "name":"战争领主",
         "id":"1-8",
-        "maxHealth": 200,
-        "health": 200,
+        "maxHealth": 247,
+        "health": 247,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
@@ -402,8 +402,8 @@
     {
         "name":"黎明之剑",
         "id":"1-9",
-        "maxHealth": 200,
-        "health": 200,
+        "maxHealth": 230,
+        "health": 230,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
@@ -456,10 +456,60 @@
         ]
     },
     {
+        "name":"黑月",
+        "id":"1-10",
+        "maxHealth": 222,
+        "health": 222,
+        "maxEnergy": 100,
+        "energy": 100,
+        "amount": 0,
+        "equipment": "",
+        "if":true,
+        "cost":"6",
+        "type":"yellow",
+        "rare":"silver",
+        "pic":"image/heros/黑月.jpg",
+        "property":[13,14,11,5,11,9],
+        "ex":[
+            {
+                "name":"月蚀",
+                "txt":"偷取目标所有的正面状态，造成300%攻击力伤害，虚弱"
+            }
+        ],
+        "skill1":[
+            {
+                "cost":1,
+                "name":"绝望化身",
+                "txt":"嘲讽，下个回合每次被攻击，自身获得蓄力，并对攻击者造成疲劳"
+            }
+        ],
+        "skill2":[
+            {
+                "cost":5,
+                "name":"魔剑觉醒",
+                "txt":"获得50能量，3层蓄力，咏唱"
+            }
+        ],
+        "skill3":[
+            {
+                "cost": 0,
+                "name":"黑暗倒影",
+                "txt":"持有：变为对手打出的上一张技能牌并使其费用-1"
+            }
+        ],
+        "derivative":[],
+        "strategy": [
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    {
         "name":"弩手",
         "id":"2-1",
-        "maxHealth": 200,
-        "health": 200,
+        "maxHealth": 192,
+        "health": 192,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
@@ -508,8 +558,8 @@
     {
         "name":"狂战士",
         "id":"2-2",
-        "maxHealth": 200,
-        "health": 200,
+        "maxHealth": 235,
+        "health": 235,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
@@ -558,8 +608,8 @@
     {
         "name":"伏击刺客",
         "id":"2-3",
-        "maxHealth": 200,
-        "health": 200,
+        "maxHealth": 197,
+        "health": 197,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
@@ -608,8 +658,8 @@
     {
         "name":"武士",
         "id":"2-4",
-        "maxHealth": 200,
-        "health": 200,
+        "maxHealth": 220,
+        "health": 220,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
@@ -658,8 +708,8 @@
     {
         "name":"复仇之刃",
         "id":"2-5",
-        "maxHealth": 200,
-        "health": 200,
+        "maxHealth": 226,
+        "health": 226,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
@@ -708,8 +758,8 @@
     {
         "name":"处决者",
         "id":"2-6",
-        "maxHealth": 200,
-        "health": 200,
+        "maxHealth": 232,
+        "health": 232,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
@@ -808,8 +858,8 @@
     {
         "name":"圣枪修女",
         "id":"2-8",
-        "maxHealth": 200,
-        "health": 200,
+        "maxHealth": 195,
+        "health": 195,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
@@ -858,8 +908,8 @@
     {
         "name":"奔雷之拳",
         "id":"2-9",
-        "maxHealth": 200,
-        "health": 200,
+        "maxHealth": 212,
+        "health": 212,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
@@ -908,8 +958,8 @@
     {
         "name":"钢铁雄狮",
         "id":"2-10",
-        "maxHealth": 200,
-        "health": 200,
+        "maxHealth": 240,
+        "health": 240,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
@@ -958,8 +1008,8 @@
     {
         "name":"学徒",
         "id":"3-1",
-        "maxHealth": 200,
-        "health": 200,
+        "maxHealth": 172,
+        "health": 172,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
@@ -1058,8 +1108,8 @@
     {
         "name":"风暴使者",
         "id":"3-3",
-        "maxHealth": 200,
-        "health": 200,
+        "maxHealth": 195,
+        "health": 195,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
@@ -1114,8 +1164,8 @@
     {
         "name":"寒冰巫女",
         "id":"3-4",
-        "maxHealth": 200,
-        "health": 200,
+        "maxHealth": 175,
+        "health": 175,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
@@ -1164,8 +1214,8 @@
     {
         "name":"红莲之羽",
         "id":"3-5",
-        "maxHealth": 200,
-        "health": 200,
+        "maxHealth": 180,
+        "health": 180,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
@@ -1214,8 +1264,8 @@
     {
         "name":"唤星师",
         "id":"3-6",
-        "maxHealth": 200,
-        "health": 200,
+        "maxHealth": 170,
+        "health": 170,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
@@ -1264,8 +1314,8 @@
     {
         "name":"灵魂收割者",
         "id":"3-7",
-        "maxHealth": 200,
-        "health": 200,
+        "maxHealth": 202,
+        "health": 202,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
@@ -1314,8 +1364,8 @@
     {
         "name":"老板娘",
         "id":"3-8",
-        "maxHealth": 200,
-        "health": 200,
+        "maxHealth": 190,
+        "health": 190,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
@@ -1380,8 +1430,8 @@
     {
         "name":"猩红魔女",
         "id":"3-9",
-        "maxHealth": 200,
-        "health": 200,
+        "maxHealth": 197,
+        "health": 197,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
@@ -1430,8 +1480,8 @@
     {
         "name":"牧师",
         "id":"4-1",
-        "maxHealth": 200,
-        "health": 200,
+        "maxHealth": 152,
+        "health": 152,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
@@ -1480,8 +1530,8 @@
     {
         "name":"德鲁伊",
         "id":"4-2",
-        "maxHealth": 200,
-        "health": 200,
+        "maxHealth": 162,
+        "health": 162,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
@@ -1580,8 +1630,8 @@
     {
         "name":"炼金师",
         "id":"4-4",
-        "maxHealth": 200,
-        "health": 200,
+        "maxHealth": 175,
+        "health": 175,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
@@ -1636,8 +1686,8 @@
     {
         "name":"大主教",
         "id":"4-5",
-        "maxHealth": 200,
-        "health": 200,
+        "maxHealth": 207,
+        "health": 207,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
@@ -1686,8 +1736,8 @@
     {
         "name":"护士长",
         "id":"4-6",
-        "maxHealth": 200,
-        "health": 200,
+        "maxHealth": 167,
+        "health": 167,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
@@ -1736,8 +1786,8 @@
     {
         "name":"符文之语",
         "id":"4-7",
-        "maxHealth": 200,
-        "health": 200,
+        "maxHealth": 185,
+        "health": 185,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
@@ -1786,8 +1836,8 @@
     {
         "name":"奇妙厨师",
         "id":"4-8",
-        "maxHealth": 200,
-        "health": 200,
+        "maxHealth": 157,
+        "health": 157,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
@@ -1836,8 +1886,8 @@
     {
         "name":"冒险家",
         "id":"5-1",
-        "maxHealth": 200,
-        "health": 200,
+        "maxHealth": 195,
+        "health": 195,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
@@ -1886,8 +1936,8 @@
     {
         "name":"工匠之锤",
         "id":"5-2",
-        "maxHealth": 200,
-        "health": 200,
+        "maxHealth": 185,
+        "health": 185,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
@@ -1936,8 +1986,8 @@
     {
         "name":"破魔机甲",
         "id":"5-3",
-        "maxHealth": 200,
-        "health": 200,
+        "maxHealth": 222,
+        "health": 222,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
@@ -1986,8 +2036,8 @@
     {
         "name":"大侦探",
         "id":"5-4",
-        "maxHealth": 200,
-        "health": 200,
+        "maxHealth": 217,
+        "health": 217,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
@@ -2036,8 +2086,8 @@
     {
         "name":"黑魔导士",
         "id":"5-5",
-        "maxHealth": 200,
-        "health": 200,
+        "maxHealth": 192,
+        "health": 192,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
@@ -2086,8 +2136,8 @@
     {
         "name":"海盗女王",
         "id":"5-6",
-        "maxHealth": 200,
-        "health": 200,
+        "maxHealth": 205,
+        "health": 205,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
@@ -2136,8 +2186,8 @@
     {
         "name":"奥术之源",
         "id":"5-7",
-        "maxHealth": 200,
-        "health": 200,
+        "maxHealth": 207,
+        "health": 207,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
@@ -2186,8 +2236,8 @@
     {
         "name":"发明家",
         "id":"5-8",
-        "maxHealth": 200,
-        "health": 200,
+        "maxHealth": 177,
+        "health": 177,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
@@ -2252,8 +2302,8 @@
     {
         "name":"白魔导士",
         "id":"5-9",
-        "maxHealth": 200,
-        "health": 200,
+        "maxHealth": 172,
+        "health": 172,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
@@ -2303,8 +2353,8 @@
     {
         "name":"幻术师",
         "id":"5-10",
-        "maxHealth": 200,
-        "health": 200,
+        "maxHealth": 165,
+        "health": 165,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
@@ -2348,6 +2398,56 @@
             "王者试炼就是一个威力加强版的老板娘的第七咏唱，无论是给自己还是核心都能快速的进行输出。时间回溯不仅可以用来回复状态，更是一个2费的单体控制，作用相当灵活。还有个群体阻挡甚至只有1费。虽然很脆，功能性很强，但是幻术师的伤害一点都不差，攻击高，大招的系数也高，如果能触发效果更是赚，更不用说现在还有延迟的能量来持续开大。",
             "和白魔类似，队友可以搭配大招强力的，充分发挥王者试炼的效果，不过不如白魔那般灵活，毕竟4费费用较高。能量回复类的装备不错。道具很推荐带怀表、鬼牌，怀表主要针对王者试炼，鬼牌的话非常适合幻术师的大招发挥，自己频繁放大，基本不怕对面放大，也能用来给队友补能量，毕竟对面放大会直接受到很高的伤害，如果有梦想的话，还可以带无尽力量头盔，提高大招的效果。为了自保的话，可以考虑带不灭凤凰余烬，在队友没死完时保证自己的存活。",
             "使用王者试炼前要注意对面是否有可能清除你的buff，不像万象之龙的第七咏唱只有3费，王者试炼4费要是被废掉了还是会很心疼的。时间回溯不仅能用来复活自己人，还能用来把敌人复活的队友给拉回去，平时要是不需要的话还能给对方的核心，当做单体控制用，自己的队友要是被打了大半的血没有死，也能瞬间回复回来，不过请务必记清这不是复活，死了1回合以上的队友是救不回来的！所以要清楚目标上回合的状态。"
+        ]
+    },
+    {
+        "name":"魅魔",
+        "id":"5-11",
+        "maxHealth": 195,
+        "health": 195,
+        "maxEnergy": 100,
+        "energy": 100,
+        "amount": 0,
+        "equipment": "",
+        "if":true,
+        "cost":"5",
+        "type":"purple",
+        "rare":"silver",
+        "pic":"image/heros/魅魔.jpg",
+        "property":[8,8,12,8,8,14],
+        "ex":[
+            {
+                "name":"感谢款待",
+                "txt":"偷取一名其他英雄70能量，使其与自身获得空虚，且基础攻击力永久提高25%"
+            }
+        ],
+        "skill1":[
+            {
+                "cost":2,
+                "name":"调教鞭笞",
+                "txt":"对一名其他英雄造成300%攻击力伤害，使其获得30能量"
+            }
+        ],
+        "skill2":[
+            {
+                "cost":2,
+                "name":"窒息捆绑",
+                "txt":"偷取一名其他英雄30能量，使其获得空虚，强化"
+            }
+        ],
+        "skill3":[
+            {
+                "cost":1,
+                "name":"秘密游戏",
+                "txt":"使一名其他英雄获得延迟：30能量，易伤"
+            }
+        ],
+        "derivative":[],
+        "strategy": [
+            "",
+            "",
+            "",
+            ""
         ]
     }
 ]

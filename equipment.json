@@ -280,6 +280,34 @@
         ]
     },
     {
+        "name":"大法师留声机",
+        "id":"1-21",
+        "amount": 0,
+        "if":true,
+        "cost":"1",
+        "rare":"gold","type":"equipment",
+        "pic":"image/equipments/大法师留声机.jpg",
+        "strategy": [
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "name":"猩红末日魔剑",
+        "id":"1-22",
+        "amount": 0,
+        "if":true,
+        "cost":"3",
+        "rare":"gold","type":"equipment",
+        "pic":"image/equipments/猩红末日魔剑.jpg",
+        "strategy": [
+            "",
+            "",
+            ""
+        ]
+    },
+    {
         "name":"微光的蜡烛",
         "id":"2-1",
         "amount": 0,
@@ -529,6 +557,48 @@
             "费用低，群体回复量高，仅论1次的回复量的话，比德鲁伊的1个回复之风还要高。在血量全体上调的这个版本，发挥不错。如果能频繁触发，奶量是非常大的。如果带的角色有能量回复的话，苟到死斗应该不是什么难事。",
             "不一定非得带在有能量回复的角色身上，按现在的情况来看，一局游戏触发个两次就差不多了，后面再有基本也差不多到死斗了。给狮子、萨满这种回复快的英雄带可能还不如带件加伤害的装备收益高。给功能性的英雄带就好。",
             "如果说对方可能有较多的诅咒效果，可以晚点在放大前装备，避免被诅咒效果限制了发挥。其他情况有费用就上就好。"
+        ]
+    },
+    {
+        "name":"巡林者护腿",
+        "id":"2-19",
+        "amount": 0,
+        "if":true,
+        "cost":"3",
+        "rare":"silver","type":"equipment",
+        "pic":"image/equipments/巡林者护腿.jpg",
+        "strategy": [
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "name":"能量电容器",
+        "id":"2-20",
+        "amount": 0,
+        "if":true,
+        "cost":"1",
+        "rare":"silver","type":"equipment",
+        "pic":"image/equipments/能量电容器.jpg",
+        "strategy": [
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "name":"巨龙放血者",
+        "id":"2-21",
+        "amount": 0,
+        "if":true,
+        "cost":"3",
+        "rare":"silver","type":"equipment",
+        "pic":"image/equipments/巨龙放血者.jpg",
+        "strategy": [
+            "",
+            "",
+            ""
         ]
     },
     {
@@ -809,6 +879,48 @@
             "装备中的刮痧王，费用低廉伤害也不错，和审判官之锤有的一拼，放大也一般相当于送了个海盗的掠夺弯刀，探探手牌。",
             "还算是比较通用。如果有兴趣的话，在有海盗的阵容里，放个这个或许还不错。",
             "不像掠夺弯刀可能会被反击所克制，渡鸦雕像的效果就显得稍微好点。"
+        ]
+    },
+    {
+        "name":"复仇指虎",
+        "id":"3-21",
+        "amount": 0,
+        "if":true,
+        "cost":"2",
+        "rare":"copper","type":"equipment",
+        "pic":"image/equipments/复仇指虎.jpg",
+        "strategy": [
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "name":"掌柜算珠",
+        "id":"3-22",
+        "amount": 0,
+        "if":true,
+        "cost":"1",
+        "rare":"copper","type":"equipment",
+        "pic":"image/equipments/掌柜算珠.jpg",
+        "strategy": [
+            "",
+            "",
+            ""
+        ]
+    },
+    {
+        "name":"工匠黏土",
+        "id":"3-23",
+        "amount": 0,
+        "if":true,
+        "cost":"0",
+        "rare":"copper","type":"equipment",
+        "pic":"image/equipments/工匠黏土.jpg",
+        "strategy": [
+            "",
+            "",
+            ""
         ]
     }
 ]
