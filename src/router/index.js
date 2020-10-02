@@ -6,10 +6,13 @@ Vue.use(Router);
 import Index from '@/components/index.vue'
 import Heros from '@/components/heros.vue'
 import African from '@/components/african.vue'
+import Strategy from '@/components/strategy.vue'
+import Rate from '@/components/rate.vue'
+import Test from '@/components/test.vue'
 
 let router = new Router({
     linkExactActiveClass: 'active',
-    mode: 'history',
+    mode: 'hash',
     routes: [
         {
             path: '/',
@@ -23,6 +26,18 @@ let router = new Router({
             path: '/african',
             name: 'African',
             component: African
+        },{
+            path: '/strategy',
+            name: 'Strategy',
+            component: Strategy
+        },{
+            path: '/rate',
+            name: 'Rate',
+            component: Rate
+        },{
+            path: '/test',
+            name: 'Test',
+            component: Test
         }
     ]
 })

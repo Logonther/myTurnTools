@@ -1,27 +1,25 @@
 <template>
     <div>
         <div class="container indexText">
-            <h3>我的回合资料站开始施工！</h3>
-            <h3>更新记录：</h3>
+            <h3>{{ this.$t("index.welcome") }}</h3>
+            <h3>{{ this.$t("index.update") }}</h3>
             <ul>
-                <li>在4测剩下的时间打算先更新一下已有功能的UI，以及完善现有功能</li>
-                <li>在考虑做模拟抽卡的累计</li>
-                <li>现模拟抽卡已经可以切换不同版本的卡池</li>
-                <li>数据资料等在国服出前会以国际服为准</li>
-                <li>【2019年12月04日14:46:51】前两天更新的描述等文本更新，会晚几天再更</li>
+                <li>【2020-09-29 10:35:07】{{ this.$t("index.notice")[0] }}</li>
+                <li>【2020-10-02 14:09:59】{{ this.$t("index.notice")[1] }}</li>
             </ul>
-            <h3>已有功能：</h3>
+            <h3>{{ this.$t("index.existing") }}</h3>
             <ul>
-                <li>英雄图鉴</li>
-                <li>模拟开包</li>
+                <li>{{ this.$t("navbar.heros") }}</li>
+                <li>{{ this.$t("navbar.african") }}</li>
+                <li>{{ this.$t("navbar.strategy") }}</li>
+                <li>{{ this.$t("navbar.rate") }}</li>
             </ul>
-            <h3>预计功能：</h3>
+            <h3>{{ this.$t("index.subsequent") }}</h3>
             <ul>
-                <li>英雄故事：所有英雄相关的背景故事（暂无确定资料）</li>
-                <li>互动语音：所有英雄相关的互动语音（暂无确定资料）</li>
+                <li>{{ this.$t("index.subsequentFunctions")[0] }}</li>
+                <li>{{ this.$t("index.subsequentFunctions")[1] }}</li>
             </ul>
         </div>
-
     </div>
 </template>
 

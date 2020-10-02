@@ -6,11 +6,11 @@
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                         <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+                        <span class="icon-bar" />
+                        <span class="icon-bar" />
+                        <span class="icon-bar" />
                     </button>
-                    <a class="navbar-brand" href="#"><img src="../assets/image/logo.png"></a>
+                    <a class="navbar-brand" href="#"><img src="../assets/image/logoNew.png"></a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -21,6 +21,16 @@
                             @click="toggle(index)"
                         >
                             <router-link :to="item.path">{{ item.name }}</router-link>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ this.$t("navbar.language") }}<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" @click="switchLanguage('zh-CN')">简体中文</a></li>
+                                <li><a href="#" @click="switchLanguage('zh-TW')">繁體中文</a></li>
+                                <li><a href="#" @click="switchLanguage('en-US')">English</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
@@ -37,18 +47,26 @@
                 activeNo: 0,
                 navList:[
                     {
-                        name: '首页',
+                        name: this.$t("navbar.index"),
                         path: '/'
                     },
                     {
-                        name: '英雄图鉴',
+                        name: this.$t("navbar.heros"),
                         path: '/heros'
                     },
                     {
-                        name: '模拟抽卡',
+                        name: this.$t("navbar.african"),
                         path: '/african'
+                    },
+                    /*{
+                        name: '卡牌讲解',
+                        path: '/strategy'
+                    }*/
+                    {
+                        name: this.$t("navbar.rate"),
+                        path: '/rate'
                     }
-                ]
+                ],
             }
         },
         mounted(){
@@ -68,6 +86,18 @@
         methods:{
             toggle(index) {
                 this.activeNo = index;
+            },
+            switchLanguage(value) {
+                if (value == "zh-CN") {
+                    this.$i18n.locale = "zh-CN";
+                } else if (value == "en-US") {
+                    this.$i18n.locale = "en-US";
+                } else if (value == "zh-TW") {
+                    this.$i18n.locale = "zh-TW";
+                }
+
+                localStorage.setItem('DefaultLanguage', value)
+                this.$router.go(0)
             }
         }
     }

@@ -1,8 +1,8 @@
 <template>
     <div id="app">
-        <Navbar></Navbar>
+        <Navbar />
         <transition name="fade" mode="out-in">
-            <router-view class="view"></router-view>
+            <router-view class="view" />
         </transition>
     </div>
 </template>
