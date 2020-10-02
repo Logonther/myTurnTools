@@ -19,7 +19,7 @@ module.exports = {
         ],
         notice: [
             '模拟抽卡更新至最新的版本（1.2.0.3）',
-            '本地址暂停更新，请移步logonther.gitee.io/vue-myturn',
+            '',
             ''
         ],
     },

@@ -19,7 +19,7 @@ module.exports = {
         ],
         notice: [
             '"Sim Summon" has been updated to the latest version(1.2.0.3)',
-            'This address is temporarily updated. Please move to logonther.gitee.io/vue-myturn',
+            '',
             ''
         ],
     },
