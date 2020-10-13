@@ -2,6 +2,7 @@ module.exports = {
     colon: ':',
     navbar: {
         index: 'Home Page',
+        news: 'News',
         heros: 'Hero Map',
         african: 'Sim Summon',
         strategy: 'Card Strategy(Temporarily Closed)',

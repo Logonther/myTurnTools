@@ -51,6 +51,10 @@
                         path: '/'
                     },
                     {
+                        name: this.$t("navbar.news"),
+                        path: '/news'
+                    },
+                    {
                         name: this.$t("navbar.heros"),
                         path: '/heros'
                     },

@@ -2,6 +2,7 @@ module.exports = {
     colon: '：',
     navbar: {
         index: '首頁',
+        news: '新聞資訊',
         heros: '英雄圖鑒',
         african: '模擬召喚',
         strategy: '卡牌講解（暫時關閉）',

@@ -2,6 +2,7 @@ module.exports = {
     colon: '：',
     navbar: {
         index: '首页',
+        news: '新闻资讯',
         heros: '英雄图鉴',
         african: '模拟召唤',
         strategy: '卡牌讲解（暂时关闭）',
