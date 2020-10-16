@@ -48,7 +48,7 @@
                 </el-tab-pane>
                 <el-footer v-if="!md" style="text-align: center;height: auto;padding: 20px 0">
                     <el-pagination
-                        :page-size="pageInfo.pageSize"
+                        :page-sizes="[10]"
                         :current-page.sync="pageInfo.pageIndex"
                         :total="pageInfo.totalCount"
                         layout="total,sizes,prev,pager,next,jumper"
