@@ -268,8 +268,10 @@ export default {
         line-height: 60rem/@fontSize;
         font-size: 36rem/@fontSize;
         margin: 30rem/@fontSize 0;
+        position: relative;
         .el-button{
-            float: left;
+            position: absolute;
+            left: 0;
             height: 100%;
             margin: 0 !important;
             font-size: 36rem/@fontSize;
