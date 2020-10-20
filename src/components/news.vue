@@ -108,6 +108,9 @@ export default {
     methods: {
         init() {
             this.md = undefined
+            this.newsData = []
+            this.typeData = []
+            this.listData = []
             this.$http.get('news.json').then((res) => {
                 console.log('所有资讯---',res.data)
                 this.newsData = res.data.reverse()
@@ -280,6 +283,6 @@ export default {
 </style>
 <style lang="less">
     .el-select-dropdown__item.selected{
-        color: #be814b;
+        color: #be814b !important;
     }
 </style>

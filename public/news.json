@@ -1,6 +1,27 @@
 [
     {
         "id": 1,
+        "title": "一封來自開發者的信",
+        "type": 2,
+        "time": "2019-10-09",
+        "src": "news/developer/1.md"
+    },
+    {
+        "id": 2,
+        "title": "[我的回合]10/15菁英測試，與你相約",
+        "type": 1,
+        "time": "2019-10-10",
+        "src": "news/notice/2.md"
+    },
+    {
+        "id": 3,
+        "title": "[我的回合]FAQ常見問題",
+        "type": 1,
+        "time": "2019-10-11",
+        "src": "news/notice/3.md"
+    },
+    {
+        "id": 111,
         "title": "V1.2更新预告",
         "type": 0,
         "time": "2020-09-16",
