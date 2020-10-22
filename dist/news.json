@@ -21,6 +21,55 @@
         "src": "news/notice/3.md"
     },
     {
+        "id": 4,
+        "title": "[我的回合]10/15 11:00 AM，菁英測試不見不散！",
+        "type": 1,
+        "time": "2019-10-15",
+        "src": "news/notice/4.md"
+    },
+    {
+        "id": 5,
+        "title": "[我的回合]菁英測試，正式開啟",
+        "type": 1,
+        "time": "2019-10-15",
+        "src": "news/notice/5.md"
+    },
+    {
+        "id": 6,
+        "title": "[我的回合]關於界面加載問題的處理",
+        "type": 1,
+        "time": "2019-10-15",
+        "src": "news/notice/6.md"
+    },
+    {
+        "id": 7,
+        "title": "[我的回合]10/15 不停機更新公告",
+        "type": 0,
+        "time": "2019-10-15",
+        "src": "news/update/7.md"
+    },
+    {
+        "id": 8,
+        "title": "[我的回合]10/17不停機更新公告",
+        "type": 0,
+        "time": "2019-10-17",
+        "src": "news/update/8.md"
+    },
+    {
+        "id": 10,
+        "title": "[逆轉回合]11/26-12/03 環境週報",
+        "type": 1,
+        "time": "2019-12-03",
+        "src": "news/notice/4.md"
+    },
+    {
+        "id": 11,
+        "title": "[逆轉回合]12/10停機更新公告",
+        "type": 0,
+        "time": "2019-12-09",
+        "src": "news/update/5.md"
+    },
+    {
         "id": 111,
         "title": "V1.2更新预告",
         "type": 0,
