@@ -67,7 +67,7 @@
         "title": "[我的回合]回合實況主開麥啦！",
         "type": 1,
         "time": "2019-10-22",
-        "src": "news/update/10.md"
+        "src": "news/notice/10.md"
     },
     {
         "id": 11,
@@ -81,7 +81,7 @@
         "title": "[我的回合]10月戰令重置公告",
         "type": 1,
         "time": "2019-10-31",
-        "src": "news/update/12.md"
+        "src": "news/notice/12.md"
     },
     {
         "id": 13,
@@ -116,7 +116,7 @@
         "title": "[逆轉回合]11/18-11/24 環境週報",
         "type": 1,
         "time": "2019-11-26",
-        "src": "news/update/17.md"
+        "src": "news/notice/17.md"
     },
     {
         "id": 18,
@@ -151,7 +151,7 @@
         "title": "[逆轉回合]12/03-12/10 環境週報",
         "type": 1,
         "time": "2019-12-10",
-        "src": "news/update/22.md"
+        "src": "news/notice/22.md"
     },
     {
         "id": 23,
