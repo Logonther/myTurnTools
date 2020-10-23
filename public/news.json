@@ -98,18 +98,67 @@
         "src": "news/update/14.md"
     },
     {
+        "id": 15,
+        "title": "[我的回合]11/19停機更新公告",
+        "type": 0,
+        "time": "2019-11-18",
+        "src": "news/update/15.md"
+    },
+    {
+        "id": 16,
+        "title": "[逆轉回合]11/26不停機更新公告",
+        "type": 0,
+        "time": "2019-11-26",
+        "src": "news/update/16.md"
+    },
+    {
+        "id": 17,
+        "title": "[逆轉回合]11/18-11/24 環境週報",
+        "type": 1,
+        "time": "2019-11-26",
+        "src": "news/update/17.md"
+    },
+    {
+        "id": 18,
+        "title": "[逆轉回合]11/27不停機更新公告",
+        "type": 0,
+        "time": "2019-11-27",
+        "src": "news/update/18.md"
+    },
+    {
+        "id": 19,
+        "title": "[逆轉回合]12/03不停機更新公告",
+        "type": 0,
+        "time": "2019-12-02",
+        "src": "news/update/19.md"
+    },
+    {
         "id": 20,
         "title": "[逆轉回合]11/26-12/03 環境週報",
         "type": 1,
         "time": "2019-12-03",
-        "src": "news/notice/4.md"
+        "src": "news/notice/20.md"
     },
     {
         "id": 21,
         "title": "[逆轉回合]12/10停機更新公告",
         "type": 0,
         "time": "2019-12-09",
-        "src": "news/update/5.md"
+        "src": "news/update/21.md"
+    },
+    {
+        "id": 22,
+        "title": "[逆轉回合]12/03-12/10 環境週報",
+        "type": 1,
+        "time": "2019-12-10",
+        "src": "news/update/22.md"
+    },
+    {
+        "id": 23,
+        "title": "[逆轉回合]12/17停機更新公告",
+        "type": 0,
+        "time": "2019-12-16",
+        "src": "news/update/23.md"
     },
     {
         "id": 111,

@@ -16,11 +16,10 @@ module.exports = {
         subsequent: 'Subsequent Functions:',
         subsequentFunctions: [
             'Step by step to multi-language',
-            '"Sim Draw Card" will be more like the carousel in game shop',
         ],
         notice: [
-            '"Sim Summon" has been updated to the latest version(1.2.0.3)',
-            '',
+            '"Sim Summon" has been updated to the latest version(1.2)',
+            'Updating news',
             ''
         ],
     },

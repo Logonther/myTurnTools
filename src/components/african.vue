@@ -180,9 +180,6 @@ export default {
                 }
             })
         },
-        roll100(min) {
-            return Math.floor(Math.random() * (101 - min) + min)
-        },
         rollN(n, min) {
             return Math.floor(Math.random() * (n + 1 - min) + min)
         },
@@ -243,8 +240,8 @@ export default {
         // 第一个卡盒无法获得金卡 第二个卡盒必得金色
         draw1ByUp(id) {
             let card = undefined;
-            let roll_no = this.roll100(this.min);
-            let rare_no = this.roll100(this.min);
+            let roll_no = this.rollN(100, this.min)
+            let rare_no = this.rollN(100, this.min)
             console.log('rare_no---',rare_no);
             this.cardPoolList.forEach(item => {
                 if (item.id == id){
@@ -309,7 +306,7 @@ export default {
                 this.draw1ByUp(id);
             } else {
                 let roll_no = Math.floor(Math.random() * 30 + 70)
-                let rare_no = this.roll100(this.min);
+                let rare_no = this.rollN(100, this.min)
                 this.cardPoolList.forEach(item => {
                     if (item.id == id){
                         this.cardPool = item
@@ -345,8 +342,8 @@ export default {
         },
         draw1ByDiamond() {
             let card = undefined;
-            let roll_no = this.roll100(this.min);
-            let rare_no = this.roll100(this.min);
+            let roll_no = this.rollN(100, this.min)
+            let rare_no = this.rollN(100, this.min)
             console.log('rare_no---',rare_no);
             let amount = this.european.length
             this.european.forEach(item => {
@@ -394,7 +391,7 @@ export default {
             } else {
                 let roll_no = Math.floor(Math.random() * 30 + 70)
                 luck ++
-                let rare_no = this.roll100(this.min);
+                let rare_no = this.rollN(100, this.min)
                 this.european.forEach(cardR => {
                     cardR.prob = 1
                 })
@@ -437,7 +434,7 @@ export default {
                     if (luck && this.luckGold) {
                         this.draw1ByDiamond()
                     } else if (luck && !this.luckGold) {
-                        let roll_no = this.roll100(this.min);
+                        let roll_no = this.rollN(100, this.min)
                         let amount = this.european.length
                         this.european.forEach(item => {
                             item.prob = 1 / amount
@@ -457,9 +454,9 @@ export default {
                             this.summon(card, 4, 10, 10, 10)
                         }
                     } else if (!luck && this.luckGold){
-                        let roll_no = this.roll100(70);
+                        let roll_no = this.rollN(100, 70)
                         luck ++
-                        let rare_no = this.roll100(this.min);
+                        let rare_no = this.rollN(100, this.min)
                         this.european.forEach(cardR => {
                             cardR.prob = 1
                         })
@@ -477,7 +474,7 @@ export default {
                             this.summon(card, 4, 10, 10, 10)
                         }
                     } else {
-                        let roll_no = this.roll100(70);
+                        let roll_no = this.rollN(100, 70)
                         let amount = this.european.length
                         this.european.forEach(item => {
                             item.prob = 1 / amount
@@ -514,7 +511,7 @@ export default {
                     if (luck && this.luckGold) {
                         this.draw1ByUp(this.poolId)
                     } else if (luck && !this.luckGold) {
-                        let roll_no = this.roll100(this.min)
+                        let roll_no = this.rollN(100, this.min)
                         luck ++
                         this.european.forEach(cardR => {
                             cardR.prob = 1
@@ -529,8 +526,8 @@ export default {
                             this.summon(card, 4, 10, 10, 10)
                         }
                     } else if (!luck && this.luckGold){
-                        let roll_no = this.roll100(70)
-                        let rare_no = this.roll100(this.min);
+                        let roll_no = this.rollN(100, 70)
+                        let rare_no = this.rollN(100, this.min)
                         this.cardPoolList.forEach(item => {
                             if (item.id == this.poolId){
                                 this.cardPool = item
@@ -561,7 +558,7 @@ export default {
                             this.summon(card, 4, 10, 10, 10)
                         }
                     } else {
-                        let roll_no = this.roll100(70)
+                        let roll_no = this.rollN(100, 70)
                         this.cardPoolList.forEach(item => {
                             if (item.id == this.poolId){
                                 this.cardPool = item

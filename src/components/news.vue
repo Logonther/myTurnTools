@@ -172,6 +172,9 @@ export default {
 
 <style scoped lang="less">
     @import "../assets/less/base";
+    /deep/ .el-tabs__header{
+        margin: 0;
+    }
     /deep/ .el-tabs__nav{
         border-color: #be814b !important;
         border-radius: 0 !important;

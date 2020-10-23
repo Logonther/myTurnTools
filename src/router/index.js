@@ -3,14 +3,6 @@ import Router from 'vue-router';
 
 Vue.use(Router);
 
-import Index from '@/components/index.vue'
-import News from '@/components/news.vue'
-import Heros from '@/components/heros.vue'
-import African from '@/components/african.vue'
-import Strategy from '@/components/strategy.vue'
-import Rate from '@/components/rate.vue'
-import Test from '@/components/test.vue'
-
 let router = new Router({
     linkExactActiveClass: 'active',
     mode: 'hash',
@@ -18,37 +10,37 @@ let router = new Router({
         {
             path: '/',
             name: 'Index',
-            component: Index,
+            component: () => import('@/components/index.vue'),
         },
         {
             path: '/news',
             name: 'Neros',
-            component: News,
+            component: () => import('@/components/news.vue'),
         },
         {
             path: '/heros',
             name: 'Heros',
-            component: Heros
+            component: () => import('@/components/heros.vue')
         },
         {
             path: '/african',
             name: 'African',
-            component: African
+            component: () => import('@/components/african.vue')
         },
         {
             path: '/strategy',
             name: 'Strategy',
-            component: Strategy
+            component: () => import('@/components/strategy.vue')
         },
         {
             path: '/rate',
             name: 'Rate',
-            component: Rate
+            component: () => import('@/components/rate.vue')
         },
         {
-            path: '/test',
-            name: 'Test',
-            component: Test
+            path: '/fight',
+            name: 'Fight',
+            component: () => import('@/components/fight.vue')
         }
     ]
 })
