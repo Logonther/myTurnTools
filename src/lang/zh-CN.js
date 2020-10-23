@@ -36,6 +36,7 @@ module.exports = {
     },
     african: {
         accumulation: '抽卡累计',
+        upTitle: '概率UP卡',
         hasCost: '已花费',
         gold: '金币',
         diamond: '钻石',

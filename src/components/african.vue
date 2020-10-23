@@ -4,6 +4,7 @@
             <!--<el-button @click="btnCamp1">冬幕堡卡池单次召唤</el-button>-->
             <el-button v-show="currentNum == 5 || currentNum == 0" @click="btnCamp5">{{ this.cardPool.name }}卡池万象卡盒</el-button>
             <el-button v-show="currentNum == 5 || currentNum == 0" @click="btnCamp25">{{ this.cardPool.name }}卡池万象卡盒×5</el-button>
+            <el-button v-show="currentNum == 5 || currentNum == 0" @click="openUps">{{ this.cardPool.name }}卡池UP卡</el-button><br>
             <!--<el-button @click="btnDiamond1">钻石召唤单次召唤</el-button>-->
             <el-button v-show="currentNum == 5 || currentNum == 0" @click="btnDiamond5">钻石召唤万象卡盒</el-button>
             <el-button v-show="currentNum == 5 || currentNum == 0" @click="btnDiamond25">钻石召唤万象卡盒×5</el-button><br>
@@ -53,6 +54,21 @@
                 </div>
             </div>
         </el-dialog>
+        <el-dialog
+            :title="this.$t('african.upTitle')"
+            :visible.sync="upsVisible"
+            width="90%"
+        >
+            <div
+                class="up col-sm-2 col-xs-4 "
+                v-for="(item, index) in upCards"
+                :key="index"
+            >
+                <div class="border " :class="item.rare">
+                    <div class="pic" :style="'background-image: url(image/card/'+item.name+'.jpg)'" />
+                </div>
+            </div>
+        </el-dialog>
     </div>
 </template>
 
@@ -85,6 +101,9 @@ export default {
             currentNum: 0,
             luckGold: 0,
             currentMode: 'Diamond',
+
+            upsVisible: false,
+            upCards: [],
         }
     },
     filter: {
@@ -753,6 +772,18 @@ export default {
         toggleCards(num) {
             this.version = num
             this.init()
+        },
+        openUps() {
+            this.cardPool.cards.forEach(item => {
+                this.upCards.push(this.european.find(card => {
+                    return card.name == item
+                }))
+            })
+            console.log('up卡-----', this.upCards)
+            this.$nextTick(() => {
+                $('.up').height($('.up').width())
+            })
+            this.upsVisible = true
         }
     }
 }
@@ -892,14 +923,11 @@ export default {
             }
         }
     }
-</style>
-<style lang="less">
-    @import "../assets/less/base";
-    .el-dialog__headerbtn{
+    /deep/ .el-dialog__headerbtn{
         margin: 0 !important;
         line-height: 24rem/@fontSize;
     }
-    .el-dialog__body{
+    /deep/ .el-dialog__body{
         overflow: hidden;
         padding: 10px 20px !important;
         .pay{
@@ -924,6 +952,37 @@ export default {
             }
             &.copper{
                 background-color: #cc9b77;
+            }
+        }
+    }
+    .up{
+        padding: 15rem/@fontSize;
+        position: relative;
+        .border{
+            display: inline-block;
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            border: 2rem/@fontSize solid black;
+            box-shadow: 0 0 20rem/@fontSize 5rem/@fontSize;
+            &.gold{
+                background-image: linear-gradient(rgb(255, 255, 120), rgb(246, 183, 70), rgb(255, 255, 120));
+            }
+            &.silver{
+                background-image: linear-gradient(rgb(205, 209, 211), rgb(177, 181, 184), rgb(205, 209, 211));
+            }
+            &.copper{
+                background-image: linear-gradient(rgb(255, 195, 147), rgb(185, 120, 88), rgb(255, 195, 147));
+            }
+            .pic{
+                border: 2rem/@fontSize solid black;
+                width: 90%;
+                height: 90%;
+                margin: 5%;
+                border-radius: 50%;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: auto 100%;
             }
         }
     }

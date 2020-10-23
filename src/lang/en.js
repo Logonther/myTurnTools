@@ -36,6 +36,7 @@ module.exports = {
     },
     african: {
         accumulation: 'Draw card accumulation',
+        upTitle: 'UP cards',
         hasCost: 'Has cost:',
         gold: ' Gold',
         diamond: ' Diamond',
