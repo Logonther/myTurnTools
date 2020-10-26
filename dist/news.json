@@ -161,6 +161,146 @@
         "src": "news/update/23.md"
     },
     {
+        "id": 24,
+        "title": "[逆轉回合]12/24 停機更新公告",
+        "type": 0,
+        "time": "2019-12-23",
+        "src": "news/update/24.md"
+    },
+    {
+        "id": 25,
+        "title": "[逆轉回合]11/25-12/24 環境報告",
+        "type": 1,
+        "time": "2019-12-27",
+        "src": "news/notice/25.md"
+    },
+    {
+        "id": 26,
+        "title": "[逆轉回合]12/31不停機更新公告",
+        "type": 0,
+        "time": "2019-12-30",
+        "src": "news/notice/26.md"
+    },
+    {
+        "id": 27,
+        "title": "[逆轉回合]設計師談話第一期發布！",
+        "type": 2,
+        "time": "2019-12-31",
+        "src": "news/developer/27.md"
+    },
+    {
+        "id": 28,
+        "title": "[逆轉回合]01/07不停機更新公告",
+        "type": 0,
+        "time": "2020-01-06",
+        "src": "news/update/28.md"
+    },
+    {
+        "id": 29,
+        "title": "[逆轉回合]01/13停機維護公告",
+        "type": 0,
+        "time": "2020-01-10",
+        "src": "news/update/29.md"
+    },
+    {
+        "id": 30,
+        "title": "[逆轉回合]01/14停機更新公告",
+        "type": 0,
+        "time": "2020-01-13",
+        "src": "news/update/30.md"
+    },
+    {
+        "id": 31,
+        "title": "[逆轉回合]更新內容&活動預告",
+        "type": 0,
+        "time": "2020-01-20",
+        "src": "news/update/31.md"
+    },
+    {
+        "id": 32,
+        "title": "[逆轉回合]來自Light的一封信",
+        "type": 2,
+        "time": "2020-01-24",
+        "src": "news/developer/32.md"
+    },
+    {
+        "id": 33,
+        "title": "[逆轉回合]01/01-01/31 標準模式環境報告",
+        "type": 1,
+        "time": "2020-02-02",
+        "src": "news/notice/33.md"
+    },
+    {
+        "id": 34,
+        "title": "[逆轉回合]麒麟谷暢想活動決賽投票",
+        "type": 1,
+        "time": "2020-02-03",
+        "src": "news/notice/34.md"
+    },
+    {
+        "id": 35,
+        "title": "[逆轉回合]02/07不停機更新公告",
+        "type": 0,
+        "time": "2020-02-06",
+        "src": "news/update/35.md"
+    },
+    {
+        "id": 36,
+        "title": "[逆轉回合]老闆娘的道歉信",
+        "type": 1,
+        "time": "2020-02-12",
+        "src": "news/notice/36.md"
+    },
+    {
+        "id": 37,
+        "title": "[逆轉回合]02/13不停機更新公告",
+        "type": 0,
+        "time": "2020-02-12",
+        "src": "news/update/37.md"
+    },
+    {
+        "id": 38,
+        "title": "[逆轉回合]02/27停機更新公告",
+        "type": 0,
+        "time": "2020-02-25",
+        "src": "news/update/38.md"
+    },
+    {
+        "id": 39,
+        "title": "[逆轉回合]02/27停機更新調整公告",
+        "type": 0,
+        "time": "2020-02-26",
+        "src": "news/update/39.md"
+    },
+    {
+        "id": 40,
+        "title": "[逆轉回合]02/01-02/28 標準模式環境報告",
+        "type": 1,
+        "time": "2020-03-02",
+        "src": "news/update/40.md"
+    },
+    {
+        "id": 41,
+        "title": "[逆轉回合]3月平衡性調整預告",
+        "type": 0,
+        "time": "2020-03-03",
+        "src": "news/update/41.md"
+    },
+    {
+        "id": 42,
+        "title": "[逆轉回合]03/12不停機更新公告",
+        "type": 0,
+        "time": "2020-03-11",
+        "src": "news/update/42.md"
+    },
+    {
+        "id": 43,
+        "title": "[逆轉回合]03/19停機更新公告",
+        "type": 0,
+        "time": "2020-03-17",
+        "src": "news/update/43.md"
+    },
+    {
         "id": 111,
         "title": "V1.2更新预告",
         "type": 0,
