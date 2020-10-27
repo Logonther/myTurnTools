@@ -171,7 +171,7 @@ export default {
                 console.log('所有资讯---',res.data)
                 this.currentNew = item
                 this.md = res.data
-                // loading.close();
+                loading.close();
             })
         }
     }
