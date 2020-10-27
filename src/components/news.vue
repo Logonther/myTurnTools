@@ -160,10 +160,18 @@ export default {
             this.listData = this.typeData.slice((index - 1) * 10, index * 10)
         },
         open(item) {
+            const loading = this.$loading({
+                lock: true,
+                text: 'Loading',
+                spinner: 'el-icon-loading',
+                background: 'rgba(0, 0, 0, 0.7)',
+                customClass: 'newsLoading'
+            });
             this.$http.get(item.src).then((res) => {
                 console.log('所有资讯---',res.data)
                 this.currentNew = item
                 this.md = res.data
+                // loading.close();
             })
         }
     }
@@ -287,7 +295,17 @@ export default {
     }
 </style>
 <style lang="less">
+    @import "../assets/less/base";
     .el-select-dropdown__item.selected{
         color: #be814b !important;
+    }
+    .newsLoading{
+        .el-loading-spinner i, .el-loading-spinner .el-loading-text{
+            color: #f0dfaa !important;
+            font-size: 30rem/@fontSize;
+        }
+        .el-loading-spinner i{
+            font-size: 60rem/@fontSize;
+        }
     }
 </style>
