@@ -427,10 +427,38 @@
         "src": "news/update/61.md"
     },
     {
-        "id": 67,
+        "id": 62,
+        "title": "V1.1 停服更新公告",
+        "type": 0,
+        "time": "2020-06-29",
+        "src": "news/update/62.md"
+    },
+    {
+        "id": 63,
+        "title": "Light的道歉信",
+        "type": 2,
+        "time": "2020-07-21",
+        "src": "news/developer/63.md"
+    },
+    {
+        "id": 64,
+        "title": "V1.1.1停服更新公告",
+        "type": 0,
+        "time": "2020-07-28",
+        "src": "news/update/64.md"
+    },
+    {
+        "id": 65,
+        "title": "V1.1.1.2 不停服更新",
+        "type": 0,
+        "time": "2020-08-03",
+        "src": "news/update/65.md"
+    },
+    {
+        "id": 66,
         "title": "V1.2更新预告",
         "type": 0,
         "time": "2020-09-16",
-        "src": "news/update/67.md"
+        "src": "news/update/66.md"
     }
 ]
