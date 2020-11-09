@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="container orderBy underline">
-            <el-button @click="byWhat('cost')">{{ this.$t("heros.sortBy")[0] }}</el-button>
+            <!--<el-button @click="byWhat('cost')">{{ this.$t("heros.sortBy")[0] }}</el-button>-->
             <el-button @click="byWhat('type')">{{ this.$t("heros.sortBy")[1] }}</el-button>
             <el-button @click="byWhat('rare')">{{ this.$t("heros.sortBy")[2] }}</el-button>
             <el-button @click="byWhat('maxHealth')">{{ this.$t("heros.sortBy")[3] }}</el-button>
