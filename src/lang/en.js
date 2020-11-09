@@ -19,8 +19,8 @@ module.exports = {
         ],
         notice: [
             '"Sim Summon" has been updated to the latest version(1.2)',
-            'Updating news',
-            ''
+            'News updates complete',
+            'Give "UP cards" a badge for its amount'
         ],
     },
     heros: {

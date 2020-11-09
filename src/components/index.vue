@@ -5,7 +5,8 @@
             <h3>{{ this.$t("index.update") }}</h3>
             <ul>
                 <li>【2020-09-29 10:35:07】{{ this.$t("index.notice")[0] }}</li>
-                <li>【2020-10-23 13:54:20】{{ this.$t("index.notice")[1] }}</li>
+                <li>【2020-10-29 12:28:00】{{ this.$t("index.notice")[1] }}</li>
+                <li>【2020-11-09 15:54:22】{{ this.$t("index.notice")[2] }}</li>
             </ul>
             <h3>{{ this.$t("index.existing") }}</h3>
             <ul>

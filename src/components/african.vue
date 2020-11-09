@@ -4,7 +4,11 @@
             <!--<el-button @click="btnCamp1">冬幕堡卡池单次召唤</el-button>-->
             <el-button v-show="currentNum == 5 || currentNum == 0" @click="btnCamp5">{{ this.cardPool.name }}卡池万象卡盒</el-button>
             <el-button v-show="currentNum == 5 || currentNum == 0" @click="btnCamp25">{{ this.cardPool.name }}卡池万象卡盒×5</el-button>
-            <el-button v-show="currentNum == 5 || currentNum == 0" @click="openUps">{{ this.cardPool.name }}卡池UP卡</el-button><br>
+            <el-badge :value="cardPool.cards.length" class="item" style="margin: 10px">
+                <el-button v-show="currentNum == 5 || currentNum == 0" @click="openUps" style="margin: 0 !important;">
+                    {{ this.cardPool.name }}卡池UP卡
+                </el-button>
+            </el-badge><br>
             <!--<el-button @click="btnDiamond1">钻石召唤单次召唤</el-button>-->
             <el-button v-show="currentNum == 5 || currentNum == 0" @click="btnDiamond5">钻石召唤万象卡盒</el-button>
             <el-button v-show="currentNum == 5 || currentNum == 0" @click="btnDiamond25">钻石召唤万象卡盒×5</el-button><br>
@@ -81,7 +85,9 @@ export default {
             equipmentList: [],
             herosList: [],
             cardPoolList: [],
-            cardPool: {},
+            cardPool: {
+                cards: []
+            },
             african: [],
             european: [],
             version: 78,
@@ -774,6 +780,7 @@ export default {
             this.init()
         },
         openUps() {
+            this.upCards = []
             this.cardPool.cards.forEach(item => {
                 this.upCards.push(this.european.find(card => {
                     return card.name == item
