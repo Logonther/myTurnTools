@@ -225,7 +225,6 @@ export default {
                 html2canvas(document.querySelector('#container-main')).then(canvas => {
                     let imgUrl = canvas.toDataURL('image/png');
                     this.rateImg = imgUrl
-                    console.log(imgUrl);
                     this.dialogVisible = true
                 })
             })

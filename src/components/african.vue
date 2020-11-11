@@ -16,7 +16,6 @@
             <el-button @click="dialogVisible = true">{{ this.$t("african.accumulation") }}</el-button>
             <el-button v-show="showNext && currentNum != 5 && currentNum != 0" type="text">{{ currentNum }}/5</el-button>
             <el-button v-show="showNext && currentNum != 5" @click="nextBox">{{ this.$t("african.next") }}</el-button>
-            <!--<el-button @click="min = 100" style="opacity: 0">看毛看啊</el-button>-->
             <!--<el-button @click="toggleCards(96)">切换为测试服卡池（96张版本）</el-button>-->
             <!--<el-button @click="toggleCards(78)">切换为国际服卡池（90张版本）</el-button>-->
         </div>
@@ -29,7 +28,7 @@
                 <img src="../assets/image/cardback.jpg">
                 <div class="cardfront" :style="'background-image: url('+item.pic+')'">
                     <div :class="'title ' + item.type">
-                        <span>{{ item.cost }}</span>{{ item.name }}
+                        <span>{{ item.cost }}</span>{{ item.name }}f
                     </div>
                 </div>
                 <div class="txt">
@@ -129,8 +128,6 @@ export default {
     created() {
         this.init()
     },
-    mounted() {
-    },
     methods: {
         init() {
             this.european = []
@@ -154,7 +151,7 @@ export default {
                 const days = moment().diff(moment('2020-08-31'),'days') % 105 // 105天转两圈，取余
                 const weeks = Math.floor(days / 7) // 看起56天中的第几个星期，取余
                 const day = days % 7 // 取完星期还剩几天
-                console.log(days, weeks, day);
+                console.log('总余天数、余周数、取完余数剩余天数----', days, weeks, day);
                 if (day < 4){
                     this.poolId = 2 * weeks + 1
                 } else {
@@ -172,23 +169,13 @@ export default {
             switch (obj, version) {
                 case 96:
                     obj.forEach((item) => {
-                        if (item.rare == "gold") {
-                            this.european.push(item);
-                        } else {
-                            this.european.push(item);
-                            this.african.push(item);
-                        }
+                        this.european.push(item)
                     })
                     break
                 case 78:
                     obj.forEach((item) => {
                         if (item.if) {
-                            if (item.rare == "gold") {
-                                this.european.push(item);
-                            } else {
-                                this.european.push(item);
-                                this.african.push(item);
-                            }
+                            this.european.push(item)
                         }
                     })
                     break
@@ -197,9 +184,9 @@ export default {
         rareAllocate(obj) {
             obj.forEach((item) => {
                 if (item.rare == "gold") {
-                    this.gold.push(item);
+                    this.gold.push(item)
                 } else if (item.rare == 'silver') {
-                    this.silver.push(item);
+                    this.silver.push(item)
                 } else {
                     this.copper.push(item)
                 }
@@ -237,11 +224,12 @@ export default {
                 })
                 this.inin(card, type, card.name + "×" + gold);
             }
+            console.log('==========================')
         },
         // 权重决定卡
         probAllocate(rareArr) {
             let card = undefined
-            let probTotal = 0 // eslint-disable-line no-unused-vars
+            let probTotal = 0
             rareArr.forEach(item => {
                 probTotal += item.prob
             })
@@ -249,7 +237,6 @@ export default {
             for (let i = 0;i < rareArr.length;i ++){
                 roll_prob -= rareArr[i].prob
                 if (roll_prob < 0) {
-                    // console.log('i---',i);
                     card = rareArr[i]
                     break
                 }
@@ -262,7 +249,6 @@ export default {
         // 精良 70% *1
         // 史诗 25% *3
         // 传奇 5% *10
-        // 第一个卡盒无法获得金卡 第二个卡盒必得金色
         draw1ByUp(id) {
             let card = undefined;
             let roll_no = this.rollN(100, this.min)
@@ -335,7 +321,6 @@ export default {
                 this.cardPoolList.forEach(item => {
                     if (item.id == id){
                         this.cardPool = item
-
                     }
                 })
                 // 概率分配
@@ -749,9 +734,8 @@ export default {
             }, 100)
         },
         open(i) {
-            console.log(i);
             this.cards[i].class = 'open'
-            console.log(this.cards);
+            console.log(this.cards)
             let c = this.cards
             this.cards = []
             this.cards = c
@@ -773,7 +757,7 @@ export default {
                         break
                 }
             }, 500)
-            console.log(this.cards[i].class);
+            console.log(this.cards[i].class)
         },
         toggleCards(num) {
             this.version = num

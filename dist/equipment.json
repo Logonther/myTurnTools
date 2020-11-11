@@ -60,7 +60,7 @@
         "id":"1-5",
         "amount": 0,
         "if":true,
-        "cost":"1",
+        "cost":"3",
         "rare":"gold","type":"equipment",
         "pic":"image/equipments/刺骨寒冰之爪.jpg",
         "strategy": [
@@ -74,7 +74,7 @@
         "id":"1-6",
         "amount": 0,
         "if":true,
-        "cost":"1",
+        "cost":"2",
         "rare":"gold","type":"equipment",
         "pic":"image/equipments/踏风者的长靴.jpg",
         "strategy": [
@@ -116,7 +116,7 @@
         "id":"1-9",
         "amount": 0,
         "if":true,
-        "cost":"2",
+        "cost":"3",
         "rare":"gold","type":"equipment",
         "pic":"image/equipments/黑暗诅咒之盾.jpg",
         "strategy": [
@@ -326,7 +326,7 @@
         "id":"2-2",
         "amount": 0,
         "if":true,
-        "cost":"2",
+        "cost":"1",
         "rare":"silver","type":"equipment",
         "pic":"image/equipments/审判官之锤.jpg",
         "strategy": [
@@ -368,7 +368,7 @@
         "id":"2-5",
         "amount": 0,
         "if":true,
-        "cost":"1",
+        "cost":"2",
         "rare":"silver","type":"equipment",
         "pic":"image/equipments/翡翠玉指环.jpg",
         "strategy": [
@@ -452,7 +452,7 @@
         "id":"2-11",
         "amount": 0,
         "if":true,
-        "cost":"2",
+        "cost":"3",
         "rare":"silver","type":"equipment",
         "pic":"image/equipments/不屈者腰带.jpg",
         "strategy": [
@@ -494,7 +494,7 @@
         "id":"2-14",
         "amount": 0,
         "if":true,
-        "cost":"1",
+        "cost":"2",
         "rare":"silver","type":"equipment",
         "pic":"image/equipments/大祭司权杖.jpg",
         "strategy": [
@@ -522,7 +522,7 @@
         "id":"2-16",
         "amount": 0,
         "if":true,
-        "cost":"2",
+        "cost":"3",
         "rare":"silver","type":"equipment",
         "pic":"image/equipments/收藏家宝藏.jpg",
         "strategy": [
@@ -592,7 +592,7 @@
         "id":"2-21",
         "amount": 0,
         "if":true,
-        "cost":"3",
+        "cost":"1",
         "rare":"silver","type":"equipment",
         "pic":"image/equipments/巨龙放血者.jpg",
         "strategy": [
@@ -606,7 +606,7 @@
         "id":"3-1",
         "amount": 0,
         "if":true,
-        "cost":"2",
+        "cost":"1",
         "rare":"copper","type":"equipment",
         "pic":"image/equipments/聚气手腕.jpg",
         "strategy": [
@@ -620,7 +620,7 @@
         "id":"3-2",
         "amount": 0,
         "if":true,
-        "cost":"3",
+        "cost":"1",
         "rare":"copper","type":"equipment",
         "pic":"image/equipments/磐石护符.jpg",
         "strategy": [
@@ -634,7 +634,7 @@
         "id":"3-3",
         "amount": 0,
         "if":true,
-        "cost":"2",
+        "cost":"1",
         "rare":"copper","type":"equipment",
         "pic":"image/equipments/圣光法典.jpg",
         "strategy": [
@@ -648,7 +648,7 @@
         "id":"3-4",
         "amount": 0,
         "if":true,
-        "cost":"2",
+        "cost":"1",
         "rare":"copper","type":"equipment",
         "pic":"image/equipments/刺客匕首.jpg",
         "strategy": [
@@ -662,7 +662,7 @@
         "id":"3-5",
         "amount": 0,
         "if":true,
-        "cost":"2",
+        "cost":"1",
         "rare":"copper","type":"equipment",
         "pic":"image/equipments/吸血面具.jpg",
         "strategy": [
@@ -676,7 +676,7 @@
         "id":"3-6",
         "amount": 0,
         "if":true,
-        "cost":"3",
+        "cost":"2",
         "rare":"copper","type":"equipment",
         "pic":"image/equipments/聚能长袍.jpg",
         "strategy": [
@@ -690,7 +690,7 @@
         "id":"3-7",
         "amount": 0,
         "if":true,
-        "cost":"2",
+        "cost":"1",
         "rare":"copper","type":"equipment",
         "pic":"image/equipments/生命果实.jpg",
         "strategy": [
@@ -718,7 +718,7 @@
         "id":"3-9",
         "amount": 0,
         "if":true,
-        "cost":"3",
+        "cost":"2",
         "rare":"copper","type":"equipment",
         "pic":"image/equipments/逆流手套.jpg",
         "strategy": [
@@ -732,7 +732,7 @@
         "id":"3-10",
         "amount": 0,
         "if":true,
-        "cost":"3",
+        "cost":"2",
         "rare":"copper","type":"equipment",
         "pic":"image/equipments/巨蛇鳞片.jpg",
         "strategy": [
@@ -830,7 +830,7 @@
         "id":"3-17",
         "amount": 0,
         "if":true,
-        "cost":"1",
+        "cost":"2",
         "rare":"copper","type":"equipment",
         "pic":"image/equipments/失语丝巾.jpg",
         "strategy": [
@@ -900,7 +900,7 @@
         "id":"3-22",
         "amount": 0,
         "if":true,
-        "cost":"1",
+        "cost":"2",
         "rare":"copper","type":"equipment",
         "pic":"image/equipments/掌柜算珠.jpg",
         "strategy": [

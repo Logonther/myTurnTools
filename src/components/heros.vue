@@ -154,7 +154,7 @@ export default {
                 ],
                 series: [
                     {
-                        name: '雷达图',
+                        name: '六维雷达图',
                         type: 'radar',
                         data: [
                             {

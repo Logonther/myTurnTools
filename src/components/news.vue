@@ -87,9 +87,9 @@ export default {
     data() {
         return {
             activeName: 'news',
-            newsData: [],
-            typeData: [],
-            listData: [],
+            newsData: [], // 总数据
+            typeData: [], // 分类后数据
+            listData: [], // 当前显示数据
             md: undefined,
             currentNew: {},
             pageInfo: {
@@ -98,9 +98,6 @@ export default {
                 totalCount: 50
             }
         }
-    },
-    computed:{
-
     },
     created() {
         this.init()
@@ -122,7 +119,7 @@ export default {
             })
         },
         changeType() {
-            console.log(this.activeName);
+            console.log('当前分类------', this.activeName)
             this.typeData = []
             switch (this.activeName) {
                 case 'news':
