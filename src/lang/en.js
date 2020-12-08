@@ -18,7 +18,7 @@ module.exports = {
             'Step by step to multi-language',
         ],
         notice: [
-            '"Sim Summon" has been updated to the latest version(1.2)',
+            'Updating!Sorry for waiting!',
             'News updates complete',
             'Give "UP cards" a badge for its amount'
         ],

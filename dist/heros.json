@@ -1087,15 +1087,15 @@
         ]
     },
     {
-        "name":"堕落之翼（预览）",
-        "id":"2-10",
+        "name":"堕落之翼",
+        "id":"2-11",
         "maxHealth": 205,
         "health": 205,
         "maxEnergy": 100,
         "energy": 100,
         "amount": 0,
         "equipment": "",
-        "if":false,
+        "if":true,
         "cost":"8",
         "type":"red",
         "rare":"gold",
