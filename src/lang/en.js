@@ -19,7 +19,7 @@ module.exports = {
         ],
         notice: [
             'Updating!Sorry for waiting!',
-            'News updates complete',
+            'Updating!',
             'Give "UP cards" a badge for its amount'
         ],
     },
