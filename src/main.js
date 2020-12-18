@@ -40,6 +40,17 @@ import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 Vue.use(ElementUI, { i18n: (key, value) => i18n.t(key, value) });
 
+const flag = navigator.userAgent.match(
+    /(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i
+)
+if(flag === null) {
+  console.log("pc端");
+  Vue.prototype.isMobile = false;
+}else {
+  console.log("移动端");
+  Vue.prototype.isMobile = true;
+}
+
 import ECharts from 'vue-echarts/components/ECharts'
 import  'echarts/lib/chart/radar'
 import 'echarts/lib/component/title'

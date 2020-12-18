@@ -4,7 +4,7 @@
             <!--<el-button @click="btnCamp1">冬幕堡卡池单次召唤</el-button>-->
             <el-button v-show="currentNum == 5 || currentNum == 0" @click="btnCamp5">{{ this.cardPool.name }}卡池万象卡盒</el-button>
             <el-button v-show="currentNum == 5 || currentNum == 0" @click="btnCamp25">{{ this.cardPool.name }}卡池万象卡盒×5</el-button>
-            <el-badge :value="cardPool.cards.length" class="item" style="margin: 10px">
+            <el-badge v-show="currentNum == 5 || currentNum == 0" :value="cardPool.cards.length" class="item" style="margin: 10px">
                 <el-button v-show="currentNum == 5 || currentNum == 0" @click="openUps" style="margin: 0 !important;">
                     {{ this.cardPool.name }}卡池UP卡
                 </el-button>
