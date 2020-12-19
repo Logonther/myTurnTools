@@ -28,7 +28,7 @@
                 <img src="../assets/image/cardback.jpg">
                 <div class="cardfront" :style="'background-image: url('+item.pic+')'">
                     <div :class="'title ' + item.type">
-                        <span>{{ item.cost }}</span>{{ item.name }}f
+                        <span>{{ item.cost }}</span>{{ item.name }}
                     </div>
                 </div>
                 <div class="txt">
