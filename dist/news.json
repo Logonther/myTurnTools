@@ -467,5 +467,12 @@
         "type": 0,
         "time": "2020-11-18",
         "src": "news/update/67.md"
+    },
+    {
+        "id": 68,
+        "title": "V1.4.0.4不停服更新",
+        "type": 0,
+        "time": "2020-12-17",
+        "src": "news/update/68.md"
     }
 ]

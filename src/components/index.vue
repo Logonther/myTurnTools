@@ -4,9 +4,9 @@
             <h3>{{ this.$t("index.welcome") }}</h3>
             <h3>{{ this.$t("index.update") }}</h3>
             <ul>
-                <li>【2020-11-09 15:54:22】{{ this.$t("index.notice")[2] }}</li>
                 <li>【2020-12-08 13:58:19】{{ this.$t("index.notice")[0] }}</li>
                 <li>【2020-12-09 13:25:58】{{ this.$t("index.notice")[1] }}</li>
+                <li>【2020-12-19 13:27:20】{{ this.$t("index.notice")[2] }}</li>
             </ul>
             <h3>{{ this.$t("index.existing") }}</h3>
             <ul>

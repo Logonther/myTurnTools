@@ -20,7 +20,7 @@ module.exports = {
         notice: [
             'Updating!Sorry for waiting!',
             'Updating!',
-            'Give "UP cards" a badge for its amount'
+            'Update complete!'
         ],
     },
     heros: {
