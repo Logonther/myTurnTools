@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="container header">
-            {{ this.$t("rate.search") }}<br>
+            <div @dblclick="dev = true">{{ this.$t("rate.search") }}</div>
             <el-row :gutter="20">
                 <el-col :span="6">
                     <el-date-picker
@@ -13,16 +13,15 @@
                     />
                 </el-col>
             </el-row>
-            {{ this.$t("rate.generate") }}<br>
+            <div v-show="dev" @click="dev = false">{{ this.$t("rate.generate") }}</div>
             <el-row :gutter="20">
-                <el-col :span="6">
+                <el-col v-show="dev" :span="6">
                     <el-input type="text" v-model="monthRange" :placeholder="this.$t('rate.range')" />
                 </el-col>
-                <el-col :span="12">
-                    {{ this.$t("rate.title") }}
-                    <el-button @click="language = 'cn'">繁體中文</el-button>/
-                    <el-button @click="language = 'en'">English</el-button>
-                    <el-button @click="toImg">{{ this.$t("rate.createPicture") }}</el-button>
+                <el-col :span="dev ? 12 : 24">
+                    <div>{{ this.$t("rate.title") }}</div>
+                    <el-button @click="language = 'cn'">繁體中文</el-button>/<el-button @click="language = 'en'">English</el-button>
+                    <el-button v-show="dev" @click="toImg">{{ this.$t("rate.createPicture") }}</el-button>
                 </el-col>
             </el-row>
         </div>
@@ -118,6 +117,7 @@ export default {
     name: "rate",
     data() {
         return {
+            dev: false,
             month: '',
             monthRange: '',
             language: 'cn',
@@ -236,7 +236,6 @@ export default {
 <style scoped lang="less">
     @import "../assets/less/base";
     .header{
-        padding: 10rem/@fontSize 0;
         .el-row{
             margin-bottom: 10px;
         }

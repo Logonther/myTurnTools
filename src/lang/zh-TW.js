@@ -6,7 +6,7 @@ module.exports = {
         heros: '英雄圖鑒',
         african: '模擬召喚',
         strategy: '卡牌講解（暫時關閉）',
-        rate: '數據月報（PC）',
+        rate: '數據月報',
         language: '語言'
     },
     index: {
@@ -18,7 +18,7 @@ module.exports = {
             '逐步實現多語言',
         ],
         notice: [
-            '網站資源尚待更新，有所不便敬請諒解',
+            '優化數據月報的顯示',
             '資源更新中',
             '更新已完成'
         ],

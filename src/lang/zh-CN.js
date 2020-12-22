@@ -6,7 +6,7 @@ module.exports = {
         heros: '英雄图鉴',
         african: '模拟召唤',
         strategy: '卡牌讲解（暂时关闭）',
-        rate: '数据月报（PC）',
+        rate: '数据月报',
         language: '语言'
     },
     index: {
@@ -18,7 +18,7 @@ module.exports = {
             '逐步实现多语言',
         ],
         notice: [
-            '网站资源尚待更新，有所不便敬请谅解',
+            '优化数据月报的显示',
             '资源更新中',
             '更新已完成'
         ],

@@ -6,7 +6,7 @@ module.exports = {
         heros: 'Hero Map',
         african: 'Sim Summon',
         strategy: 'Card Strategy(Temporarily Closed)',
-        rate: 'Meta Report (PC)',
+        rate: 'Meta Report',
         language: 'Language'
     },
     index: {
@@ -18,7 +18,7 @@ module.exports = {
             'Step by step to multi-language',
         ],
         notice: [
-            'Updating!Sorry for waiting!',
+            'Improve the display of Meta Report',
             'Updating!',
             'Update complete!'
         ],
