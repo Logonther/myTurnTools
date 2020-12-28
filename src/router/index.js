@@ -10,37 +10,42 @@ let router = new Router({
         {
             path: '/',
             name: 'Index',
-            component: () => import('@/components/index.vue'),
+            component: () => import('@/views/index.vue'),
         },
         {
             path: '/news',
             name: 'Neros',
-            component: () => import('@/components/news.vue'),
+            component: () => import('@/views/news.vue'),
         },
         {
             path: '/heros',
             name: 'Heros',
-            component: () => import('@/components/heros.vue')
+            component: () => import('@/views/heros.vue')
         },
         {
             path: '/african',
             name: 'African',
-            component: () => import('@/components/african.vue')
+            component: () => import('@/views/african.vue')
         },
         {
             path: '/strategy',
             name: 'Strategy',
-            component: () => import('@/components/strategy.vue')
+            component: () => import('@/views/strategy.vue')
         },
         {
             path: '/rate',
             name: 'Rate',
-            component: () => import('@/components/rate.vue')
+            component: () => import('@/views/rate.vue')
         },
         {
             path: '/fight',
             name: 'Fight',
-            component: () => import('@/components/fight.vue')
+            component: () => import('@/views/fight.vue')
+        },
+        {
+            path: '/collection',
+            name: 'Collection',
+            component: () => import('@/views/collection.vue')
         }
     ]
 })

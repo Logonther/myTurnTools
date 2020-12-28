@@ -8,7 +8,7 @@
 </template>
 
 <script>
-    import Navbar from '@/components/navbar'
+    import Navbar from '@/views/navbar'
 
     export default {
         name: 'app',

@@ -474,5 +474,12 @@
         "type": 0,
         "time": "2020-12-17",
         "src": "news/update/68.md"
+    },
+    {
+        "id": 69,
+        "title": "V1.4.1停服更新",
+        "type": 0,
+        "time": "2020-12-28",
+        "src": "news/update/69.md"
     }
 ]
