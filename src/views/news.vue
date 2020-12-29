@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="container">
-            <el-tabs v-if="!md" v-model="activeName" type="card" stretch @tab-click="changeType">
+            <el-tabs v-show="!md" v-model="activeName" type="card" stretch @tab-click="changeType">
                 <el-tab-pane label="最新资讯" name="news">
                     <ul class="newsList">
                         <li v-for="(item, index) in listData" :key="index" @click="open(item)">
@@ -46,7 +46,7 @@
                         </li>
                     </ul>
                 </el-tab-pane>
-                <el-footer v-if="!md" style="text-align: center;height: auto;padding: 20px 0">
+                <el-footer style="text-align: center;height: auto;padding: 20px 0">
                     <el-pagination
                         :page-sizes="[10]"
                         :current-page.sync="pageInfo.pageIndex"
@@ -56,11 +56,11 @@
                     />
                 </el-footer>
             </el-tabs>
-            <div class="newTitle" v-if="md" style="text-align: center">
-                <el-button type="text" @click="init"><i class="el-icon-back" /> 返回</el-button>{{ currentNew.title }}
+            <div class="newTitle" v-show="md" style="text-align: center">
+                <el-button type="text" @click="md = undefined"><i class="el-icon-back" /> 返回</el-button>{{ currentNew.title }}
             </div>
-            <div class="newTime" v-if="md" style="text-align: center">{{ currentNew.time }}</div>
-            <vueMarkdown v-if="md" :source="md" />
+            <div class="newTime" v-show="md" style="text-align: center">{{ currentNew.time }}</div>
+            <vueMarkdown v-show="md" :source="md" />
         </div>
     </div>
 </template>
