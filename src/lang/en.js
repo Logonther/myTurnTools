@@ -19,7 +19,7 @@ module.exports = {
         ],
         notice: [
             'Improve the display of Meta Report',
-            'Updating!',
+            'New Hero Map is complete',
             'Update complete!'
         ],
     },

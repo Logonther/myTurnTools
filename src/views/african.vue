@@ -782,6 +782,9 @@ export default {
 
 <style scoped lang="less">
     @import "../assets/less/base";
+    button {
+        margin: 10rem/@fontSize !important;
+    }
 
     .cards {
         .card {

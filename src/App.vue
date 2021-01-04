@@ -8,24 +8,30 @@
 </template>
 
 <script>
-    import Navbar from '@/views/navbar'
+import Navbar from '@/views/navbar'
 
-    export default {
-        name: 'app',
-        components: {
-            Navbar
-        }
+export default {
+    name: 'app',
+    components: {
+        Navbar
     }
+}
 </script>
 
 <style>
+    * {
+        outline: none;
+    }
+
     .fade-enter-active, .fade-leave-active {
         transition: opacity .3s;
     }
-    .fade-enter, .fade-leave-to{
+
+    .fade-enter, .fade-leave-to {
         opacity: 0;
     }
-    button{
-        margin: 10px !important;
+
+    #app {
+        padding-top: 51px;
     }
 </style>
