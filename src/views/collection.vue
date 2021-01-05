@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <div class="container">
+    <div id="how">
+        <div ref="container" class="container">
             <div
                 v-if="currentHero"
                 class="banner"
@@ -115,6 +115,7 @@ export default {
         },
         choose(hero) {
             console.log('点选------', hero)
+            document.documentElement.scrollTop = document.body.scrollTop = 0
             this.currentHero = hero
             this.showChart(hero)
         },
