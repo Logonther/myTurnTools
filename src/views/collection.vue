@@ -75,7 +75,7 @@
         <el-button class="openBtn" type="warning" icon="el-icon-notebook-2" circle @click="showList = true" />
         <el-drawer class="cards" :visible.sync="showList" direction="rtl" :show-close="false" :with-header="false" size="50%">
             <div
-                class="col-sm-6 col-xs-12 card"
+                class="col-md-6 col-sm-12 card"
                 v-for="(hero, index) in herosList"
                 :key="index"
             >
@@ -428,6 +428,8 @@ export default {
                         font-size: 30rem/@fontSize;
                         text-align: center;
                         flex: 1;
+                        line-height: normal;
+                        vertical-align: middle;
                     }
                 }
             }
