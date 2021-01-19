@@ -3,7 +3,7 @@ module.exports = {
     navbar: {
         index: '首页',
         news: '新闻资讯',
-        heros: '英雄图鉴',
+        heros: '图鉴',
         african: '模拟召唤',
         strategy: '卡牌讲解（暂时关闭）',
         rate: '数据月报',
@@ -20,7 +20,7 @@ module.exports = {
         notice: [
             '优化数据月报的显示',
             '新的图鉴已完成',
-            '更新已完成'
+            '图鉴加入装备'
         ],
     },
     heros: {

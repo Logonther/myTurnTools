@@ -2,47 +2,53 @@
     <div id="how">
         <div ref="container" class="container">
             <div
-                v-if="currentHero"
+                v-if="current"
                 class="banner"
-                :class="currentHero.type"
-                :style="'background-image: url('+currentHero.pic+')'"
+                :class="current.type"
+                :style="'background-image: url('+current.pic+')'"
             >
-                {{ currentHero.name }}
+                {{ current.name }}
             </div>
-            <div v-if="currentHero" class="skills">
-                <div class="skill">
+            <div v-if="current" class="skills">
+                <div v-if="current.type !== 'equipment'" class="skill">
                     <div class="title">
                         <span>Ex</span>
-                        <span>{{ currentHero.ex[0].name }}：</span>
+                        <span>{{ current.ex[0].name }}：</span>
                     </div>
-                    <div class="content">{{ currentHero.ex[0].txt.replace(/(\/)/g,' ') }}</div>
+                    <div class="content">{{ current.ex[0].txt.replace(/(\/)/g,' ') }}</div>
                 </div>
-                <div class="skill">
+                <div v-if="current.type !== 'equipment'" class="skill">
                     <div class="title">
                         <span>{{ $t("heros.skill") }}</span>
-                        <span>{{ currentHero.skill1[0].cost }}{{ $t("heros.cost") }}</span>
-                        <span>{{ currentHero.skill1[0].name }}：</span>
+                        <span>{{ current.skill1[0].cost }}{{ $t("heros.cost") }}</span>
+                        <span>{{ current.skill1[0].name }}：</span>
                     </div>
-                    <div class="content">{{ currentHero.skill1[0].txt.replace(/(\/)/g,' ') }}</div>
+                    <div class="content">{{ current.skill1[0].txt.replace(/(\/)/g,' ') }}</div>
                 </div>
-                <div class="skill">
+                <div v-if="current.type !== 'equipment'" class="skill">
                     <div class="title">
                         <span>{{ $t("heros.skill") }}</span>
-                        <span>{{ currentHero.skill2[0].cost }}{{ $t("heros.cost") }}</span>
-                        <span>{{ currentHero.skill2[0].name }}：</span>
+                        <span>{{ current.skill2[0].cost }}{{ $t("heros.cost") }}</span>
+                        <span>{{ current.skill2[0].name }}：</span>
                     </div>
-                    <div class="content">{{ currentHero.skill2[0].txt.replace(/(\/)/g,' ') }}</div>
+                    <div class="content">{{ current.skill2[0].txt.replace(/(\/)/g,' ') }}</div>
                 </div>
-                <div class="skill">
+                <div v-if="current.type !== 'equipment'" class="skill">
                     <div class="title">
                         <span>{{ $t("heros.skill") }}</span>
-                        <span>{{ currentHero.skill3[0].cost }}{{ $t("heros.cost") }}</span>
-                        <span>{{ currentHero.skill3[0].name }}：</span>
+                        <span>{{ current.skill3[0].cost }}{{ $t("heros.cost") }}</span>
+                        <span>{{ current.skill3[0].name }}：</span>
                     </div>
-                    <div class="content">{{ currentHero.skill3[0].txt.replace(/(\/)/g,' ') }}</div>
+                    <div class="content">{{ current.skill3[0].txt.replace(/(\/)/g,' ') }}</div>
                 </div>
-                <div v-if="currentHero.derivative != []">
-                    <div class="skill" v-for="(item,index2) in currentHero.derivative" :key="index2">
+                <div v-if="current.type === 'equipment'" class="skill">
+                    <div class="title">
+                        <span>{{ current.cost }}{{ $t("heros.cost") }}</span>
+                    </div>
+                    <div class="content">{{ current.txt.replace(/(\/)/g,' ') }}</div>
+                </div>
+                <div v-if="current.derivative != []">
+                    <div class="skill" v-for="(item,index2) in current.derivative" :key="index2">
                         <div class="title">
                             {{ $t("heros.derivative") }} {{ item.cost }}{{ $t("heros.cost") }} {{ item.name }}：
                         </div>
@@ -50,25 +56,25 @@
                     </div>
                 </div>
             </div>
-            <div v-if="currentHero" class="datas">
+            <div v-if="current && current.type !== 'equipment'" class="datas">
                 <div class="radar col-sm-4 col-xs-12">
                     <chart ref="chart" class="heroChart" :options="chartOptions" :auto-resize="true" />
                 </div>
                 <div class="data col-sm-4 col-xs-6">
                     <div class="title">满级血量</div>
-                    <div class="content">{{ currentHero.maxHealth }}</div>
+                    <div class="content">{{ current.maxHealth }}</div>
                 </div>
                 <div class="data col-sm-4 col-xs-6">
                     <div class="title">阵营</div>
-                    <div class="content">{{ currentHero.faction }}</div>
+                    <div class="content">{{ current.faction }}</div>
                 </div>
                 <div class="data col-sm-4 col-xs-6">
                     <div class="title">生日</div>
-                    <div class="content">{{ currentHero.birthday }}</div>
+                    <div class="content">{{ current.birthday }}</div>
                 </div>
                 <div class="data col-sm-4 col-xs-6">
                     <div class="title">属性</div>
-                    <div class="content">{{ currentHero.stats }}</div>
+                    <div class="content">{{ current.stats }}</div>
                 </div>
             </div>
         </div>
@@ -76,12 +82,22 @@
         <el-drawer class="cards" :visible.sync="showList" direction="rtl" :show-close="false" :with-header="false" size="50%">
             <div
                 class="col-md-6 col-sm-12 card"
-                v-for="(hero, index) in herosList"
-                :key="index"
+                v-for="(hero, index) in heroList"
+                :key="'h' + index"
             >
                 <div class="content" :class="hero.type" @click="choose(hero)">
                     <div class="pic" :style="'background-image: url('+hero.pic+')'" />
                     <div class="name">{{ hero.name }}</div>
+                </div>
+            </div>
+            <div
+                class="col-md-6 col-sm-12 card"
+                v-for="(equipment, index) in equipmentList"
+                :key="'e' + index"
+            >
+                <div class="content" :class="equipment.type" @click="choose(equipment)">
+                    <div class="pic" :style="'background-image: url(image/card/'+equipment.name+'.jpg)'" />
+                    <div class="name">{{ equipment.name }}</div>
                 </div>
             </div>
         </el-drawer>
@@ -94,8 +110,9 @@ export default {
     data() {
         return {
             showList: false,
-            herosList: [],
-            currentHero: undefined,
+            heroList: [],
+            equipmentList: [],
+            current: undefined,
             chartOptions: {},
         }
     },
@@ -105,19 +122,22 @@ export default {
     methods: {
         init() {
             this.$http.get('heros.json').then((res) => {
-                this.herosList = res.data
-                const hero = this.herosList.find(item => {
+                this.heroList = res.data
+                const hero = this.heroList.find(item => {
                     return item.name === '白魔导士'
                 })
-                this.currentHero = hero
+                this.current = hero
                 this.showChart(hero)
             })
+            this.$http.get('equipment.json').then((res) => {
+                this.equipmentList = res.data
+            })
         },
-        choose(hero) {
-            console.log('点选------', hero)
+        choose(card) {
+            console.log('点选------', card)
             document.documentElement.scrollTop = document.body.scrollTop = 0
-            this.currentHero = hero
-            this.showChart(hero)
+            this.current = card
+            this.showChart(card)
         },
         showChart(item) {
             console.log(item);
@@ -298,6 +318,11 @@ export default {
                     rgb(12, 114, 77) 3rem/@fontSize 0 0,
                     rgb(12, 114, 77) 0 3rem/@fontSize 0;
             }
+            &.equipment {
+                text-shadow:
+                    rgb(128, 128, 128) 3rem/@fontSize 0 0,
+                    rgb(128, 128, 128) 0 3rem/@fontSize 0;
+            }
         }
         .skills {
             .skill {
@@ -416,6 +441,11 @@ export default {
                     &.green {
                         border-color: rgb(12, 114, 77);
                         color: rgb(12, 114, 77);
+                    }
+
+                    &.equipment {
+                        border-color: rgb(128, 128, 128);
+                        color: rgb(128, 128, 128);
                     }
                     .pic {
                         width: 140rem/@fontSize;

@@ -3,7 +3,7 @@ module.exports = {
     navbar: {
         index: 'Home Page',
         news: 'News',
-        heros: 'Hero Map',
+        heros: 'Collection',
         african: 'Sim Summon',
         strategy: 'Card Strategy(Temporarily Closed)',
         rate: 'Meta Report',
@@ -20,7 +20,7 @@ module.exports = {
         notice: [
             'Improve the display of Meta Report',
             'New Hero Map is complete',
-            'Update complete!'
+            'Hero Map → Collection(join equipments)'
         ],
     },
     heros: {

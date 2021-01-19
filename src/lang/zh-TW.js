@@ -3,7 +3,7 @@ module.exports = {
     navbar: {
         index: '首頁',
         news: '新聞資訊',
-        heros: '英雄圖鑒',
+        heros: '圖鑒',
         african: '模擬召喚',
         strategy: '卡牌講解（暫時關閉）',
         rate: '數據月報',
@@ -20,7 +20,7 @@ module.exports = {
         notice: [
             '優化數據月報的顯示',
             '新的圖鑒已完成',
-            '更新已完成'
+            '圖鑒加入裝備'
         ],
     },
     heros: {
