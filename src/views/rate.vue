@@ -8,6 +8,7 @@
                         v-model="month"
                         type="month"
                         value-format="yyyy-MM"
+                        :picker-options="pickerOptions"
                         :placeholder="this.$t('rate.chooseMonth')"
                         @change="monthChange"
                     />
@@ -135,6 +136,11 @@ export default {
             rateImg: '',
             herosData: [],
             dialogVisible: false,
+            pickerOptions: {
+                disabledDate: (time) => {
+                    return time.getTime() < moment('2020-06') || time.getTime() > moment('2020-12')
+                }
+            }
         }
     },
     created() {
@@ -142,8 +148,6 @@ export default {
             console.log('英雄数据---',res);
             this.herosData = res.data
         })
-    },
-    mounted() {
     },
     methods: {
         monthChange() {
