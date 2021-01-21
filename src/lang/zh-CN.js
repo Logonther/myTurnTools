@@ -49,5 +49,6 @@ module.exports = {
         range: '具体日期范围',
         createPicture: '生成图片',
         title: '标题语言：',
+        upload: '上传json数据：'
     }
 }

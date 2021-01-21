@@ -49,5 +49,6 @@ module.exports = {
         range: 'Specific date range',
         createPicture: 'Generate picture',
         title: 'Title language:',
+        upload: 'Upload .json:'
     }
 }

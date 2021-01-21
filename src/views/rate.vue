@@ -14,15 +14,32 @@
                     />
                 </el-col>
             </el-row>
-            <div v-show="dev" @click="dev = false">{{ this.$t("rate.generate") }}</div>
             <el-row :gutter="20">
                 <el-col v-show="dev" :span="6">
+                    <div v-show="dev" @click="dev = false">{{ this.$t("rate.generate") }}</div>
                     <el-input type="text" v-model="monthRange" :placeholder="this.$t('rate.range')" />
                 </el-col>
                 <el-col :span="dev ? 12 : 24">
                     <div>{{ this.$t("rate.title") }}</div>
                     <el-button @click="language = 'cn'">繁體中文</el-button>/<el-button @click="language = 'en'">English</el-button>
                     <el-button v-show="dev" @click="toImg">{{ this.$t("rate.createPicture") }}</el-button>
+                </el-col>
+            </el-row>
+            <el-row :gutter="20">
+                <el-col v-show="dev" :span="dev ? 12 : 24">
+                    <div>{{ this.$t("rate.upload") }}</div>
+                    <el-upload
+                        class="upload-json"
+                        drag
+                        action="https://jsonplaceholder.typicode.com/posts/"
+                        accept=".json"
+                        :limit="1"
+                        :on-success="uploadJson"
+                    >
+                        <i class="el-icon-upload"></i>
+                        <div class="el-upload__text">将文件拖到此处，或<em>点击上传</em></div>
+                        <div class="el-upload__tip" slot="tip">只能上传json文件，且不超过500kb</div>
+                    </el-upload>
                 </el-col>
             </el-row>
         </div>
@@ -140,7 +157,8 @@ export default {
                 disabledDate: (time) => {
                     return time.getTime() < moment('2020-06') || time.getTime() > moment('2020-12')
                 }
-            }
+            },
+            uploadData: []
         }
     },
     created() {
@@ -150,6 +168,66 @@ export default {
         })
     },
     methods: {
+        uploadJson(res, file) {
+            console.log(res, file)
+            let reader = new FileReader()
+            reader.readAsText(file.raw)
+            reader.onload = ((e) => {
+                this.uploadData = []
+                this.uploadData = JSON.parse(e.target.result)
+                console.log('该月数据---', this.uploadData);
+                Object.keys(this.rateData).map(index => (this.rateData[index] = []))
+                this.uploadData.forEach(item => {
+                    if (item.type == '英雄'){
+                        this.rateData.rateHero.push(item)
+                    } else if (item.type == '装备'){
+                        this.rateData.rateEquipment.push(item)
+                    } else if (item.type == '道具'){
+                        this.rateData.rateProps.push(item)
+                    }
+                })
+                console.log('rateData---',this.rateData);
+                // 颜色
+                this.rateData.rateHero.forEach(item => {
+                    this.herosData.forEach(item2 => {
+                        if (item.name == item2.name){
+                            item.color = item2.type
+                        }
+                    })
+                })
+
+                this.$http.get('rate/' + moment(file.name.replace('.json', '')).subtract(1, 'month').format('YYYY-MM') + '.json').then(resp => {
+                    console.log('上月数据---',resp);
+                    this.showReport = true
+                    resp.data.forEach(item => {
+                        if (item.type == '英雄'){
+                            this.lastMonthData.lastMonthHero.push(item)
+                        } else if (item.type == '装备'){
+                            this.lastMonthData.lastMonthEquipment.push(item)
+                        } else if (item.type == '道具'){
+                            this.lastMonthData.lastMonthProps.push(item)
+                        }
+                    })
+                    console.log('lastMonthData---',this.lastMonthData);
+
+                    // 计算排名升降
+                    this.getRate(this.rateData.rateHero, this.lastMonthData.lastMonthHero)
+                    this.getRate(this.rateData.rateEquipment, this.lastMonthData.lastMonthEquipment)
+                    this.getRate(this.rateData.rateProps, this.lastMonthData.lastMonthProps)
+
+
+                    console.log('排名后---',this.rateData);
+
+                },error => {
+                    console.log(error)
+                    // 计算排名升降
+                    this.getRate(this.rateData.rateHero, this.lastMonthData.lastMonthHero)
+                    this.getRate(this.rateData.rateEquipment, this.lastMonthData.lastMonthEquipment)
+                    this.getRate(this.rateData.rateProps, this.lastMonthData.lastMonthProps)
+                    this.showReport = true
+                })
+            })
+        },
         monthChange() {
             console.log('month------',this.month);
             Object.keys(this.rateData).map(index => (this.rateData[index] = []))
@@ -247,6 +325,11 @@ export default {
     button{
         margin: 0 !important;
         margin-right: 10rem/@fontSize !important;
+    }
+    /deep/ .upload-json {
+        .el-upload__input {
+            display: none;
+        }
     }
     .container-main{
         width: 750rem/@fontSize;
