@@ -7,6 +7,7 @@ module.exports = {
         african: '模擬召喚',
         strategy: '卡牌講解（暫時關閉）',
         rate: '數據月報',
+        build: '編輯卡組',
         language: '語言'
     },
     index: {
@@ -18,7 +19,7 @@ module.exports = {
             '逐步實現多語言',
         ],
         notice: [
-            '優化數據月報的顯示',
+            '更新編輯卡組',
             '新的圖鑒已完成',
             '圖鑒加入裝備'
         ],
@@ -50,5 +51,12 @@ module.exports = {
         createPicture: '生成圖片',
         title: '標題語言：',
         upload: '上傳json數據：'
+    },
+    build: {
+        hero: '英雄',
+        equip: '裝備',
+        item: '道具',
+        toImg: '生成圖片',
+        right: '右鍵圖片保存'
     }
 }

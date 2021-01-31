@@ -75,6 +75,10 @@ export default {
                 {
                     name: this.$t("navbar.rate"),
                     path: '/rate'
+                },
+                {
+                    name: this.$t("navbar.build"),
+                    path: '/build'
                 }
             ],
             showMask: false

@@ -46,6 +46,11 @@ let router = new Router({
             path: '/collection',
             name: 'Collection',
             component: () => import('@/views/collection.vue')
+        },
+        {
+            path: '/build',
+            name: 'Build',
+            component: () => import('@/views/build.vue')
         }
     ]
 })

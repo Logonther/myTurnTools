@@ -7,6 +7,7 @@ module.exports = {
         african: 'Sim Summon',
         strategy: 'Card Strategy(Temporarily Closed)',
         rate: 'Meta Report',
+        build: 'Edit Deck',
         language: 'Language'
     },
     index: {
@@ -18,7 +19,7 @@ module.exports = {
             'Step by step to multi-language',
         ],
         notice: [
-            'Improve the display of Meta Report',
+            'Update Edit Deck',
             'New Hero Map is complete',
             'Hero Map → Collection(join equipments)'
         ],
@@ -50,5 +51,12 @@ module.exports = {
         createPicture: 'Generate picture',
         title: 'Title language:',
         upload: 'Upload .json:'
+    },
+    build: {
+        hero: 'Hero',
+        equip: 'Equip',
+        item: 'Item',
+        toImg: 'Generate image',
+        right: 'Right click the image to save'
     }
 }

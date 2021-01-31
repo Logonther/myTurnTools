@@ -119,11 +119,11 @@
             </div>
         </div>
         <el-dialog
-            title="右键图片保存"
+            :title="this.$t('build.right')"
             :visible.sync="dialogVisible"
             width="90%"
         >
-            <img :src="rateImg">
+            <img :src="rateImg" style="width: 100%">
         </el-dialog>
     </div>
 </template>

@@ -2,6 +2,7 @@
     {
         "name": "备选计划",
         "id": "1-1",
+        "type": "prop",
         "txt": "抽抽抽",
         "strategy": [
             "",
@@ -11,6 +12,7 @@
     {
         "name": "凤凰羽毛",
         "id": "1-2",
+        "type": "prop",
         "txt": "",
         "strategy": [
             "",
@@ -20,6 +22,7 @@
     {
         "name": "法力结晶",
         "id": "1-3",
+        "type": "prop",
         "txt": "",
         "strategy": [
             "",
@@ -29,6 +32,7 @@
     {
         "name": "愤怒烈酒",
         "id": "1-4",
+        "type": "prop",
         "txt": "",
         "strategy": [
             "",
@@ -38,6 +42,7 @@
     {
         "name": "混沌魔方",
         "id": "1-5",
+        "type": "prop",
         "txt": "",
         "strategy": [
             "",
@@ -47,6 +52,7 @@
     {
         "name": "护盾装置",
         "id": "1-6",
+        "type": "prop",
         "txt": "",
         "strategy": [
             "",
@@ -56,6 +62,7 @@
     {
         "name": "魔法萤火",
         "id": "1-7",
+        "type": "prop",
         "txt": "",
         "strategy": [
             "",
@@ -65,6 +72,7 @@
     {
         "name": "回忆怀表",
         "id": "1-8",
+        "type": "prop",
         "txt": "",
         "strategy": [
             "",
@@ -74,6 +82,7 @@
     {
         "name": "静默套索",
         "id": "1-9",
+        "type": "prop",
         "txt": "",
         "strategy": [
             "",
@@ -83,6 +92,7 @@
     {
         "name": "聚能炮台",
         "id": "1-10",
+        "type": "prop",
         "txt": "",
         "strategy": [
             "",
@@ -92,6 +102,7 @@
     {
         "name": "虚空鬼牌",
         "id": "1-11",
+        "type": "prop",
         "txt": "",
         "strategy": [
             "",
@@ -101,6 +112,7 @@
     {
         "name": "魅魔皮鞭",
         "id": "1-12",
+        "type": "prop",
         "txt": "",
         "strategy": [
             "",
@@ -110,6 +122,7 @@
     {
         "name": "粘性蛛网",
         "id": "1-13",
+        "type": "prop",
         "txt": "",
         "strategy": [
             "",
@@ -119,6 +132,7 @@
     {
         "name": "霜火魔瓶",
         "id": "1-14",
+        "type": "prop",
         "txt": "",
         "strategy": [
             "",
@@ -128,6 +142,7 @@
     {
         "name": "生命药水",
         "id": "1-15",
+        "type": "prop",
         "txt": "",
         "strategy": [
             "",
@@ -137,6 +152,7 @@
     {
         "name": "保护卷轴",
         "id": "1-16",
+        "type": "prop",
         "txt": "",
         "strategy": [
             "",
@@ -146,6 +162,7 @@
     {
         "name": "邪恶祭品",
         "id": "1-17",
+        "type": "prop",
         "txt": "",
         "strategy": [
             "",
@@ -155,6 +172,7 @@
     {
         "name": "有限剑制",
         "id": "1-18",
+        "type": "prop",
         "txt": "",
         "strategy": [
             "",
@@ -164,6 +182,7 @@
     {
         "name": "终极炸药",
         "id": "1-19",
+        "type": "prop",
         "txt": "",
         "strategy": [
             "",
@@ -173,6 +192,7 @@
     {
         "name": "战术背包",
         "id": "1-20",
+        "type": "prop",
         "txt": "",
         "strategy": [
             "",
@@ -182,6 +202,7 @@
     {
         "name": "贪婪卡包",
         "id": "1-21",
+        "type": "prop",
         "txt": "",
         "strategy": [
             "",
@@ -191,6 +212,7 @@
     {
         "name": "时光宝盒",
         "id": "1-22",
+        "type": "prop",
         "txt": "",
         "strategy": [
             "",
