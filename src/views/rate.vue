@@ -155,7 +155,7 @@ export default {
             dialogVisible: false,
             pickerOptions: {
                 disabledDate: (time) => {
-                    return time.getTime() < moment('2020-06') || time.getTime() > moment('2021-01')
+                    return time.getTime() < moment('2020-03') || time.getTime() > moment('2021-01')
                 }
             },
             uploadData: []
@@ -270,6 +270,12 @@ export default {
                     })
                     console.log('lastMonthData---',this.lastMonthData);
 
+                    this.sortRate(this.rateData.rateHero)
+                    this.sortRate(this.rateData.rateEquipment)
+                    this.sortRate(this.rateData.rateProps)
+                    this.sortRate(this.lastMonthData.lastMonthHero)
+                    this.sortRate(this.lastMonthData.lastMonthEquipment)
+                    this.sortRate(this.lastMonthData.lastMonthProps)
                     // 计算排名升降
                     this.getRate(this.rateData.rateHero, this.lastMonthData.lastMonthHero)
                     this.getRate(this.rateData.rateEquipment, this.lastMonthData.lastMonthEquipment)
@@ -280,6 +286,9 @@ export default {
 
                 },error => {
                     console.log(error)
+                    this.sortRate(this.rateData.rateHero)
+                    this.sortRate(this.rateData.rateEquipment)
+                    this.sortRate(this.rateData.rateProps)
                     // 计算排名升降
                     this.getRate(this.rateData.rateHero, this.lastMonthData.lastMonthHero)
                     this.getRate(this.rateData.rateEquipment, this.lastMonthData.lastMonthEquipment)
@@ -311,6 +320,11 @@ export default {
                 })
             })
         },
+        sortRate(arr) {
+            arr.sort((a, b) => {
+                return Number(b.rate.replace('%', '')) - Number(a.rate.replace('%', ''))
+            })
+        }
     }
 }
 </script>

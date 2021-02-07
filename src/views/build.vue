@@ -1,5 +1,6 @@
 <template>
     <div class="bigbox">
+        <!-- build部分 -->
         <div id="container-build" class="container build">
             <div
                 class="buildProps"
@@ -79,6 +80,7 @@
                 </div>
             </div>
         </div>
+        <!-- 按钮部分 -->
         <div class="container buttons">
             <div class="typeButton">
                 <button
@@ -130,6 +132,7 @@
                 />
             </div>
         </div>
+        <!-- 列表部分 -->
         <div class="container cardsList" style="padding-top: 20px">
             <div class="cards">
                 <div
