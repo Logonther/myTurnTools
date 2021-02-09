@@ -481,5 +481,12 @@
         "type": 0,
         "time": "2020-12-28",
         "src": "news/update/69.md"
+    },
+    {
+        "id": 70,
+        "title": "V1.4.2更新预告",
+        "type": 0,
+        "time": "2021-02-07",
+        "src": "news/update/70.md"
     }
 ]
