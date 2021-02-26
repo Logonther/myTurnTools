@@ -155,7 +155,7 @@ export default {
             dialogVisible: false,
             pickerOptions: {
                 disabledDate: (time) => {
-                    return time.getTime() < moment('2019-12') || time.getTime() > moment('2021-01')
+                    return time.getTime() < moment('2019-12') || time.getTime() > moment('2021-02')
                 }
             },
             uploadData: []
