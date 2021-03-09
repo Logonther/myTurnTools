@@ -20,7 +20,7 @@
             <!--<el-button @click="toggleCards(78)">切换为国际服卡池（90张版本）</el-button>-->
         </div>
         <div class="container cards" v-show="cards != []">
-            <div v-for="(item,index) in cards"
+            <div v-for="(item, index) in cards"
                  :class="'card col-sm-2 col-xs-5 ' + item.class"
                  :key="index"
                  @click="open(index)"
@@ -28,12 +28,17 @@
                 <img src="../assets/image/cardback.jpg">
                 <div class="cardfront" :style="'background-image: url('+item.pic+')'">
                     <div :class="'title ' + item.type">
-                        <span>{{ item.cost }}</span>{{ item.name }}
+                        <span v-if="item.type === 'equipment'">{{ item.cost }}</span>{{ item.name }}
+                    </div>
+                    <div v-if="item.type === 'equipment'" class="equipmentTxt">
+                        <div class="txtBox">
+                            {{ item.txt.replace(/(\/)/g,' ') }}
+                        </div>
                     </div>
                 </div>
                 <div class="txt">
                     <div :class="'rare ' + item.rare"></div>
-                    {{ item.txt }}
+                    {{ item.amountTxt }}
                 </div>
             </div>
         </div>
@@ -599,7 +604,7 @@ export default {
         },
         inin(card, type, txt) {
             $('.card .txt').css("opacity", "0")
-            card.txt = txt
+            card.amountTxt = txt
             card.class = ''
             card.summonType = type
             this.cards.push(card)
@@ -849,9 +854,9 @@ export default {
                     line-height: 30rem/@fontSize;
                     font-size: 20rem/@fontSize;
                     border-bottom: 3rem/@fontSize solid #333;
-
+                    padding-left: 15rem/@fontSize;
                     span {
-                        padding: 0 15rem/@fontSize;
+                        padding-right: 15rem/@fontSize;
                     }
 
                     color: white;
@@ -879,7 +884,26 @@ export default {
                 }
 
                 .title.equipment {
-                    opacity: 0;
+                    background-color: rgb(128, 128, 128);
+                }
+
+                .equipmentTxt {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 44%;
+                    background-color: #333;
+                    .txtBox {
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 80%;
+                        font-size: 14rem/@fontSize;
+                        text-align: center;
+                        color: white;
+                    }
                 }
             }
 

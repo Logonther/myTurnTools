@@ -20,7 +20,7 @@ module.exports = {
         ],
         notice: [
             'Update Edit Deck',
-            'New Hero Map is complete',
+            'Join equipments(Collection), Sim Summon display adjustment',
             'Hero Map → Collection(join equipments)'
         ],
     },

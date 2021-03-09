@@ -100,6 +100,16 @@
                     <div class="name">{{ equipment.name }}</div>
                 </div>
             </div>
+            <div
+                class="col-md-6 col-sm-12 card"
+                v-for="(prop, index) in propList"
+                :key="'e' + index"
+            >
+                <div class="content" :class="prop.type" @click="choose(prop)">
+                    <div class="pic" :style="'background-image: url(image/card/'+prop.name+'.jpg)'" />
+                    <div class="name">{{ prop.name }}</div>
+                </div>
+            </div>
         </el-drawer>
     </div>
 </template>
@@ -112,6 +122,7 @@ export default {
             showList: false,
             heroList: [],
             equipmentList: [],
+            propList: [],
             current: undefined,
             chartOptions: {},
         }
@@ -131,6 +142,9 @@ export default {
             })
             this.$http.get('equipment.json').then((res) => {
                 this.equipmentList = res.data
+            })
+            this.$http.get('props.json').then((res) => {
+                this.propList = res.data
             })
         },
         choose(card) {
@@ -443,7 +457,7 @@ export default {
                         color: rgb(12, 114, 77);
                     }
 
-                    &.equipment {
+                    &.equipment, &.prop {
                         border-color: rgb(128, 128, 128);
                         color: rgb(128, 128, 128);
                     }
