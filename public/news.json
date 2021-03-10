@@ -488,5 +488,12 @@
         "type": 0,
         "time": "2021-02-07",
         "src": "news/update/70.md"
+    },
+    {
+        "id": 71,
+        "title": "V1.4.3不停服更新预告",
+        "type": 0,
+        "time": "2021-03-09",
+        "src": "news/update/71.md"
     }
 ]
