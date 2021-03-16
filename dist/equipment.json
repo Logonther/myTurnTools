@@ -775,7 +775,7 @@
         "cost":"2",
         "rare":"copper",
         "type":"equipment",
-        "txt": "手牌上限/-3/，回合结束时，获得手牌随机一张技能卡的复制",
+        "txt": "手牌上限/-2/，回合结束时，获得手牌随机一张技能卡的复制",
         "pic":"image/equipments/掌柜算珠.jpg",
         "strategy": []
     },

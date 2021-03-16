@@ -502,5 +502,12 @@
         "type": 0,
         "time": "2021-03-12",
         "src": "news/update/72.md"
+    },
+    {
+        "id": 73,
+        "title": "V1.4.3.2不停服更新",
+        "type": 0,
+        "time": "2021-03-15",
+        "src": "news/update/72.md"
     }
 ]
