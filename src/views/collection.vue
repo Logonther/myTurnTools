@@ -5,19 +5,19 @@
                 v-if="current"
                 class="banner"
                 :class="current.type"
-                :style="'background-image: url('+current.pic+')'"
+                :style="current.type === 'prop' ? 'background-image: url(image/card/'+current.name+'.jpg)' : 'background-image: url('+current.pic+')'"
             >
                 {{ current.name }}
             </div>
             <div v-if="current" class="skills">
-                <div v-if="current.type !== 'equipment'" class="skill">
+                <div v-if="current.type !== 'equipment' && current.type !== 'prop'" class="skill">
                     <div class="title">
                         <span>Ex</span>
                         <span>{{ current.ex[0].name }}：</span>
                     </div>
                     <div class="content">{{ current.ex[0].txt.replace(/(\/)/g,' ') }}</div>
                 </div>
-                <div v-if="current.type !== 'equipment'" class="skill">
+                <div v-if="current.type !== 'equipment' && current.type !== 'prop'" class="skill">
                     <div class="title">
                         <span>{{ $t("heros.skill") }}</span>
                         <span>{{ current.skill1[0].cost }}{{ $t("heros.cost") }}</span>
@@ -25,7 +25,7 @@
                     </div>
                     <div class="content">{{ current.skill1[0].txt.replace(/(\/)/g,' ') }}</div>
                 </div>
-                <div v-if="current.type !== 'equipment'" class="skill">
+                <div v-if="current.type !== 'equipment' && current.type !== 'prop'" class="skill">
                     <div class="title">
                         <span>{{ $t("heros.skill") }}</span>
                         <span>{{ current.skill2[0].cost }}{{ $t("heros.cost") }}</span>
@@ -33,7 +33,7 @@
                     </div>
                     <div class="content">{{ current.skill2[0].txt.replace(/(\/)/g,' ') }}</div>
                 </div>
-                <div v-if="current.type !== 'equipment'" class="skill">
+                <div v-if="current.type !== 'equipment' && current.type !== 'prop'" class="skill">
                     <div class="title">
                         <span>{{ $t("heros.skill") }}</span>
                         <span>{{ current.skill3[0].cost }}{{ $t("heros.cost") }}</span>
@@ -41,8 +41,8 @@
                     </div>
                     <div class="content">{{ current.skill3[0].txt.replace(/(\/)/g,' ') }}</div>
                 </div>
-                <div v-if="current.type === 'equipment'" class="skill">
-                    <div class="title">
+                <div v-if="current.type === 'equipment' || current.type === 'prop'" class="skill">
+                    <div v-if="current.type === 'equipment'" class="title">
                         <span>{{ current.cost }}{{ $t("heros.cost") }}</span>
                     </div>
                     <div class="content">{{ current.txt.replace(/(\/)/g,' ') }}</div>
@@ -56,7 +56,7 @@
                     </div>
                 </div>
             </div>
-            <div v-if="current && current.type !== 'equipment'" class="datas">
+            <div v-if="current && current.type !== 'equipment' && current.type !== 'prop'" class="datas">
                 <div class="radar col-sm-4 col-xs-12">
                     <chart ref="chart" class="heroChart" :options="chartOptions" :auto-resize="true" />
                 </div>
@@ -79,7 +79,7 @@
             </div>
         </div>
         <el-button class="openBtn" type="warning" icon="el-icon-notebook-2" circle @click="showList = true" />
-        <el-drawer class="cards" :visible.sync="showList" direction="rtl" :show-close="false" :with-header="false" size="50%">
+        <!--<el-drawer class="cards" :visible.sync="showList" direction="rtl" :show-close="false" :with-header="false" size="50%">
             <div
                 class="col-md-6 col-sm-12 card"
                 v-for="(hero, index) in heroList"
@@ -110,13 +110,25 @@
                     <div class="name">{{ prop.name }}</div>
                 </div>
             </div>
-        </el-drawer>
+        </el-drawer>-->
+        <card-list
+            :showList="showList"
+            :heroList="heroList"
+            :equipmentList="equipmentList"
+            :propList="propList"
+            @select="choose"
+            @close="showList = false"
+        />
     </div>
 </template>
 
 <script>
+import cardList from '@/components/cardList'
 export default {
     name: "collection",
+    components: {
+        cardList
+    },
     data() {
         return {
             showList: false,
@@ -156,6 +168,7 @@ export default {
         showChart(item) {
             console.log(item);
             this.chartOptions = {}
+            if (item.type === 'equipment' || item.type === 'prop') return
             let bgColor = ''
             switch (item.type) {
                 case 'yellow':
@@ -332,10 +345,13 @@ export default {
                     rgb(12, 114, 77) 3rem/@fontSize 0 0,
                     rgb(12, 114, 77) 0 3rem/@fontSize 0;
             }
-            &.equipment {
+            &.equipment, &.prop {
                 text-shadow:
                     rgb(128, 128, 128) 3rem/@fontSize 0 0,
                     rgb(128, 128, 128) 0 3rem/@fontSize 0;
+            }
+            &.prop {
+                background-position: center center;
             }
         }
         .skills {

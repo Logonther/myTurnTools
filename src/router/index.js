@@ -51,6 +51,11 @@ let router = new Router({
             path: '/build',
             name: 'Build',
             component: () => import('@/views/build.vue')
+        },
+        {
+            path: '/skins',
+            name: 'Skins',
+            component: () => import('@/views/skins.vue')
         }
     ]
 })

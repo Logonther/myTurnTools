@@ -4,6 +4,7 @@ module.exports = {
         index: '首页',
         news: '新闻资讯',
         heros: '图鉴',
+        skins: '皮肤图鉴',
         african: '模拟召唤',
         strategy: '卡牌讲解（暂时关闭）',
         rate: '数据月报',
@@ -21,7 +22,7 @@ module.exports = {
         notice: [
             '更新编辑卡组',
             '图鉴加入道具，模拟抽卡显示调整',
-            '图鉴加入装备'
+            '皮肤图鉴（更新中）'
         ],
     },
     heros: {

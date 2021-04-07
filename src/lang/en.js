@@ -4,6 +4,7 @@ module.exports = {
         index: 'Home Page',
         news: 'News',
         heros: 'Collection',
+        skins: 'Skins',
         african: 'Sim Summon',
         strategy: 'Card Strategy(Temporarily Closed)',
         rate: 'Meta Report',
@@ -21,7 +22,7 @@ module.exports = {
         notice: [
             'Update Edit Deck',
             'Join equipments(Collection), Sim Summon display adjustment',
-            'Hero Map → Collection(join equipments)'
+            'Skins Collection(Updating)'
         ],
     },
     heros: {

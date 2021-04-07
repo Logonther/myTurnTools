@@ -4,6 +4,7 @@ module.exports = {
         index: '首頁',
         news: '新聞資訊',
         heros: '圖鑒',
+        skins: '皮膚',
         african: '模擬召喚',
         strategy: '卡牌講解（暫時關閉）',
         rate: '數據月報',
@@ -21,7 +22,7 @@ module.exports = {
         notice: [
             '更新編輯卡組',
             '圖鑒加入道具，模擬抽卡顯示調整',
-            '圖鑒加入裝備'
+            '皮膚圖鑒（更新中）'
         ],
     },
     heros: {

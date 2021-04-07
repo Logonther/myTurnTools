@@ -58,6 +58,10 @@ import 'echarts/lib/component/tooltip'
 import 'echarts/lib/component/legend'
 Vue.component('chart', ECharts)
 
+import 'swiper/css/swiper.css'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+Vue.use(VueAwesomeSwiper)
+
 Vue.config.productionTip = false
 
 new Vue({

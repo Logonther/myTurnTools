@@ -65,6 +65,10 @@ export default {
                     path: '/collection'
                 },
                 {
+                    name: this.$t("navbar.skins"),
+                    path: '/skins'
+                },
+                {
                     name: this.$t("navbar.african"),
                     path: '/african'
                 },
