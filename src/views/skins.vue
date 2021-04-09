@@ -100,7 +100,12 @@ export default {
             skin: {},
             showSkinList: false,
             swiperOptions: {
-                spaceBetween: 10
+                spaceBetween: 10,
+                on: {
+                    slideChange:() => {
+                        this.activeThumb = this.$refs.swiperTop.$swiper.activeIndex
+                    }
+                }
             },
             activeThumb: 0,
             domObj: null
@@ -128,7 +133,6 @@ export default {
                         }
                     }
                     this.skin = this.current.skins[0]
-                    console.log(this.current)
                 })
             })
         },
@@ -143,7 +147,7 @@ export default {
             this.current = card
             this.initSwiper()
             for (let i = 0; i < this.skinList.length; i++) {
-                if (this.skinList[i].id === this.current.id) {
+                if (this.skinList[i].heroId === this.current.id) {
                     this.current = { ...this.current, ...this.skinList[i] }
                 }
             }

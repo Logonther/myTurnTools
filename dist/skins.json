@@ -1,5 +1,77 @@
 [
     {
+        "heroId": "1-1",
+        "skins": [
+            {
+                "name": "经典",
+                "description": "猎鹰联邦初级佣兵装束。乍看毫无特色，容易淹没在人群中。凑近了才会发现，铠甲和武器都打磨得比别人更加光亮",
+                "get": "默认",
+                "price": "免费",
+                "ikon": "image/skins/1-1/经典/立绘.png",
+                "pics": [
+                    {
+                        "name": "无动作",
+                        "pic": "image/skins/1-1/经典/无动作.png"
+                    },
+                    {
+                        "name": "动作1",
+                        "pic": "image/skins/1-1/经典/动作1.png"
+                    },
+                    {
+                        "name": "动作2",
+                        "pic": "image/skins/1-1/经典/动作2.png"
+                    },
+                    {
+                        "name": "被攻击",
+                        "pic": "image/skins/1-1/经典/被攻击.png"
+                    },
+                    {
+                        "name": "EX效果",
+                        "pic": "image/skins/1-1/经典/EX效果.png"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "heroId": "1-2",
+        "skins": [
+            {
+                "name": "经典",
+                "description": "英雄的经典皮肤。虽然看起来比较简朴，但是还是很实用的。",
+                "get": "默认",
+                "price": "免费",
+                "ikon": "image/skins/1-2/经典/立绘.png",
+                "pics": [
+                    {
+                        "name": "无动作",
+                        "pic": "image/skins/1-2/经典/无动作.png"
+                    },
+                    {
+                        "name": "动作1",
+                        "pic": "image/skins/1-2/经典/动作1.png"
+                    },
+                    {
+                        "name": "动作2",
+                        "pic": "image/skins/1-2/经典/动作2.png"
+                    },
+                    {
+                        "name": "被攻击",
+                        "pic": "image/skins/1-2/经典/被攻击.png"
+                    },
+                    {
+                        "name": "EX效果",
+                        "pic": "image/skins/1-2/经典/EX效果.png"
+                    },
+                    {
+                        "name": "技能2效果",
+                        "pic": "image/skins/1-2/经典/技能2效果.png"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "heroId": "5-9",
         "skins": [
             {
@@ -7,31 +79,31 @@
                 "description": "英雄的经典皮肤。虽然看起来比较简朴，但是还是很实用的。",
                 "get": "默认",
                 "price": "免费",
-                "ikon": "image/skins/5-9/立绘.png",
+                "ikon": "image/skins/5-9/经典/立绘.png",
                 "pics": [
                     {
                         "name": "无动作",
-                        "pic": "image/skins/5-9/无动作.png"
+                        "pic": "image/skins/5-9/经典/无动作.png"
                     },
                     {
                         "name": "动作1",
-                        "pic": "image/skins/5-9/动作1.png"
+                        "pic": "image/skins/5-9/经典/动作1.png"
                     },
                     {
                         "name": "动作2",
-                        "pic": "image/skins/5-9/动作2.png"
+                        "pic": "image/skins/5-9/经典/动作2.png"
                     },
                     {
                         "name": "被攻击",
-                        "pic": "image/skins/5-9/被攻击.png"
+                        "pic": "image/skins/5-9/经典/被攻击.png"
                     },
                     {
                         "name": "EX效果",
-                        "pic": "image/skins/5-9/EX效果.png"
+                        "pic": "image/skins/5-9/经典/EX效果.png"
                     },
                     {
                         "name": "光芒闪耀效果",
-                        "pic": "image/skins/5-9/技能3效果.png"
+                        "pic": "image/skins/5-9/经典/技能3效果.png"
                     }
                 ]
             }
