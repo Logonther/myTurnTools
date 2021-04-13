@@ -106,6 +106,130 @@
                         "pic": "image/skins/5-9/经典/技能3效果.png"
                     }
                 ]
+            },
+            {
+                "name": "绿野仙踪",
+                "description": "哇！是新皮肤！",
+                "get": "商店",
+                "price": "待补充",
+                "ikon": "image/skins/5-9/绿野仙踪/立绘.png",
+                "pics": [
+                    {
+                        "name": "无动作",
+                        "pic": "image/skins/5-9/绿野仙踪/无动作.png"
+                    },
+                    {
+                        "name": "动作1",
+                        "pic": "image/skins/5-9/绿野仙踪/动作1.png"
+                    },
+                    {
+                        "name": "动作2",
+                        "pic": "image/skins/5-9/绿野仙踪/动作2.png"
+                    },
+                    {
+                        "name": "被攻击",
+                        "pic": "image/skins/5-9/绿野仙踪/被攻击.png"
+                    },
+                    {
+                        "name": "EX效果",
+                        "pic": "image/skins/5-9/绿野仙踪/EX效果.png"
+                    }
+                ]
+            },
+            {
+                "name": "冰雪女王",
+                "description": "哇！是新皮肤！",
+                "get": "商店",
+                "price": "待补充",
+                "ikon": "image/skins/5-9/冰雪女王/立绘.png",
+                "pics": [
+                    {
+                        "name": "无动作",
+                        "pic": "image/skins/5-9/冰雪女王/无动作.png"
+                    },
+                    {
+                        "name": "动作1",
+                        "pic": "image/skins/5-9/冰雪女王/动作1.png"
+                    },
+                    {
+                        "name": "动作2",
+                        "pic": "image/skins/5-9/冰雪女王/动作2.png"
+                    },
+                    {
+                        "name": "被攻击",
+                        "pic": "image/skins/5-9/冰雪女王/被攻击.png"
+                    },
+                    {
+                        "name": "EX效果",
+                        "pic": "image/skins/5-9/冰雪女王/EX效果.png"
+                    }
+                ]
+            },
+            {
+                "name": "幻月女王",
+                "description": "哇！是新皮肤！",
+                "get": "商店",
+                "price": "待补充",
+                "ikon": "image/skins/5-9/幻月女王/立绘.png",
+                "pics": [
+                    {
+                        "name": "无动作",
+                        "pic": "image/skins/5-9/幻月女王/无动作.png"
+                    },
+                    {
+                        "name": "动作1",
+                        "pic": "image/skins/5-9/幻月女王/动作1.png"
+                    },
+                    {
+                        "name": "动作2",
+                        "pic": "image/skins/5-9/幻月女王/动作2.png"
+                    },
+                    {
+                        "name": "被攻击",
+                        "pic": "image/skins/5-9/幻月女王/被攻击.png"
+                    },
+                    {
+                        "name": "EX效果",
+                        "pic": "image/skins/5-9/幻月女王/EX效果.png"
+                    },
+                    {
+                        "name": "技能3效果",
+                        "pic": "image/skins/5-9/幻月女王/技能3效果.png"
+                    }
+                ]
+            },
+            {
+                "name": "月蚀女王",
+                "description": "哇！是新皮肤！",
+                "get": "商店",
+                "price": "360钻石",
+                "ikon": "image/skins/5-9/月蚀女王/立绘.png",
+                "pics": [
+                    {
+                        "name": "无动作",
+                        "pic": "image/skins/5-9/月蚀女王/无动作.png"
+                    },
+                    {
+                        "name": "动作1",
+                        "pic": "image/skins/5-9/月蚀女王/动作1.png"
+                    },
+                    {
+                        "name": "动作2",
+                        "pic": "image/skins/5-9/月蚀女王/动作2.png"
+                    },
+                    {
+                        "name": "被攻击",
+                        "pic": "image/skins/5-9/月蚀女王/被攻击.png"
+                    },
+                    {
+                        "name": "EX效果",
+                        "pic": "image/skins/5-9/月蚀女王/EX效果.png"
+                    },
+                    {
+                        "name": "技能3效果",
+                        "pic": "image/skins/5-9/月蚀女王/技能3效果.png"
+                    }
+                ]
             }
         ]
     }
