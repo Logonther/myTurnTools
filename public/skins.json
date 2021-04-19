@@ -368,6 +368,424 @@
         ]
     },
     {
+        "heroId": "2-1",
+        "skins": [
+            {
+                "name": "经典",
+                "description": "英雄的经典皮肤。虽然看起来比较简朴，但是还是很实用的。",
+                "get": "默认",
+                "price": "免费",
+                "ikon": "image/skins/2-1/经典/立绘.png",
+                "pics": [
+                    {
+                        "name": "无动作",
+                        "pic": "image/skins/2-1/经典/无动作.png"
+                    },
+                    {
+                        "name": "动作1",
+                        "pic": "image/skins/2-1/经典/动作1.png"
+                    },
+                    {
+                        "name": "动作2",
+                        "pic": "image/skins/2-1/经典/动作2.png"
+                    },
+                    {
+                        "name": "被攻击",
+                        "pic": "image/skins/2-1/经典/被攻击.png"
+                    },
+                    {
+                        "name": "EX效果",
+                        "pic": "image/skins/2-1/经典/EX效果.png"
+                    },
+                    {
+                        "name": "技能2效果",
+                        "pic": "image/skins/2-1/经典/技能2效果.png"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "heroId": "2-2",
+        "skins": [
+            {
+                "name": "经典",
+                "description": "英雄的经典皮肤。虽然看起来比较简朴，但是还是很实用的。",
+                "get": "默认",
+                "price": "免费",
+                "ikon": "image/skins/2-2/经典/立绘.png",
+                "pics": [
+                    {
+                        "name": "无动作",
+                        "pic": "image/skins/2-2/经典/无动作.png"
+                    },
+                    {
+                        "name": "动作1",
+                        "pic": "image/skins/2-2/经典/动作1.png"
+                    },
+                    {
+                        "name": "动作2",
+                        "pic": "image/skins/2-2/经典/动作2.png"
+                    },
+                    {
+                        "name": "被攻击",
+                        "pic": "image/skins/2-2/经典/被攻击.png"
+                    },
+                    {
+                        "name": "EX效果",
+                        "pic": "image/skins/2-2/经典/EX效果.png"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "heroId": "2-3",
+        "skins": [
+            {
+                "name": "经典",
+                "description": "英雄的经典皮肤。虽然看起来比较简朴，但是还是很实用的。",
+                "get": "默认",
+                "price": "免费",
+                "ikon": "image/skins/2-3/经典/立绘.png",
+                "pics": [
+                    {
+                        "name": "无动作",
+                        "pic": "image/skins/2-3/经典/无动作.png"
+                    },
+                    {
+                        "name": "动作1",
+                        "pic": "image/skins/2-3/经典/动作1.png"
+                    },
+                    {
+                        "name": "动作2",
+                        "pic": "image/skins/2-3/经典/动作2.png"
+                    },
+                    {
+                        "name": "被攻击",
+                        "pic": "image/skins/2-3/经典/被攻击.png"
+                    },
+                    {
+                        "name": "EX效果",
+                        "pic": "image/skins/2-3/经典/EX效果.png"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "heroId": "2-4",
+        "skins": [
+            {
+                "name": "经典",
+                "description": "英雄的经典皮肤。虽然看起来比较简朴，但是还是很实用的。",
+                "get": "默认",
+                "price": "免费",
+                "ikon": "image/skins/2-4/经典/立绘.png",
+                "pics": [
+                    {
+                        "name": "无动作",
+                        "pic": "image/skins/2-4/经典/无动作.png"
+                    },
+                    {
+                        "name": "动作1",
+                        "pic": "image/skins/2-4/经典/动作1.png"
+                    },
+                    {
+                        "name": "动作2",
+                        "pic": "image/skins/2-4/经典/动作2.png"
+                    },
+                    {
+                        "name": "被攻击",
+                        "pic": "image/skins/2-4/经典/被攻击.png"
+                    },
+                    {
+                        "name": "EX效果",
+                        "pic": "image/skins/2-4/经典/EX效果.png"
+                    },
+                    {
+                        "name": "技能1效果",
+                        "pic": "image/skins/2-4/经典/技能1效果.png"
+                    },
+                    {
+                        "name": "技能3效果",
+                        "pic": "image/skins/2-4/经典/技能3效果.png"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "heroId": "2-5",
+        "skins": [
+            {
+                "name": "经典",
+                "description": "英雄的经典皮肤。虽然看起来比较简朴，但是还是很实用的。",
+                "get": "默认",
+                "price": "免费",
+                "ikon": "image/skins/2-5/经典/立绘.png",
+                "pics": [
+                    {
+                        "name": "无动作",
+                        "pic": "image/skins/2-5/经典/无动作.png"
+                    },
+                    {
+                        "name": "动作1",
+                        "pic": "image/skins/2-5/经典/动作1.png"
+                    },
+                    {
+                        "name": "动作2",
+                        "pic": "image/skins/2-5/经典/动作2.png"
+                    },
+                    {
+                        "name": "被攻击",
+                        "pic": "image/skins/2-5/经典/被攻击.png"
+                    },
+                    {
+                        "name": "EX效果",
+                        "pic": "image/skins/2-5/经典/EX效果.png"
+                    },
+                    {
+                        "name": "技能1效果",
+                        "pic": "image/skins/2-5/经典/技能1效果.png"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "heroId": "2-6",
+        "skins": [
+            {
+                "name": "经典",
+                "description": "英雄的经典皮肤。虽然看起来比较简朴，但是还是很实用的。",
+                "get": "默认",
+                "price": "免费",
+                "ikon": "image/skins/2-6/经典/立绘.png",
+                "pics": [
+                    {
+                        "name": "无动作",
+                        "pic": "image/skins/2-6/经典/无动作.png"
+                    },
+                    {
+                        "name": "动作1",
+                        "pic": "image/skins/2-6/经典/动作1.png"
+                    },
+                    {
+                        "name": "动作2",
+                        "pic": "image/skins/2-6/经典/动作2.png"
+                    },
+                    {
+                        "name": "被攻击",
+                        "pic": "image/skins/2-6/经典/被攻击.png"
+                    },
+                    {
+                        "name": "EX效果",
+                        "pic": "image/skins/2-6/经典/EX效果.png"
+                    },
+                    {
+                        "name": "技能2效果",
+                        "pic": "image/skins/2-6/经典/技能2效果.png"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "heroId": "2-7",
+        "skins": [
+            {
+                "name": "经典",
+                "description": "英雄的经典皮肤。虽然看起来比较简朴，但是还是很实用的。",
+                "get": "默认",
+                "price": "免费",
+                "ikon": "image/skins/2-7/经典/立绘.png",
+                "pics": [
+                    {
+                        "name": "无动作",
+                        "pic": "image/skins/2-7/经典/无动作.png"
+                    },
+                    {
+                        "name": "动作1",
+                        "pic": "image/skins/2-7/经典/动作1.png"
+                    },
+                    {
+                        "name": "动作2",
+                        "pic": "image/skins/2-7/经典/动作2.png"
+                    },
+                    {
+                        "name": "被攻击",
+                        "pic": "image/skins/2-7/经典/被攻击.png"
+                    },
+                    {
+                        "name": "EX效果",
+                        "pic": "image/skins/2-7/经典/EX效果.png"
+                    },
+                    {
+                        "name": "技能2效果",
+                        "pic": "image/skins/2-7/经典/技能2效果.png"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "heroId": "2-8",
+        "skins": [
+            {
+                "name": "经典",
+                "description": "英雄的经典皮肤。虽然看起来比较简朴，但是还是很实用的。",
+                "get": "默认",
+                "price": "免费",
+                "ikon": "image/skins/2-8/经典/立绘.png",
+                "pics": [
+                    {
+                        "name": "无动作",
+                        "pic": "image/skins/2-8/经典/无动作.png"
+                    },
+                    {
+                        "name": "动作1",
+                        "pic": "image/skins/2-8/经典/动作1.png"
+                    },
+                    {
+                        "name": "动作2",
+                        "pic": "image/skins/2-8/经典/动作2.png"
+                    },
+                    {
+                        "name": "被攻击",
+                        "pic": "image/skins/2-8/经典/被攻击.png"
+                    },
+                    {
+                        "name": "EX效果",
+                        "pic": "image/skins/2-8/经典/EX效果.png"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "heroId": "2-9",
+        "skins": [
+            {
+                "name": "经典",
+                "description": "英雄的经典皮肤。虽然看起来比较简朴，但是还是很实用的。",
+                "get": "默认",
+                "price": "免费",
+                "ikon": "image/skins/2-9/经典/立绘.png",
+                "pics": [
+                    {
+                        "name": "无动作",
+                        "pic": "image/skins/2-9/经典/无动作.png"
+                    },
+                    {
+                        "name": "动作1",
+                        "pic": "image/skins/2-9/经典/动作1.png"
+                    },
+                    {
+                        "name": "动作2",
+                        "pic": "image/skins/2-9/经典/动作2.png"
+                    },
+                    {
+                        "name": "被攻击",
+                        "pic": "image/skins/2-9/经典/被攻击.png"
+                    },
+                    {
+                        "name": "EX效果",
+                        "pic": "image/skins/2-9/经典/EX效果.png"
+                    },
+                    {
+                        "name": "技能1效果",
+                        "pic": "image/skins/2-9/经典/技能1效果.png"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "heroId": "2-10",
+        "skins": [
+            {
+                "name": "经典",
+                "description": "英雄的经典皮肤。虽然看起来比较简朴，但是还是很实用的。",
+                "get": "默认",
+                "price": "免费",
+                "ikon": "image/skins/2-10/经典/立绘.png",
+                "pics": [
+                    {
+                        "name": "无动作",
+                        "pic": "image/skins/2-10/经典/无动作.png"
+                    },
+                    {
+                        "name": "动作1",
+                        "pic": "image/skins/2-10/经典/动作1.png"
+                    },
+                    {
+                        "name": "动作2",
+                        "pic": "image/skins/2-10/经典/动作2.png"
+                    },
+                    {
+                        "name": "被攻击",
+                        "pic": "image/skins/2-10/经典/被攻击.png"
+                    },
+                    {
+                        "name": "EX效果",
+                        "pic": "image/skins/2-10/经典/EX效果.png"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "heroId": "2-11",
+        "skins": [
+            {
+                "name": "经典",
+                "description": "英雄的经典皮肤。虽然看起来比较简朴，但是还是很实用的。",
+                "get": "默认",
+                "price": "免费",
+                "ikon": "image/skins/2-11/经典/立绘.png",
+                "pics": [
+                    {
+                        "name": "无动作",
+                        "pic": "image/skins/2-11/经典/无动作.png"
+                    },
+                    {
+                        "name": "动作1",
+                        "pic": "image/skins/2-11/经典/动作1.png"
+                    },
+                    {
+                        "name": "动作2",
+                        "pic": "image/skins/2-11/经典/动作2.png"
+                    },
+                    {
+                        "name": "被攻击",
+                        "pic": "image/skins/2-11/经典/被攻击.png"
+                    },
+                    {
+                        "name": "EX效果",
+                        "pic": "image/skins/2-11/经典/EX效果.png"
+                    },
+                    {
+                        "name": "技能1效果",
+                        "pic": "image/skins/2-11/经典/技能1效果.png"
+                    },
+                    {
+                        "name": "衍生1效果",
+                        "pic": "image/skins/2-11/经典/衍生1效果.png"
+                    },
+                    {
+                        "name": "衍生2效果",
+                        "pic": "image/skins/2-11/经典/衍生2效果.png"
+                    },
+                    {
+                        "name": "衍生3效果",
+                        "pic": "image/skins/2-11/经典/衍生3效果.png"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "heroId": "5-9",
         "skins": [
             {
