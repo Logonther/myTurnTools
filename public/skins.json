@@ -30,6 +30,60 @@
                         "pic": "image/skins/1-1/经典/EX效果.png"
                     }
                 ]
+            },
+            {
+                "name": "青空",
+                "description": "哇！是新皮肤！",
+                "get": "商店",
+                "price": "80钻石",
+                "ikon": "image/skins/1-1/青空/立绘.png",
+                "pics": [
+                    {
+                        "name": "无动作",
+                        "pic": "image/skins/1-1/青空/无动作.png"
+                    },
+                    {
+                        "name": "动作1",
+                        "pic": "image/skins/1-1/青空/动作1.png"
+                    },
+                    {
+                        "name": "动作2",
+                        "pic": "image/skins/1-1/青空/动作2.png"
+                    },
+                    {
+                        "name": "被攻击",
+                        "pic": "image/skins/1-1/青空/被攻击.png"
+                    }
+                ]
+            },
+            {
+                "name": "守护之誓",
+                "description": "前路未知，唯一坚定的是心中誓言。曾经的小小少年，不知不觉间已可独当一面。“这套装束好像过于华丽了些，执行任务时会不会太显眼...不过...她开心就好，嘿嘿”",
+                "get": "商店",
+                "price": "待补充",
+                "ikon": "image/skins/1-1/守护之誓/立绘.png",
+                "pics": [
+                    {
+                        "name": "无动作",
+                        "pic": "image/skins/1-1/守护之誓/无动作.png"
+                    },
+                    {
+                        "name": "动作1",
+                        "pic": "image/skins/1-1/守护之誓/动作1.png"
+                    },
+                    {
+                        "name": "动作2",
+                        "pic": "image/skins/1-1/守护之誓/动作2.png"
+                    },
+                    {
+                        "name": "被攻击",
+                        "pic": "image/skins/1-1/守护之誓/被攻击.png"
+                    },
+                    {
+                        "name": "EX效果",
+                        "pic": "image/skins/1-1/守护之誓/EX效果.png"
+                    }
+                ]
             }
         ]
     },
