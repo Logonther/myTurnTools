@@ -508,6 +508,20 @@
         "title": "V1.4.3.2不停服更新",
         "type": 0,
         "time": "2021-03-15",
-        "src": "news/update/72.md"
+        "src": "news/update/73.md"
+    },
+    {
+        "id": 74,
+        "title": "V1.6更新公告",
+        "type": 0,
+        "time": "2021-04-28",
+        "src": "news/update/74.md"
+    },
+    {
+        "id": 75,
+        "title": "V1.6更新内容说明",
+        "type": 1,
+        "time": "2021-04-28",
+        "src": "news/update/75.md"
     }
 ]

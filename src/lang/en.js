@@ -20,7 +20,7 @@ module.exports = {
             'Step by step to multi-language',
         ],
         notice: [
-            'Update Edit Deck',
+            'Temporarily remove Sim Summon, updating data',
             'Join equipments(Collection), Sim Summon display adjustment',
             'Skins Collection(Updating)'
         ],

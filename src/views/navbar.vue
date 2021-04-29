@@ -68,10 +68,10 @@ export default {
                     name: this.$t("navbar.skins"),
                     path: '/skins'
                 },
-                {
+                /*{
                     name: this.$t("navbar.african"),
                     path: '/african'
-                },
+                },*/
                 /*{
                     name: '卡牌讲解',
                     path: '/strategy'

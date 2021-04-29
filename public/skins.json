@@ -122,6 +122,35 @@
                         "pic": "image/skins/1-2/经典/技能2效果.png"
                     }
                 ]
+            },
+            {
+                "name": "叶落晚枫",
+                "description": "哇！是新皮肤！",
+                "get": "商店",
+                "price": "1000碎片",
+                "ikon": "image/skins/1-2/叶落晚枫/立绘.png",
+                "pics": [
+                    {
+                        "name": "无动作",
+                        "pic": "image/skins/1-2/叶落晚枫/无动作.png"
+                    },
+                    {
+                        "name": "动作1",
+                        "pic": "image/skins/1-2/叶落晚枫/动作1.png"
+                    },
+                    {
+                        "name": "动作2",
+                        "pic": "image/skins/1-2/叶落晚枫/动作2.png"
+                    },
+                    {
+                        "name": "被攻击",
+                        "pic": "image/skins/1-2/叶落晚枫/被攻击.png"
+                    },
+                    {
+                        "name": "EX效果",
+                        "pic": "image/skins/1-2/叶落晚枫/EX效果.png"
+                    }
+                ]
             }
         ]
     },
