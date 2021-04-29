@@ -6,7 +6,7 @@
             <ul>
                 <li>【2021-03-09 22:38:25】{{ this.$t("index.notice")[1] }}</li>
                 <li>【2021-04-07 09:14:32】{{ this.$t("index.notice")[2] }}</li>
-                <li>【】{{ this.$t("index.notice")[0] }}</li>
+                <li>【2021-04-29 21:42:59】{{ this.$t("index.notice")[0] }}</li>
             </ul>
             <h3>{{ this.$t("index.existing") }}</h3>
             <ul>
