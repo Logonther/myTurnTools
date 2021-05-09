@@ -60,12 +60,12 @@
         "strategy": []
     },
     {
-        "name":"踏风者的长靴",
+        "name":"踏风者长靴",
         "id":"1-6",
         "amount": 0,
         "if":true,
         "cost":"2",
-        "rare":"gold",
+        "rare":"silver",
         "type":"equipment",
         "txt": "超必杀抽/2/张牌",
         "pic":"image/equipments/踏风者的长靴.jpg",
@@ -432,12 +432,12 @@
         "strategy": []
     },
     {
-        "name":"血女巫符咒",
+        "name":"血巫符咒",
         "id":"2-15",
         "amount": 0,
         "if":true,
         "cost":"1",
-        "rare":"silver",
+        "rare":"copper",
         "type":"equipment",
         "txt": "超必杀治疗你/300%/标准攻击力生命",
         "pic":"image/equipments/血女巫符咒.jpg",
@@ -456,12 +456,12 @@
         "strategy": []
     },
     {
-        "name":"水晶十字镐",
+        "name":"水晶矿镐",
         "id":"2-17",
         "amount": 0,
         "if":true,
         "cost":"1",
-        "rare":"silver",
+        "rare":"copper",
         "type":"equipment",
         "txt": "攻击卡伤害降低/50%/，获得一张次级法力结晶",
         "pic":"image/equipments/水晶十字镐.jpg",
