@@ -111,7 +111,7 @@ export default {
     watch:{
         $route:{
             handler(val, oldval) {
-                if (val.fullPath.indexOf('CN')) {
+                if (val.fullPath.indexOf('CN') !== -1) {
                     this.navList = this.navListCN
                     this.serverFlag = true
                 } else {
