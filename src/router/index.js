@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import Router from 'vue-router';
+import indexCN from '@/views/index-CN.vue'
 
 Vue.use(Router);
 
@@ -14,7 +15,7 @@ let router = new Router({
         },
         {
             path: '/news',
-            name: 'Neros',
+            name: 'News',
             component: () => import('@/views/news.vue'),
         },
         {
@@ -56,7 +57,40 @@ let router = new Router({
             path: '/skins',
             name: 'Skins',
             component: () => import('@/views/skins.vue')
-        }
+        },
+        {
+            path: '/CN',
+            name: 'CN',
+            component: () => import('@/views/CN.vue'),
+            redirect: '/CN/index',
+            children: [
+                {
+                    path: 'index',
+                    name: 'Index-CN',
+                    component: () => import('@/views/index-CN.vue'),
+                },
+                {
+                    path: 'news',
+                    name: 'News-CN',
+                    component: () => import('@/views/news.vue'),
+                },
+                {
+                    path: 'collection',
+                    name: 'Collection-CN',
+                    component: () => import('@/views/collection.vue')
+                },
+                {
+                    path: 'build',
+                    name: 'Build-CN',
+                    component: () => import('@/views/build.vue')
+                },
+                {
+                    path: 'skins',
+                    name: 'Skins-CN',
+                    component: () => import('@/views/skins.vue')
+                }
+            ]
+        },
     ]
 })
 

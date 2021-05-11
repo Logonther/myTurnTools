@@ -185,12 +185,31 @@ export default {
     },
     methods: {
         init() {
+            let serverFlag = this.$route.fullPath.indexOf('CN') ? true : false
             this.$http.get('heros.json').then((res) => {
-                this.heroList = res.data
-                this.$http.get('equipment.json').then((res) => {
-                    this.equipmentList = res.data
-                    this.$http.get('props.json').then((res) => {
-                        this.propList = res.data
+                res.data.forEach(item => {
+                    if (item.if) {
+                        this.heroList.push(item)
+                    } else if (!serverFlag) {
+                        this.heroList.push(item)
+                    }
+                })
+                this.$http.get('equipment.json').then((ress) => {
+                    ress.data.forEach(item => {
+                        if (item.if) {
+                            this.equipmentList.push(item)
+                        } else if (!serverFlag) {
+                            this.equipmentList.push(item)
+                        }
+                    })
+                    this.$http.get('props.json').then((resss) => {
+                        resss.data.forEach(item => {
+                            if (item.if) {
+                                this.propList.push(item)
+                            } else if (!serverFlag) {
+                                this.propList.push(item)
+                            }
+                        })
                         this.cardsList = [...this.equipmentList, ...this.heroList, ...this.propList]
                         console.log('cardsList----', this.cardsList)
                         this.selectType('all')

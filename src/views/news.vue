@@ -108,7 +108,13 @@ export default {
             this.newsData = []
             this.typeData = []
             this.listData = []
-            this.$http.get('news.json').then((res) => {
+            let json = ''
+            if (this.$route.fullPath.indexOf('CN')) {
+                json = 'news-CN.json'
+            } else {
+                json = 'news.json'
+            }
+            this.$http.get(json).then(res => {
                 console.log('所有资讯---',res.data)
                 this.newsData = res.data.reverse()
                 this.newsData.forEach(item => {

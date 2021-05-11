@@ -12,7 +12,6 @@
             <ul>
                 <li>{{ this.$t("navbar.news") }}</li>
                 <li>{{ this.$t("navbar.heros") }}</li>
-                <li>{{ this.$t("navbar.african") }}</li>
                 <li>{{ this.$t("navbar.strategy") }}</li>
                 <li>{{ this.$t("navbar.rate") }}</li>
             </ul>

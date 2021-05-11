@@ -24,7 +24,7 @@
                             <router-link :to="item.path">{{ item.name }}</router-link>
                         </li>
                     </ul>
-                    <ul class="nav navbar-nav navbar-right">
+                    <ul v-if="!serverFlag" class="nav navbar-nav navbar-right">
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                aria-haspopup="true" aria-expanded="false">{{ this.$t("navbar.language") }}<span
@@ -51,7 +51,8 @@ export default {
     data() {
         return {
             activeNo: 0,
-            navList: [
+            navList: [],
+            navListGlobal: [
                 {
                     name: this.$t("navbar.index"),
                     path: '/'
@@ -85,8 +86,44 @@ export default {
                     path: '/build'
                 }
             ],
-            showMask: false
+            navListCN: [
+                {
+                    name: this.$t("navbar.index"),
+                    path: '/CN/index'
+                },
+                {
+                    name: this.$t("navbar.news"),
+                    path: '/CN/news'
+                },
+                {
+                    name: this.$t("navbar.heros"),
+                    path: '/CN/collection'
+                },
+                {
+                    name: this.$t("navbar.build"),
+                    path: '/CN/build'
+                }
+            ],
+            showMask: false,
+            serverFlag: false
         }
+    },
+    watch:{
+        $route:{
+            handler(val, oldval) {
+                if (val.fullPath.indexOf('CN')) {
+                    this.navList = this.navListCN
+                    this.serverFlag = true
+                } else {
+                    this.navList = this.navListGlobal
+                    this.serverFlag = false
+                }
+            },
+            // 深度观察监听
+            deep: true
+        }
+    },
+    created() {
     },
     mounted() {
         const that = this
