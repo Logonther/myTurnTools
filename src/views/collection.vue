@@ -144,7 +144,7 @@ export default {
     },
     methods: {
         init() {
-            let serverFlag = this.$route.fullPath.indexOf('CN') ? true : false
+            let serverFlag = this.$route.fullPath.indexOf('CN') === 1 ? true : false
             this.$http.get('heros.json').then((res) => {
                 res.data.forEach(item => {
                     if (item.if) {

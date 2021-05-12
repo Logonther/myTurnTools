@@ -109,7 +109,7 @@ export default {
             this.typeData = []
             this.listData = []
             let json = ''
-            if (this.$route.fullPath.indexOf('CN')) {
+            if (this.$route.fullPath.indexOf('CN') === 1) {
                 json = 'news-CN.json'
             } else {
                 json = 'news.json'
