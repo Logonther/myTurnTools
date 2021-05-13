@@ -185,6 +185,93 @@
                         "pic": "image/skins/1-3/经典/EX效果.png"
                     }
                 ]
+            },
+            {
+                "name": "突击战牛",
+                "description": "英雄的经典皮肤。虽然看起来比较简朴，但是还是很实用的。",
+                "get": "默认",
+                "price": "免费",
+                "ikon": "image/skins/1-3/突击战牛/立绘.png",
+                "pics": [
+                    {
+                        "name": "无动作",
+                        "pic": "image/skins/1-3/突击战牛/无动作.png"
+                    },
+                    {
+                        "name": "动作1",
+                        "pic": "image/skins/1-3/突击战牛/动作1.png"
+                    },
+                    {
+                        "name": "动作2",
+                        "pic": "image/skins/1-3/突击战牛/动作2.png"
+                    },
+                    {
+                        "name": "被攻击",
+                        "pic": "image/skins/1-3/突击战牛/被攻击.png"
+                    },
+                    {
+                        "name": "EX效果",
+                        "pic": "image/skins/1-3/突击战牛/EX效果.png"
+                    }
+                ]
+            },
+            {
+                "name": "幽冥鬼刃",
+                "description": "英雄的经典皮肤。虽然看起来比较简朴，但是还是很实用的。",
+                "get": "默认",
+                "price": "免费",
+                "ikon": "image/skins/1-3/幽冥鬼刃/立绘.png",
+                "pics": [
+                    {
+                        "name": "无动作",
+                        "pic": "image/skins/1-3/幽冥鬼刃/无动作.png"
+                    },
+                    {
+                        "name": "动作1",
+                        "pic": "image/skins/1-3/幽冥鬼刃/动作1.png"
+                    },
+                    {
+                        "name": "动作2",
+                        "pic": "image/skins/1-3/幽冥鬼刃/动作2.png"
+                    },
+                    {
+                        "name": "被攻击",
+                        "pic": "image/skins/1-3/幽冥鬼刃/被攻击.png"
+                    },
+                    {
+                        "name": "EX效果",
+                        "pic": "image/skins/1-3/幽冥鬼刃/EX效果.png"
+                    }
+                ]
+            },
+            {
+                "name": "地狱熔岩",
+                "description": "英雄的经典皮肤。虽然看起来比较简朴，但是还是很实用的。",
+                "get": "默认",
+                "price": "免费",
+                "ikon": "image/skins/1-3/地狱熔岩/立绘.png",
+                "pics": [
+                    {
+                        "name": "无动作",
+                        "pic": "image/skins/1-3/地狱熔岩/无动作.png"
+                    },
+                    {
+                        "name": "动作1",
+                        "pic": "image/skins/1-3/地狱熔岩/动作1.png"
+                    },
+                    {
+                        "name": "动作2",
+                        "pic": "image/skins/1-3/地狱熔岩/动作2.png"
+                    },
+                    {
+                        "name": "被攻击",
+                        "pic": "image/skins/1-3/地狱熔岩/被攻击.png"
+                    },
+                    {
+                        "name": "EX效果",
+                        "pic": "image/skins/1-3/地狱熔岩/EX效果.png"
+                    }
+                ]
             }
         ]
     },
