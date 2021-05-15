@@ -424,7 +424,7 @@
         "id":"2-14",
         "amount": 0,
         "if":true,
-        "cost":"2",
+        "cost":"3",
         "rare":"silver",
         "type":"equipment",
         "txt": "超必杀给予其他友方/20/能量",
@@ -691,7 +691,7 @@
         "cost":"2",
         "rare":"copper",
         "type":"equipment",
-        "txt": "回合结束时或超必杀后获得/50%/标准攻击力反击",
+        "txt": "回合结束时获得/75%/标准攻击力反击",
         "pic":"image/equipments/荆棘头冠.jpg",
         "strategy": []
     },
