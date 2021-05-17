@@ -33,13 +33,19 @@
         "type": 0,
         "time": "2021-05-11",
         "src": "news-CN/update/5.md"
-    }
-,
+    },
     {
         "id": 6,
         "title": "世界线变更V?.?.?",
         "type": 0,
         "time": "2021-05-12",
         "src": "news-CN/update/6.md"
+    },
+    {
+        "id": 7,
+        "title": "世界线变更V1.6.7",
+        "type": 0,
+        "time": "2021-05-17",
+        "src": "news-CN/update/7.md"
     }
 ]
