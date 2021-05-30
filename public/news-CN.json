@@ -47,5 +47,12 @@
         "type": 0,
         "time": "2021-05-17",
         "src": "news-CN/update/7.md"
+    },
+    {
+        "id": 8,
+        "title": "世界线变更V1.6.8",
+        "type": 0,
+        "time": "2021-05-27",
+        "src": "news-CN/update/8.md"
     }
 ]
