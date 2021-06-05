@@ -21,7 +21,7 @@ module.exports = {
         ],
         notice: [
             'Temporarily remove Sim Summon, updating data',
-            'Join equipments(Collection), Sim Summon display adjustment',
+            'In modification, temporarily close the Meta Report',
             'Skins Collection(Updating)'
         ],
     },

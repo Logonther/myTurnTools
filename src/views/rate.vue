@@ -51,10 +51,10 @@
             <img src="../assets/image/卡.png" class="img-ka">
             <div class="main">
                 <img src="../assets/image/logoNew.png" class="logo">
-                <div class="title">{{ language == 'cn' ? '數據報告' : 'META REPORT' }}</div>
+                <div class="title">{{ language == 'cn' ? '5000+数据报告' : 'META REPORT' }}</div>
                 <div class="subtitle month">{{ monthRange }}</div>
                 <div class="type">
-                    <div class="title">{{ language == 'cn' ? '標準模式英雄榜' : 'STANDARD MODE | HERO LIST' }}</div>
+                    <div class="title">{{ language == 'cn' ? '标准模式英雄榜' : 'STANDARD MODE | HERO LIST' }}</div>
                     <div class="content">
                         <div class="item" v-for="(item,index) in rateData.rateHero" :key="index">
                             <span class="index">{{ index + 1 }}</span>
@@ -75,7 +75,7 @@
                     </div>
                 </div>
                 <div class="type">
-                    <div class="title">{{ language == 'cn' ? '標準模式裝備榜' : 'STANDARD MODE | GEAR LIST' }}</div>
+                    <div class="title">{{ language == 'cn' ? '标准模式装备榜' : 'STANDARD MODE | GEAR LIST' }}</div>
                     <div class="content">
                         <div class="item" v-for="(item,index) in rateData.rateEquipment" :key="index">
                             <span class="index">{{ index + 1 }}</span>
@@ -96,7 +96,7 @@
                     </div>
                 </div>
                 <div class="type">
-                    <div class="title">{{ language == 'cn' ? '標準模式道具榜' : 'STANDARD MODE | ITEM LIST' }}</div>
+                    <div class="title">{{ language == 'cn' ? '标准模式道具榜' : 'STANDARD MODE | ITEM LIST' }}</div>
                     <div class="content">
                         <div class="item" v-for="(item,index) in rateData.rateProps" :key="index">
                             <span class="index">{{ index + 1 }}</span>
@@ -110,12 +110,19 @@
                                 <img v-show="item.lifting > 0" src="../assets/image/icon_up.png" class="img-up">
                                 <img v-show="item.lifting < 0" src="../assets/image/icon_down.png" class="img-down">
                                 <div v-show="item.lifting != 0" class="lifting " :class="item.lifting < 0 ? 'red' : ''">
-                                    {{ Math.abs(item.lifting) }}
+                                    {{ Math.abs(item.lifting) || '' }}
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <ul class="tips">
+                    <li>统计方法：</li>
+                    <li>1、只统计标准模式</li>
+                    <li>2、急速投降的对局不计入统计</li>
+                    <li>3、全局数据：两边有同样的英雄不计入统计</li>
+                    <li>4、5000+数据：两边有同样的英雄不计入统计，仅仅统计双方总星数均为 5000 以上的对局</li>
+                </ul>
             </div>
         </div>
         <el-dialog
@@ -155,7 +162,7 @@ export default {
             dialogVisible: false,
             pickerOptions: {
                 disabledDate: (time) => {
-                    return time.getTime() < moment('2019-12') || time.getTime() > moment('2021-02')
+                    return time.getTime() < moment('2019-12') || (time.getTime() > moment('2021-02') && time.getTime() < moment('2021-05'))
                 }
             },
             uploadData: []
@@ -539,6 +546,14 @@ export default {
                         }
                     }
                 }
+            }
+            .tips {
+                margin: 50rem/@fontSize;
+                padding: 0;
+                list-style: none;
+                font-size: 16rem/@fontSize;
+                color: rgba(229, 162, 55, 1);
+                text-shadow: 0 0 20rem/@fontSize rgba(229, 162, 55, 1);
             }
         }
     }

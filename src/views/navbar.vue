@@ -77,10 +77,10 @@ export default {
                     name: '卡牌讲解',
                     path: '/strategy'
                 }*/
-                {
+                /*{
                     name: this.$t("navbar.rate"),
                     path: '/rate'
-                },
+                },*/
                 {
                     name: this.$t("navbar.build"),
                     path: '/build'
