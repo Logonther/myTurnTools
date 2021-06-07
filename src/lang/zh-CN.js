@@ -22,7 +22,7 @@ module.exports = {
         notice: [
             '暂时删除模拟召唤，更新数据',
             '修改中，暂时关闭月报',
-            '皮肤图鉴（更新中）'
+            '月报重新开放'
         ],
     },
     heros: {
@@ -47,6 +47,7 @@ module.exports = {
     rate: {
         search: '搜索：',
         chooseMonth: '选择月份',
+        chooseType: '选择类别',
         generate: '生成：',
         range: '具体日期范围',
         createPicture: '生成图片',

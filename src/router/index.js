@@ -88,6 +88,11 @@ let router = new Router({
                     path: 'skins',
                     name: 'Skins-CN',
                     component: () => import('@/views/skins.vue')
+                },
+                {
+                    path: 'rate',
+                    name: 'Rate-CN',
+                    component: () => import('@/views/rate.vue')
                 }
             ]
         },

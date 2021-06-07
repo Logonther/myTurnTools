@@ -13,13 +13,18 @@
                         @change="monthChange"
                     />
                 </el-col>
+                <el-col :span="6">
+                    <el-select v-model="fileName" placeholder="请选择" @change="fileChange">
+                        <el-option v-for="item in fileOptions" :key="item" :label="item" :value="item" />
+                    </el-select>
+                </el-col>
             </el-row>
             <el-row :gutter="20">
                 <el-col v-show="dev" :span="6">
                     <div v-show="dev" @click="dev = false">{{ this.$t("rate.generate") }}</div>
                     <el-input type="text" v-model="monthRange" :placeholder="this.$t('rate.range')" />
                 </el-col>
-                <el-col :span="dev ? 12 : 24">
+                <el-col v-show="region !== 'CN'" :span="dev ? 12 : 24">
                     <div>{{ this.$t("rate.title") }}</div>
                     <el-button @click="language = 'cn'">繁體中文</el-button>/<el-button @click="language = 'en'">English</el-button>
                     <el-button v-show="dev" @click="toImg">{{ this.$t("rate.createPicture") }}</el-button>
@@ -51,10 +56,14 @@
             <img src="../assets/image/卡.png" class="img-ka">
             <div class="main">
                 <img src="../assets/image/logoNew.png" class="logo">
-                <div class="title">{{ language == 'cn' ? '5000+数据报告' : 'META REPORT' }}</div>
+                <div class="title">
+                    {{ region === 'CN' ? '数据报告' : language == 'cn' ? '數據報告' : 'META REPORT' }}
+                </div>
                 <div class="subtitle month">{{ monthRange }}</div>
                 <div class="type">
-                    <div class="title">{{ language == 'cn' ? '标准模式英雄榜' : 'STANDARD MODE | HERO LIST' }}</div>
+                    <div class="title">
+                        {{ region === 'CN' ? '标准模式英雄榜' : language == 'cn' ? '標準模式英雄榜' : 'STANDARD MODE | HERO LIST' }}
+                    </div>
                     <div class="content">
                         <div class="item" v-for="(item,index) in rateData.rateHero" :key="index">
                             <span class="index">{{ index + 1 }}</span>
@@ -75,7 +84,9 @@
                     </div>
                 </div>
                 <div class="type">
-                    <div class="title">{{ language == 'cn' ? '标准模式装备榜' : 'STANDARD MODE | GEAR LIST' }}</div>
+                    <div class="title">
+                        {{ region === 'CN' ? '标准模式装备榜' : language == 'cn' ? '標準模式裝備榜' : 'STANDARD MODE | GEAR LIST' }}
+                    </div>
                     <div class="content">
                         <div class="item" v-for="(item,index) in rateData.rateEquipment" :key="index">
                             <span class="index">{{ index + 1 }}</span>
@@ -96,7 +107,9 @@
                     </div>
                 </div>
                 <div class="type">
-                    <div class="title">{{ language == 'cn' ? '标准模式道具榜' : 'STANDARD MODE | ITEM LIST' }}</div>
+                    <div class="title">
+                        {{ region === 'CN' ? '标准模式道具榜' : language == 'cn' ? '標準模式道具榜' : 'STANDARD MODE | ITEM LIST' }}
+                    </div>
                     <div class="content">
                         <div class="item" v-for="(item,index) in rateData.rateProps" :key="index">
                             <span class="index">{{ index + 1 }}</span>
@@ -116,7 +129,7 @@
                         </div>
                     </div>
                 </div>
-                <ul class="tips">
+                <ul v-if="dev" class="tips">
                     <li>统计方法：</li>
                     <li>1、只统计标准模式</li>
                     <li>2、急速投降的对局不计入统计</li>
@@ -142,9 +155,13 @@ export default {
     name: "rate",
     data() {
         return {
+            region: 'CN',
             dev: false,
+            fileNames: [],
             month: '',
             monthRange: '',
+            fileName: '',
+            fileOptions: [],
             language: 'cn',
             showReport: false,
             rateData: {
@@ -162,15 +179,30 @@ export default {
             dialogVisible: false,
             pickerOptions: {
                 disabledDate: (time) => {
-                    return time.getTime() < moment('2019-12') || (time.getTime() > moment('2021-02') && time.getTime() < moment('2021-05'))
+                    if (window.location.href.indexOf('CN') !== -1) {
+                        return time.getTime() < moment('2021-05') || time.getTime() > moment('2021-05')
+                    } else {
+                        return time.getTime() < moment('2019-12') || time.getTime() > moment('2021-02')
+                    }
                 }
             },
             uploadData: []
         }
     },
     created() {
+        let json = ''
+        if (this.$route.fullPath.indexOf('CN') === 1) {
+            this.region = 'CN'
+        } else {
+            this.region = 'Global'
+        }
+        let files = require.context('../../public/rate', false, /.json$/).keys()
+        files.forEach(item => {
+            this.fileNames.push(item.slice(2).slice(0, -5))
+        })
+        console.log('filesNames---', this.fileNames)
         this.$http.get('heros.json').then(res => {
-            console.log('英雄数据---',res);
+            console.log('英雄数据---',res)
             this.herosData = res.data
         })
     },
@@ -237,12 +269,20 @@ export default {
         },
         monthChange() {
             console.log('month------',this.month);
+            this.showReport = false
+            this.fileOptions = []
+            this.fileNames.forEach(item => {
+                if (item.split('_')[0] === this.month && item.split('_')[2].indexOf('false') === -1) {
+                    this.fileOptions.push(item.split('_')[2])
+                }
+            })
+        },
+        fileChange() {
             Object.keys(this.rateData).map(index => (this.rateData[index] = []))
             Object.keys(this.lastMonthData).map(index => (this.lastMonthData[index] = []))
             this.rateImg = ''
-            this.showReport = false
 
-            this.$http.get('rate/' + this.month + '.json').then(res => {
+            this.$http.get(`rate/${this.month}_${this.region}_${this.fileName}.json`).then(res => {
                 console.log('选中月份数据---',res);
                 res.data.forEach(item => {
                     if (item.type == '英雄'){
@@ -263,7 +303,7 @@ export default {
                     })
                 })
 
-                this.$http.get('rate/' + moment(this.month).subtract(1, 'month').format('YYYY-MM') + '.json').then(resp => {
+                this.$http.get(`rate/${moment(this.month).subtract(1, 'month').format('YYYY-MM')}_${this.region}_${this.fileName}.json`).then(resp => {
                     console.log('上月数据---',resp);
                     this.showReport = true
                     resp.data.forEach(item => {

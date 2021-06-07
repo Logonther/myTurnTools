@@ -77,10 +77,10 @@ export default {
                     name: '卡牌讲解',
                     path: '/strategy'
                 }*/
-                /*{
+                {
                     name: this.$t("navbar.rate"),
                     path: '/rate'
-                },*/
+                },
                 {
                     name: this.$t("navbar.build"),
                     path: '/build'
@@ -98,6 +98,10 @@ export default {
                 {
                     name: this.$t("navbar.heros"),
                     path: '/CN/collection'
+                },
+                {
+                    name: this.$t("navbar.rate"),
+                    path: '/CN/rate'
                 },
                 {
                     name: this.$t("navbar.build"),

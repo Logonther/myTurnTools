@@ -22,7 +22,7 @@ module.exports = {
         notice: [
             'Temporarily remove Sim Summon, updating data',
             'In modification, temporarily close the Meta Report',
-            'Skins Collection(Updating)'
+            'Meta Report open again'
         ],
     },
     heros: {
@@ -47,6 +47,7 @@ module.exports = {
     rate: {
         search: 'Search:',
         chooseMonth: 'Choose month',
+        chooseType: 'Choose type',
         generate: 'Generate:',
         range: 'Specific date range',
         createPicture: 'Generate picture',
